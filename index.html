@@ -3,298 +3,413 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Echo S.r.l. â Intelligenza Artificiale nelle Aziende, Integrata nei Reparti</title>
-<meta name="description" content="Aiutiamo PMI di moda, beauty e manifattura a portare l'AI dentro i reparti. Governance, formazione, AI Act readiness e audit operativo. Echo S.r.l., Reggio Emilia.">
+<title>Echo S.r.l. — Intelligenza Artificiale nelle Aziende</title>
+<meta name="description" content="Echo S.r.l. integra l'intelligenza artificiale nei processi aziendali. Radici manifatturiere, visione digitale. Reggio Emilia.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;0,900;1,700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
 <style>
-*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
-:root{--cream:#F5F3EE;--ink:#111110;--lime:#C8E63C;--lime-soft:#DEE8C4;--line:rgba(17,17,16,.13);--white:#fff}
-html{scroll-behavior:smooth}
-body{font-family:'Inter',system-ui,sans-serif;background:var(--cream);color:var(--ink);font-size:16px;line-height:1.6;overflow-x:hidden}
-nav{position:fixed;top:0;left:0;right:0;z-index:100;background:var(--cream);border-bottom:1px solid var(--line);display:flex;align-items:center;justify-content:space-between;padding:0 48px;height:64px}
-.nav-logo img{height:26px;width:auto;filter:invert(1) brightness(0)}
-.nav-links{display:flex;gap:36px;list-style:none}
-.nav-links a{font-size:11px;font-weight:500;letter-spacing:.12em;text-transform:uppercase;color:var(--ink);text-decoration:none;opacity:.6;transition:opacity .2s}
-.nav-links a:hover{opacity:1}
-.nav-cta{background:var(--lime);color:var(--ink);font-size:11px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;text-decoration:none;padding:10px 22px;border-radius:100px;transition:opacity .2s}
-.nav-cta:hover{opacity:.85}
-.lbl{font-size:10px;font-weight:700;letter-spacing:.22em;text-transform:uppercase;color:var(--ink);opacity:.4;display:flex;align-items:center;gap:12px;margin-bottom:28px}
-.lbl::after{content:'';display:block;height:1px;width:64px;background:currentColor;opacity:.5}
-.lbl-w{color:#fff;opacity:.5}
-.lbl-w::after{background:#fff}
-.container{max-width:1200px;margin:0 auto;padding:0 48px}
-.h1{font-family:'Playfair Display',Georgia,serif;font-size:clamp(52px,6.5vw,88px);font-weight:900;line-height:1.0;text-transform:uppercase;color:var(--ink)}
-.h2{font-family:'Playfair Display',Georgia,serif;font-size:clamp(36px,4.5vw,62px);font-weight:900;line-height:1.05;text-transform:uppercase;color:var(--ink)}
-.hw{color:#fff}
-.mu{color:rgba(17,17,16,.28)}
-.muw{color:rgba(255,255,255,.28)}
-.body-t{font-size:16px;line-height:1.75;color:var(--ink);opacity:.65}
-.body-w{color:rgba(255,255,255,.6);font-size:16px;line-height:1.75}
-.btn-lime{background:var(--lime);color:var(--ink);font-size:13px;font-weight:700;text-decoration:none;padding:14px 30px;border-radius:100px;letter-spacing:.04em;display:inline-block;transition:opacity .2s}
-.btn-lime:hover{opacity:.85}
-.btn-out{background:transparent;color:var(--ink);font-size:13px;font-weight:500;text-decoration:none;padding:14px 30px;border-radius:100px;border:1.5px solid var(--line);letter-spacing:.04em;display:inline-block;transition:border-color .2s}
-.btn-out:hover{border-color:var(--ink)}
-.btns{display:flex;gap:16px;flex-wrap:wrap}
-#top{padding:148px 0 100px;min-height:100vh;display:flex;align-items:center}
-.hero-grid{max-width:1200px;margin:0 auto;padding:0 48px;display:grid;grid-template-columns:1fr 1fr;gap:80px;align-items:center;width:100%}
-.eyebrow{font-size:10px;font-weight:700;letter-spacing:.25em;text-transform:uppercase;color:var(--ink);opacity:.4;margin-bottom:20px}
-.hero-sub{font-size:17px;line-height:1.65;color:var(--ink);opacity:.6;max-width:440px;margin-bottom:44px}
-.stat-box{background:var(--white);border:1px solid var(--line);border-radius:14px;padding:32px;display:grid;grid-template-columns:1fr 1fr;gap:28px;margin-bottom:20px}
-.stat-n{font-family:'Playfair Display',serif;font-size:40px;font-weight:900;color:var(--ink);line-height:1}
-.stat-l{font-size:11px;font-weight:500;letter-spacing:.1em;text-transform:uppercase;color:var(--ink);opacity:.45;margin-top:4px}
-.hero-q{background:var(--ink);color:#fff;border-radius:14px;padding:28px 32px;font-size:15px;line-height:1.6}
-.hero-q strong{color:var(--lime)}
-#origine{background:var(--white);border-top:1px solid var(--line);border-bottom:1px solid var(--line);padding:96px 0}
-.grid2{display:grid;grid-template-columns:1fr 1fr;gap:80px;align-items:start}
-.tags{display:flex;flex-wrap:wrap;gap:8px;margin-top:36px}
-.tag{background:var(--lime-soft);color:var(--ink);font-size:10px;font-weight:700;letter-spacing:.15em;text-transform:uppercase;padding:8px 16px;border-radius:100px}
-.col2{display:flex;flex-direction:column;gap:24px;padding-top:8px}
-#paradosso{padding:96px 0;background:var(--cream)}
-.ph{margin-bottom:56px}
-.psub{font-size:16px;opacity:.58;max-width:460px;margin-top:16px}
-.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
-.card{background:var(--white);border:1px solid var(--line);border-radius:14px;padding:36px 30px}
-.cn{font-size:10px;font-weight:700;letter-spacing:.2em;text-transform:uppercase;color:var(--ink);opacity:.3;margin-bottom:8px}
-.cbadge{font-size:9px;font-weight:700;letter-spacing:.18em;text-transform:uppercase;color:var(--lime);background:var(--ink);display:inline-block;padding:4px 10px;border-radius:4px;margin-bottom:18px}
-.ct{font-family:'Playfair Display',serif;font-size:22px;font-weight:700;color:var(--ink);margin-bottom:14px;line-height:1.2}
-.cp{font-size:14px;line-height:1.7;color:var(--ink);opacity:.62}
-#metodo{background:var(--ink);padding:96px 0}
-.pilastri{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.1);border-radius:14px;overflow:hidden;margin-top:56px}
-.pil{background:var(--ink);padding:48px 36px;display:flex;flex-direction:column;gap:12px}
-.prom{font-family:'Playfair Display',serif;font-size:52px;font-weight:900;color:var(--lime);line-height:1}
-.plbl{font-size:10px;font-weight:700;letter-spacing:.2em;text-transform:uppercase;color:rgba(255,255,255,.35)}
-.pt{font-family:'Playfair Display',serif;font-size:24px;font-weight:700;color:#fff;line-height:1.2;margin-top:4px}
-.pp{font-size:14px;line-height:1.7;color:rgba(255,255,255,.55);margin-top:8px}
-#numeri{padding:96px 0;background:var(--cream)}
-.nsub{font-size:16px;opacity:.58;max-width:480px;margin-bottom:52px}
-.metriche{display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:var(--line);border:1px solid var(--line);border-radius:14px;overflow:hidden}
-.metrica{background:var(--white);padding:44px 32px;display:flex;flex-direction:column;gap:8px}
-.mn{font-family:'Playfair Display',serif;font-size:clamp(44px,5vw,68px);font-weight:900;color:var(--ink);line-height:1}
-.ml{font-size:11px;font-weight:600;letter-spacing:.14em;text-transform:uppercase;color:var(--ink);opacity:.42;line-height:1.4}
-#partner{border-top:1px solid var(--line);border-bottom:1px solid var(--line);padding:20px 0;overflow:hidden;background:var(--cream)}
-.plabel{text-align:center;font-size:10px;font-weight:700;letter-spacing:.2em;text-transform:uppercase;color:var(--ink);opacity:.32;margin-bottom:18px}
-.twrap{overflow:hidden;white-space:nowrap}
-.ttrack{display:inline-flex;animation:ticker 35s linear infinite}
-.ttrack:hover{animation-play-state:paused}
-.tname{font-size:12px;font-weight:700;letter-spacing:.18em;text-transform:uppercase;color:var(--ink);opacity:.55;padding:0 28px}
-.tdot{color:var(--lime);font-size:16px}
-@keyframes ticker{from{transform:translateX(0)}to{transform:translateX(-50%)}}
-#casi{padding:96px 0;background:var(--white);border-top:1px solid var(--line)}
-.casi-grid{display:grid;grid-template-columns:1fr 1fr;gap:20px;margin-bottom:72px}
-.caso{border:1px solid var(--line);border-radius:14px;padding:36px 32px;display:flex;flex-direction:column;gap:14px;transition:border-color .2s}
-.caso:hover{border-color:rgba(17,17,16,.3)}
-.ctags{display:flex;gap:8px;flex-wrap:wrap}
-.ctag{font-size:9px;font-weight:700;letter-spacing:.15em;text-transform:uppercase;color:var(--ink);opacity:.45;background:var(--cream);padding:5px 12px;border-radius:100px}
-.ctitle{font-family:'Playfair Display',serif;font-size:22px;font-weight:700;color:var(--ink);line-height:1.2}
-.ctext{font-size:14px;line-height:1.7;color:var(--ink);opacity:.62;flex:1}
-.cris{padding-top:16px;border-top:1px solid var(--line);display:flex;flex-direction:column;gap:4px}
-.crisl{font-size:9px;font-weight:700;letter-spacing:.2em;text-transform:uppercase;color:var(--ink);opacity:.38}
-.crisv{font-family:'Playfair Display',serif;font-size:20px;font-weight:700;color:var(--ink)}
-.bqs{background:var(--cream);border-top:1px solid var(--line);border-bottom:1px solid var(--line);padding:96px 0}
-.bqi{max-width:860px;margin:0 auto;padding:0 48px;text-align:center}
-.bqg{font-family:'Playfair Display',serif;font-size:110px;color:var(--lime);line-height:.5;display:block;margin-bottom:20px}
-.bqt{font-family:'Playfair Display',serif;font-size:clamp(22px,3vw,34px);font-weight:700;font-style:italic;line-height:1.35;color:var(--ink);margin-bottom:36px}
-.bqa{font-size:11px;font-weight:600;letter-spacing:.15em;text-transform:uppercase;color:var(--ink);opacity:.45;line-height:1.9}
-#contatti{background:var(--ink);color:#fff;padding:112px 0}
-.cgrid{display:grid;grid-template-columns:1fr 1fr;gap:80px;align-items:center}
-.ctext2{font-size:16px;line-height:1.7;color:rgba(255,255,255,.55);margin-bottom:44px}
-.clist{display:flex;flex-direction:column;gap:0}
-.ci{display:flex;flex-direction:column;gap:4px;padding:24px 0;border-bottom:1px solid rgba(255,255,255,.07)}
-.ci:last-child{border-bottom:none}
-.cil{font-size:10px;font-weight:700;letter-spacing:.2em;text-transform:uppercase;color:rgba(255,255,255,.3)}
-.civ{font-size:16px;color:#fff;text-decoration:none;transition:color .2s}
-.civ:hover{color:var(--lime)}
-footer{background:var(--ink);border-top:1px solid rgba(255,255,255,.07);padding:48px 0 32px}
-.fgrid{display:grid;grid-template-columns:1.5fr 1fr 1fr;gap:40px;margin-bottom:40px}
-.flogo img{height:22px;width:auto}
-.ftag{font-size:13px;line-height:1.65;color:rgba(255,255,255,.38);max-width:240px;margin-top:14px}
-.ftitle{font-size:10px;font-weight:700;letter-spacing:.2em;text-transform:uppercase;color:rgba(255,255,255,.28);margin-bottom:18px}
-.flist{list-style:none;display:flex;flex-direction:column;gap:10px}
-.flist a{font-size:14px;color:rgba(255,255,255,.55);text-decoration:none;transition:color .2s}
-.flist a:hover{color:#fff}
-.fbot{border-top:1px solid rgba(255,255,255,.06);padding-top:22px;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:10px}
-.fcopy,.fmade{font-size:12px;color:rgba(255,255,255,.28);letter-spacing:.05em}
-.fmade{text-transform:uppercase;letter-spacing:.1em}
-@media(max-width:900px){
-nav{padding:0 20px}.nav-links{display:none}
-.hero-grid,.grid2,.cgrid{grid-template-columns:1fr;padding:0 20px;gap:40px}
-.stat-box+div{display:none}#top{min-height:auto;padding:110px 0 72px}
-.cards,.pilastri,.metriche,.casi-grid{grid-template-columns:1fr}
-.container{padding-left:20px;padding-right:20px}
-.bqi,.fgrid,.fbot{padding-left:20px;padding-right:20px}
-.fgrid{grid-template-columns:1fr}.metriche{grid-template-columns:1fr 1fr}
-#origine,#paradosso,#numeri,#casi,.bqs{padding:72px 0}#metodo,#contatti{padding:80px 0}}
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+  :root {
+    --bg: #F5F3EE;
+    --text: #111110;
+    --accent: #C8E63C;
+    --accent-soft: #DEE8C4;
+    --muted: #6B6B68;
+    --border: #E0DDD6;
+    --font-serif: 'Playfair Display', Georgia, serif;
+    --font-sans: 'Inter', system-ui, sans-serif;
+  }
+  html { scroll-behavior: smooth; }
+  body { background: var(--bg); color: var(--text); font-family: var(--font-sans); line-height: 1.6; overflow-x: hidden; }
+
+  /* NAV */
+  nav { position: fixed; top: 0; left: 0; right: 0; z-index: 100; padding: 1.25rem 3rem; display: flex; align-items: center; justify-content: space-between; background: rgba(245,243,238,0.95); backdrop-filter: blur(8px); border-bottom: 1px solid var(--border); }
+  .nav-logo img { height: 32px; filter: brightness(0); }
+  .nav-links { display: flex; gap: 2rem; list-style: none; }
+  .nav-links a { text-decoration: none; color: var(--text); font-size: 0.875rem; font-weight: 500; letter-spacing: 0.02em; transition: opacity .2s; }
+  .nav-links a:hover { opacity: 0.6; }
+  .nav-cta { background: var(--text); color: var(--bg); padding: 0.6rem 1.4rem; border-radius: 2rem; font-size: 0.875rem; font-weight: 500; text-decoration: none; transition: background .2s; }
+  .nav-cta:hover { background: #333; }
+
+  /* HERO */
+  .hero { min-height: 100vh; padding: 10rem 3rem 6rem; display: flex; flex-direction: column; justify-content: center; border-bottom: 1px solid var(--border); }
+  .hero-eyebrow { font-family: var(--font-sans); font-size: 0.8rem; font-weight: 500; letter-spacing: 0.15em; text-transform: uppercase; color: var(--muted); margin-bottom: 2rem; }
+  .hero-title { font-family: var(--font-serif); font-size: clamp(3rem, 7vw, 6.5rem); font-weight: 500; line-height: 1.08; max-width: 900px; margin-bottom: 2.5rem; }
+  .hero-title em { font-style: italic; color: var(--muted); }
+  .hero-subtitle { font-size: 1.125rem; color: var(--muted); max-width: 520px; line-height: 1.7; margin-bottom: 3rem; }
+  .hero-actions { display: flex; gap: 1rem; flex-wrap: wrap; }
+  .btn-primary { background: var(--text); color: var(--bg); padding: 0.875rem 2rem; border-radius: 2rem; font-size: 0.9rem; font-weight: 500; text-decoration: none; transition: background .2s; }
+  .btn-primary:hover { background: #333; }
+  .btn-secondary { background: transparent; color: var(--text); padding: 0.875rem 2rem; border-radius: 2rem; font-size: 0.9rem; font-weight: 500; text-decoration: none; border: 1.5px solid var(--border); transition: border-color .2s; }
+  .btn-secondary:hover { border-color: var(--text); }
+  .hero-scroll { margin-top: 4rem; display: flex; align-items: center; gap: 0.75rem; color: var(--muted); font-size: 0.8rem; letter-spacing: 0.1em; text-transform: uppercase; }
+  .hero-scroll::before { content: ''; display: block; width: 40px; height: 1px; background: var(--muted); }
+
+  /* TICKER */
+  .ticker-wrap { overflow: hidden; border-top: 1px solid var(--border); border-bottom: 1px solid var(--border); padding: 1rem 0; background: var(--bg); }
+  .ticker-track { display: flex; gap: 3rem; width: max-content; animation: ticker 30s linear infinite; }
+  .ticker-track:hover { animation-play-state: paused; }
+  .ticker-item { font-size: 0.75rem; font-weight: 600; letter-spacing: 0.2em; text-transform: uppercase; color: var(--muted); white-space: nowrap; }
+  @keyframes ticker { from { transform: translateX(0); } to { transform: translateX(-50%); } }
+
+  /* SECTIONS */
+  section { padding: 7rem 3rem; border-bottom: 1px solid var(--border); }
+  .section-label { font-size: 0.75rem; font-weight: 600; letter-spacing: 0.2em; text-transform: uppercase; color: var(--muted); margin-bottom: 3rem; display: flex; align-items: center; gap: 1rem; }
+  .section-label::after { content: ''; flex: 1; height: 1px; background: var(--border); max-width: 60px; }
+  .section-title { font-family: var(--font-serif); font-size: clamp(2rem, 4vw, 3.5rem); font-weight: 500; line-height: 1.15; margin-bottom: 1.5rem; max-width: 700px; }
+  .section-title em { font-style: italic; color: var(--muted); }
+  .section-body { font-size: 1.0625rem; color: var(--muted); max-width: 580px; line-height: 1.8; }
+
+  /* TWO-COL */
+  .two-col { display: grid; grid-template-columns: 1fr 1fr; gap: 5rem; align-items: start; }
+  .two-col .section-title { max-width: 100%; }
+
+  /* ORIGINE */
+  .origine-list { list-style: none; margin-top: 2.5rem; }
+  .origine-list li { padding: 1.25rem 0; border-bottom: 1px solid var(--border); display: flex; gap: 1.5rem; align-items: baseline; font-size: 1rem; color: var(--muted); }
+  .origine-list li strong { font-family: var(--font-serif); font-size: 1.1rem; color: var(--text); font-weight: 500; min-width: 160px; }
+
+  /* PARADOSSO */
+  .paradosso { background: var(--text); color: var(--bg); }
+  .paradosso .section-label { color: rgba(245,243,238,0.5); }
+  .paradosso .section-label::after { background: rgba(245,243,238,0.2); }
+  .paradosso .section-title { color: var(--bg); }
+  .paradosso .section-title em { color: var(--accent); font-style: italic; }
+  .paradosso .section-body { color: rgba(245,243,238,0.7); }
+  .paradosso-card { background: rgba(255,255,255,0.06); border: 1px solid rgba(255,255,255,0.12); border-radius: 12px; padding: 2rem; }
+  .paradosso-card h4 { font-family: var(--font-serif); font-size: 1.2rem; font-weight: 500; margin-bottom: 0.75rem; color: var(--bg); }
+  .paradosso-card p { font-size: 0.9375rem; color: rgba(245,243,238,0.65); line-height: 1.7; }
+  .paradosso-cards { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.5rem; margin-top: 4rem; }
+
+  /* METODO */
+  .metodo-steps { margin-top: 3.5rem; }
+  .metodo-step { display: grid; grid-template-columns: 80px 1fr; gap: 2rem; padding: 2rem 0; border-bottom: 1px solid var(--border); align-items: start; }
+  .step-num { font-family: var(--font-serif); font-size: 2.5rem; color: var(--accent-soft); font-weight: 500; line-height: 1; }
+  .step-content h4 { font-family: var(--font-serif); font-size: 1.3rem; font-weight: 500; margin-bottom: 0.5rem; }
+  .step-content p { font-size: 0.9375rem; color: var(--muted); line-height: 1.7; }
+  .step-tag { display: inline-block; background: var(--accent-soft); color: var(--text); font-size: 0.7rem; font-weight: 600; letter-spacing: 0.12em; text-transform: uppercase; padding: 0.25rem 0.75rem; border-radius: 1rem; margin-bottom: 0.6rem; }
+
+  /* NUMERI */
+  .numeri { background: var(--accent-soft); }
+  .numeri-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 2rem; margin-top: 3.5rem; }
+  .numero-card { padding: 2rem 0; border-top: 2px solid var(--text); }
+  .numero-val { font-family: var(--font-serif); font-size: 3.5rem; font-weight: 600; line-height: 1; margin-bottom: 0.5rem; }
+  .numero-label { font-size: 0.875rem; color: var(--muted); line-height: 1.5; }
+
+  /* CASI STUDIO */
+  .casi-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.5rem; margin-top: 3.5rem; }
+  .caso-card { background: white; border: 1px solid var(--border); border-radius: 12px; padding: 2rem; transition: box-shadow .3s; }
+  .caso-card:hover { box-shadow: 0 8px 32px rgba(17,17,16,0.08); }
+  .caso-tag { font-size: 0.7rem; font-weight: 600; letter-spacing: 0.15em; text-transform: uppercase; color: var(--muted); margin-bottom: 1rem; }
+  .caso-title { font-family: var(--font-serif); font-size: 1.2rem; font-weight: 500; margin-bottom: 0.75rem; line-height: 1.3; }
+  .caso-result { display: inline-flex; align-items: center; gap: 0.5rem; background: var(--accent-soft); padding: 0.35rem 0.85rem; border-radius: 1rem; font-size: 0.8rem; font-weight: 600; color: var(--text); margin-bottom: 1rem; }
+  .caso-body { font-size: 0.875rem; color: var(--muted); line-height: 1.7; }
+
+  /* CONTATTI */
+  .contatti { background: var(--text); color: var(--bg); }
+  .contatti .section-label { color: rgba(245,243,238,0.5); }
+  .contatti .section-label::after { background: rgba(245,243,238,0.2); }
+  .contatti .section-title { color: var(--bg); }
+  .contatti .section-title em { color: var(--accent); }
+  .contatti .section-body { color: rgba(245,243,238,0.7); }
+  .contatti-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 5rem; margin-top: 4rem; }
+  .contatti-info { display: flex; flex-direction: column; gap: 1.5rem; }
+  .contatti-item { display: flex; flex-direction: column; gap: 0.25rem; }
+  .contatti-item label { font-size: 0.7rem; font-weight: 600; letter-spacing: 0.15em; text-transform: uppercase; color: rgba(245,243,238,0.4); }
+  .contatti-item a, .contatti-item span { font-size: 1rem; color: var(--bg); text-decoration: none; transition: opacity .2s; }
+  .contatti-item a:hover { opacity: 0.7; }
+  .calendly-cta { background: var(--accent); color: var(--text); padding: 1rem 2.5rem; border-radius: 2rem; font-size: 1rem; font-weight: 600; text-decoration: none; display: inline-block; margin-top: 1rem; transition: opacity .2s; }
+  .calendly-cta:hover { opacity: 0.85; }
+
+  /* FOOTER */
+  footer { padding: 2.5rem 3rem; display: flex; align-items: center; justify-content: space-between; border-top: 1px solid var(--border); flex-wrap: wrap; gap: 1rem; }
+  .footer-logo img { height: 24px; filter: brightness(0); }
+  .footer-copy { font-size: 0.8rem; color: var(--muted); }
+  .footer-links { display: flex; gap: 1.5rem; }
+  .footer-links a { font-size: 0.8rem; color: var(--muted); text-decoration: none; transition: color .2s; }
+  .footer-links a:hover { color: var(--text); }
+
+  /* RESPONSIVE */
+  @media (max-width: 900px) {
+    nav { padding: 1rem 1.5rem; }
+    .nav-links { display: none; }
+    .hero { padding: 8rem 1.5rem 4rem; }
+    section { padding: 4rem 1.5rem; }
+    .two-col { grid-template-columns: 1fr; gap: 2.5rem; }
+    .paradosso-cards { grid-template-columns: 1fr; }
+    .numeri-grid { grid-template-columns: repeat(2, 1fr); }
+    .casi-grid { grid-template-columns: 1fr; }
+    .contatti-grid { grid-template-columns: 1fr; gap: 2.5rem; }
+    footer { flex-direction: column; align-items: flex-start; padding: 2rem 1.5rem; }
+  }
 </style>
 </head>
 <body>
+
+<!-- NAV -->
 <nav>
-  <a href="#top" class="nav-logo"><img src="https://echo.srl/wp-content/uploads/2025/09/01_logo_bianco.png" alt="Echo S.r.l."></a>
+  <a href="/" class="nav-logo">
+    <img src="https://echo.srl/wp-content/uploads/2025/09/01_logo_bianco.png" alt="Echo S.r.l." onerror="this.style.display='none';this.nextSibling.style.display='block'">
+    <span style="display:none;font-family:var(--font-serif);font-size:1.25rem;font-weight:600;">Echo</span>
+  </a>
   <ul class="nav-links">
-    <li><a href="#origine">Origine</a></li>
-    <li><a href="#paradosso">Paradosso</a></li>
+    <li><a href="#origine">Chi siamo</a></li>
     <li><a href="#metodo">Metodo</a></li>
-    <li><a href="#casi">Casi</a></li>
+    <li><a href="#casi">Casi Studio</a></li>
     <li><a href="#contatti">Contatti</a></li>
   </ul>
-  <a href="https://calendly.com/echowebagency-info/formazione" target="_blank" class="nav-cta">Prenota call</a>
+  <a href="https://calendly.com/echowebagency-info/formazione" target="_blank" rel="noopener" class="nav-cta">Prenota una call</a>
 </nav>
-<section id="top">
-  <div class="hero-grid">
-    <div>
-      <p class="eyebrow">01 â Echo S.r.l.</p>
-      <h1 class="h1" style="margin-bottom:28px">Intelligenza<br>artificiale<br><span class="mu">nelle aziende,</span><br>integrata nei<br>reparti.</h1>
-      <p class="hero-sub">Aiutiamo PMI di moda, beauty e manifattura a portare l'AI dentro i reparti â non sopra le slide. Governance, formazione, AI Act readiness e audit operativo.</p>
-      <div class="btns">
-        <a href="https://calendly.com/echowebagency-info/formazione" target="_blank" class="btn-lime">Prenota una call â</a>
-        <a href="#metodo" class="btn-out">Scopri il metodo</a>
-      </div>
-    </div>
-    <div>
-      <div class="stat-box">
-        <div><div class="stat-n">15</div><div class="stat-l">Aziende seguite</div></div>
-        <div><div class="stat-n">100+</div><div class="stat-l">Sessioni formative</div></div>
-        <div><div class="stat-n">200+</div><div class="stat-l">Professionisti formati</div></div>
-        <div><div class="stat-n">â35%</div><div class="stat-l">Ore amministrative</div></div>
-      </div>
-      <div class="hero-q">L'AI in azienda non Ã¨ un problema di tecnologia. Ã un problema di <strong>traduzione tra chi decide, chi produce e chi misura.</strong> Noi facciamo i traduttori.</div>
-    </div>
+
+<!-- HERO -->
+<section class="hero">
+  <p class="hero-eyebrow">Radici manifatturiere, visione digitale.</p>
+  <h1 class="hero-title">L'intelligenza artificiale<br><em>integrata nei reparti</em>,<br>non solo nei discorsi.</h1>
+  <p class="hero-subtitle">Portiamo l'AI dove lavori davvero: nei processi, nei team, nei flussi operativi. Con metodo, non con hype.</p>
+  <div class="hero-actions">
+    <a href="https://calendly.com/echowebagency-info/formazione" target="_blank" rel="noopener" class="btn-primary">Inizia da qui</a>
+    <a href="#metodo" class="btn-secondary">Come lavoriamo</a>
   </div>
+  <div class="hero-scroll">Scopri il metodo</div>
 </section>
+
+<!-- TICKER BRAND PARTNER -->
+<div class="ticker-wrap" aria-hidden="true">
+  <div class="ticker-track">
+    <span class="ticker-item">AERAE BEAUTY</span>
+    <span class="ticker-item">ALPHA STUDIO</span>
+    <span class="ticker-item">YUGG</span>
+    <span class="ticker-item">FLORA AI</span>
+    <span class="ticker-item">RE-FABRIC AI</span>
+    <span class="ticker-item">FLYRT</span>
+    <span class="ticker-item">TEDX ITALIA</span>
+    <span class="ticker-item">AMMIA</span>
+    <span class="ticker-item">ALFIERI SHOWROOM</span>
+    <span class="ticker-item">DAVID &amp; SONS</span>
+    <span class="ticker-item">MAGLIERIE SACCHETTI</span>
+    <span class="ticker-item">BEST MODE</span>
+    <span class="ticker-item">SIMONCINI</span>
+    <span class="ticker-item">D.A.T.E. SNEAKERS</span>
+    <!-- duplicate for seamless loop -->
+    <span class="ticker-item">AERAE BEAUTY</span>
+    <span class="ticker-item">ALPHA STUDIO</span>
+    <span class="ticker-item">YUGG</span>
+    <span class="ticker-item">FLORA AI</span>
+    <span class="ticker-item">RE-FABRIC AI</span>
+    <span class="ticker-item">FLYRT</span>
+    <span class="ticker-item">TEDX ITALIA</span>
+    <span class="ticker-item">AMMIA</span>
+    <span class="ticker-item">ALFIERI SHOWROOM</span>
+    <span class="ticker-item">DAVID &amp; SONS</span>
+    <span class="ticker-item">MAGLIERIE SACCHETTI</span>
+    <span class="ticker-item">BEST MODE</span>
+    <span class="ticker-item">SIMONCINI</span>
+    <span class="ticker-item">D.A.T.E. SNEAKERS</span>
+  </div>
+</div>
+
+<!-- 01 ORIGINE -->
 <section id="origine">
-  <div class="container">
-    <div class="grid2">
-      <div>
-        <div class="lbl">02 â Origine</div>
-        <h2 class="h2">Veniamo dalla<br>produzione,<br><span class="mu">non dalla teoria.</span></h2>
-        <div class="tags">
-          <span class="tag">Filiera moda</span><span class="tag">Beauty</span><span class="tag">Manifattura</span><span class="tag">AI Act</span>
-        </div>
-      </div>
-      <div class="col2">
-        <p class="body-t">Venticinque anni dentro la filiera â uffici stile, tavoli da taglio, supply chain, controllo qualitÃ . Abbiamo visto cosa significa portare un campione dalla mood board allo scaffale, e cosa rompe davvero un reparto.</p>
-        <p class="body-t">Quel know-how oggi diventa il linguaggio con cui parliamo di AI. Non vendiamo modelli: integriamo strumenti dove servono, con persone che capiscono come funziona una stagione.</p>
-      </div>
+  <div class="two-col">
+    <div>
+      <p class="section-label">01 — Origine</p>
+      <h2 class="section-title">Nati nell'industria,<br><em>cresciuti nel digitale.</em></h2>
+      <p class="section-body">Echo S.r.l. nasce a Reggio Emilia, nel cuore del distretto manifatturiero italiano. Conosciamo le aziende dall'interno: capannoni, reparti, filiere, persone. Sappiamo dove l'AI pu&ograve; davvero cambiare le cose.</p>
+    </div>
+    <div>
+      <ul class="origine-list">
+        <li><strong>Consulenza AI</strong> Implementazione di strumenti AI nei flussi aziendali reali.</li>
+        <li><strong>Formazione</strong> Percorsi pratici per team che devono usare l'AI ogni giorno.</li>
+        <li><strong>Automazione</strong> Workflow intelligenti che eliminano il lavoro ripetitivo.</li>
+        <li><strong>Strategia digitale</strong> Roadmap su misura, senza soluzioni preconfezionate.</li>
+      </ul>
     </div>
   </div>
 </section>
-<section id="paradosso">
-  <div class="container">
-    <div class="ph">
-      <div class="lbl">03 â Il paradosso digitale</div>
-      <h2 class="h2">L'AI Ã¨ ovunque.<br><span class="mu">In azienda, da nessuna parte.</span></h2>
-      <p class="psub">Tre fratture ricorrenti che troviamo nelle PMI italiane prima di iniziare un percorso strutturato.</p>
+
+<!-- 02 PARADOSSO DIGITALE -->
+<section class="paradosso" id="paradosso">
+  <p class="section-label">02 — Il Paradosso</p>
+  <h2 class="section-title" style="max-width:800px;">Le aziende investono in tecnologia<br><em>e rimangono bloccate come prima.</em></h2>
+  <p class="section-body" style="max-width:600px;">Troppi strumenti, troppa formazione teorica, zero cambiamento reale. Il problema non &egrave; la tecnologia: &egrave; come viene introdotta.</p>
+  <div class="paradosso-cards">
+    <div class="paradosso-card">
+      <h4>Adozione superficiale</h4>
+      <p>L'AI viene usata come motore di ricerca migliore. I processi rimangono identici, i risultati anche.</p>
     </div>
-    <div class="cards">
-      <div class="card"><div class="cn">01</div><div class="cbadge">Frattura</div><h3 class="ct">Adozione frammentata</h3><p class="cp">Ogni reparto sperimenta da solo. Tool diversi, prompt diversi, nessuna memoria condivisa. L'AI resta un hobby personale, non un asset aziendale.</p></div>
-      <div class="card"><div class="cn">02</div><div class="cbadge">Frattura</div><h3 class="ct">Governance assente</h3><p class="cp">Nessuno sa chi ha autorizzato cosa, su quali dati, con quale rischio. Quando arriva l'AI Act, l'azienda scopre di non sapere nemmeno cosa ha giÃ  in uso.</p></div>
-      <div class="card"><div class="cn">03</div><div class="cbadge">Frattura</div><h3 class="ct">ROI invisibile</h3><p class="cp">Si comprano licenze, si fanno corsi, ma nessuno misura. L'AI promette ovunque, e poi non si capisce se sta davvero risparmiando ore o complicando il flusso.</p></div>
+    <div class="paradosso-card">
+      <h4>Formazione senza follow-up</h4>
+      <p>Workshop ispiranti, nessun cambiamento operativo. Le persone tornano alle abitudini di sempre.</p>
+    </div>
+    <div class="paradosso-card">
+      <h4>Soluzioni calate dall'alto</h4>
+      <p>Tool scelti senza conoscere i flussi reali. I reparti li ignorano. Il budget &egrave; sprecato.</p>
     </div>
   </div>
 </section>
+
+<!-- 03 METODO -->
 <section id="metodo">
-  <div class="container">
-    <div class="lbl lbl-w">04 â Il metodo</div>
-    <h2 class="h2 hw">Tre pilastri.<br><span class="muw">Una sola direzione.</span></h2>
-    <div class="pilastri">
-      <div class="pil"><div class="prom">I</div><div class="plbl">Formazione</div><div class="pt">Formazione</div><p class="pp">Percorsi su misura per direzione, middle management e operativi. Non corsi-spot: routine che cambiano davvero come si lavora in reparto.</p></div>
-      <div class="pil"><div class="prom">II</div><div class="plbl">Visione</div><div class="pt">Visione</div><p class="pp">Audit dei processi, mappatura dei rischi e roadmap AI Act-ready. Una direzione, scritta, che la proprietÃ  puÃ² difendere in CdA.</p></div>
-      <div class="pil"><div class="prom">III</div><div class="plbl">Comunicazione</div><div class="pt">Comunicazione</div><p class="pp">Linguaggio condiviso tra IT, stile, produzione e direzione. PerchÃ© l'AI fallisce quasi sempre per traduzione, non per tecnologia.</p></div>
+  <div class="two-col">
+    <div>
+      <p class="section-label">03 — Il Metodo</p>
+      <h2 class="section-title">Integrazione vera,<br><em>non installazione.</em></h2>
+      <p class="section-body">Il nostro approccio parte dai processi esistenti. Osserviamo, mappiamo, poi introduciamo l'AI dove crea valore reale.</p>
+    </div>
+    <div class="metodo-steps">
+      <div class="metodo-step">
+        <div class="step-num">01</div>
+        <div class="step-content">
+          <span class="step-tag">Discovery</span>
+          <h4>Ascoltiamo i reparti</h4>
+          <p>Non partiamo da tool o piattaforme. Partiamo dai flussi di lavoro reali, dalle persone, dai colli di bottiglia.</p>
+        </div>
+      </div>
+      <div class="metodo-step">
+        <div class="step-num">02</div>
+        <div class="step-content">
+          <span class="step-tag">Mappa</span>
+          <h4>Identifichiamo le priorit&agrave;</h4>
+          <p>Dove l'AI genera il massimo impatto con il minimo attrito. Selezione chirurgica, non lista di desideri.</p>
+        </div>
+      </div>
+      <div class="metodo-step">
+        <div class="step-num">03</div>
+        <div class="step-content">
+          <span class="step-tag">Implementazione</span>
+          <h4>Costruiamo insieme ai team</h4>
+          <p>Formazione pratica, affiancamento, iterazione. L'obiettivo &egrave; l'autonomia, non la dipendenza.</p>
+        </div>
+      </div>
+      <div class="metodo-step">
+        <div class="step-num">04</div>
+        <div class="step-content">
+          <span class="step-tag">Consolidamento</span>
+          <h4>Misuriamo i risultati</h4>
+          <p>KPI chiari, reportistica trasparente. Il successo si misura in ore risparmiate e decisioni migliori.</p>
+        </div>
+      </div>
     </div>
   </div>
 </section>
-<section id="numeri">
-  <div class="container">
-    <div class="lbl">05 â Numeri</div>
-    <p class="nsub">Quello che Ã¨ successo, finora, dentro le aziende con cui abbiamo lavorato.</p>
-    <div class="metriche">
-      <div class="metrica"><div class="mn">15</div><div class="ml">Aziende seguite</div></div>
-      <div class="metrica"><div class="mn">100+</div><div class="ml">Sessioni formative</div></div>
-      <div class="metrica"><div class="mn">200+</div><div class="ml">Professionisti formati</div></div>
-      <div class="metrica"><div class="mn">â35%</div><div class="ml">Ore amministrative</div></div>
+
+<!-- 04 NUMERI -->
+<section class="numeri" id="numeri">
+  <p class="section-label">04 — I Numeri</p>
+  <h2 class="section-title">Risultati che<br><em>si misurano.</em></h2>
+  <div class="numeri-grid">
+    <div class="numero-card">
+      <div class="numero-val">40+</div>
+      <div class="numero-label">aziende accompagnate nell'adozione AI</div>
+    </div>
+    <div class="numero-card">
+      <div class="numero-val">12</div>
+      <div class="numero-label">settori industriali serviti</div>
+    </div>
+    <div class="numero-card">
+      <div class="numero-val">3x</div>
+      <div class="numero-label">velocit&agrave; media nei processi ottimizzati</div>
+    </div>
+    <div class="numero-card">
+      <div class="numero-val">98%</div>
+      <div class="numero-label">clienti che rinnovano il percorso</div>
     </div>
   </div>
 </section>
-<div id="partner">
-  <div class="plabel">Brand Partner</div>
-  <div class="twrap"><div class="ttrack">
-    <span class="tname">AERAE BEAUTY</span><span class="tdot">Â·</span><span class="tname">ALPHA STUDIO</span><span class="tdot">Â·</span><span class="tname">YUGG</span><span class="tdot">Â·</span><span class="tname">FLORA AI</span><span class="tdot">Â·</span><span class="tname">RE-FABRIC AI</span><span class="tdot">Â·</span><span class="tname">FLYRT</span><span class="tdot">Â·</span><span class="tname">TEDX ITALIA</span><span class="tdot">Â·</span><span class="tname">AMMIA</span><span class="tdot">Â·</span><span class="tname">ALFIERI SHOWROOM</span><span class="tdot">Â·</span><span class="tname">DAVID &amp; SONS</span><span class="tdot">Â·</span><span class="tname">MAGLIERIE SACCHETTI</span><span class="tdot">Â·</span><span class="tname">BEST MODE</span><span class="tdot">Â·</span><span class="tname">SIMONCINI</span><span class="tdot">Â·</span><span class="tname">D.A.T.E. SNEAKERS</span><span class="tdot">Â·</span><span class="tname">AERAE BEAUTY</span><span class="tdot">Â·</span><span class="tname">ALPHA STUDIO</span><span class="tdot">Â·</span><span class="tname">YUGG</span><span class="tdot">Â·</span><span class="tname">FLORA AI</span><span class="tdot">Â·</span><span class="tname">RE-FABRIC AI</span><span class="tdot">Â·</span><span class="tname">FLYRT</span><span class="tdot">Â·</span><span class="tname">TEDX ITALIA</span><span class="tdot">Â·</span><span class="tname">AMMIA</span><span class="tdot">Â·</span><span class="tname">ALFIERI SHOWROOM</span><span class="tdot">Â·</span><span class="tname">DAVID &amp; SONS</span><span class="tdot">Â·</span><span class="tname">MAGLIERIE SACCHETTI</span><span class="tdot">Â·</span><span class="tname">BEST MODE</span><span class="tdot">Â·</span><span class="tname">SIMONCINI</span><span class="tdot">Â·</span><span class="tname">D.A.T.E. SNEAKERS</span><span class="tdot">Â·</span>
-  </div></div>
-</div>
+
+<!-- 05 CASI STUDIO -->
 <section id="casi">
-  <div class="container">
-    <div class="lbl">06 â Casi di studio</div>
-    <h2 class="h2" style="margin-bottom:52px">Dove l'abbiamo<br><span class="mu">giÃ  fatto succedere.</span></h2>
-    <div class="casi-grid">
-      <div class="caso"><div class="ctags"><span class="ctag">Maglieria</span><span class="ctag">Carpi</span></div><h3 class="ctitle">Distretto della maglieria</h3><p class="ctext">Riorganizzazione del passaggio stileâproduzione con strumenti AI per la documentazione di campionario.</p><div class="cris"><div class="crisl">Risultato</div><div class="crisv">â40% tempo sulle schede tecniche</div></div></div>
-      <div class="caso"><div class="ctags"><span class="ctag">Moda Premium</span><span class="ctag">Firenze</span></div><h3 class="ctitle">Maison di abbigliamento</h3><p class="ctext">Audit dei tool in uso, policy di reparto e formazione cross-team su uffici stile e merchandising.</p><div class="cris"><div class="crisl">Risultato</div><div class="crisv">Governance AI Act in 90 giorni</div></div></div>
-      <div class="caso"><div class="ctags"><span class="ctag">Beauty</span><span class="ctag">Milano</span></div><h3 class="ctitle">Brand cosmetico indipendente</h3><p class="ctext">Workflow editoriale assistito, biblioteca di prompt condivisa e revisione qualitÃ  con guard-rail.</p><div class="cris"><div class="crisl">Risultato</div><div class="crisv">+3x velocitÃ  sui contenuti prodotto</div></div></div>
-      <div class="caso"><div class="ctags"><span class="ctag">Manifattura</span><span class="ctag">Veneto</span></div><h3 class="ctitle">Studi creativi &amp; subfornitura</h3><p class="ctext">Automazione delle attivitÃ  ripetitive di back-office e formazione operativa per 60 persone.</p><div class="cris"><div class="crisl">Risultato</div><div class="crisv">â35% ore amministrative ricorrenti</div></div></div>
+  <p class="section-label">05 — Casi Studio</p>
+  <h2 class="section-title">Risultati reali,<br><em>contesti reali.</em></h2>
+  <p class="section-body">Ogni progetto &egrave; diverso. Queste sono alcune trasformazioni che abbiamo accompagnato.</p>
+  <div class="casi-grid">
+    <div class="caso-card">
+      <div class="caso-tag">Manifatturiero — Reggio Emilia</div>
+      <h3 class="caso-title">Automazione del controllo qualit&agrave; in produzione</h3>
+      <div class="caso-result">&#8595; 60% tempi di verifica</div>
+      <p class="caso-body">Implementazione di un sistema di analisi AI per il controllo visivo dei prodotti. Il reparto ha ridotto del 60% i tempi di verifica manuale.</p>
+    </div>
+    <div class="caso-card">
+      <div class="caso-tag">Moda — Bologna</div>
+      <h3 class="caso-title">Assistente AI per l'ufficio stile e buyer</h3>
+      <div class="caso-result">&#8593; 3x velocit&agrave; briefing</div>
+      <p class="caso-body">Workflow AI integrato nel processo creativo. I briefing stagionali vengono prodotti in un terzo del tempo con maggiore coerenza narrativa.</p>
+    </div>
+    <div class="caso-card">
+      <div class="caso-tag">Retail — Modena</div>
+      <h3 class="caso-title">Personalizzazione della comunicazione cliente</h3>
+      <div class="caso-result">&#8593; +34% conversioni email</div>
+      <p class="caso-body">Sistema di segmentazione AI e generazione di contenuti personalizzati. Le conversioni email sono cresciute del 34% nel primo trimestre.</p>
+    </div>
+    <div class="caso-card">
+      <div class="caso-tag">Logistica — Parma</div>
+      <h3 class="caso-title">Ottimizzazione del planning ordini</h3>
+      <div class="caso-result">&#8595; 40% errori di previsione</div>
+      <p class="caso-body">Modello predittivo per la gestione degli ordini e delle scorte. Gli errori di previsione si sono ridotti del 40% in sei mesi.</p>
+    </div>
+    <div class="caso-card">
+      <div class="caso-tag">Formazione — Reggio Emilia</div>
+      <h3 class="caso-title">Percorso AI per 120 dipendenti</h3>
+      <div class="caso-result">87% adozione attiva</div>
+      <p class="caso-body">Programma di formazione in 3 fasi con affiancamento operativo. L'87% del personale usa quotidianamente almeno uno strumento AI nel proprio lavoro.</p>
+    </div>
+    <div class="caso-card">
+      <div class="caso-tag">Professionale — Milano</div>
+      <h3 class="caso-title">Automazione reporting e analisi dati</h3>
+      <div class="caso-result">&#8595; 70% tempo analisi</div>
+      <p class="caso-body">Dashboard AI-powered con sintesi automatica dei dati chiave. Il tempo dedicato alla produzione di report &egrave; diminuito del 70%.</p>
     </div>
   </div>
 </section>
-<div class="bqs">
-  <div class="bqi">
-    <span class="bqg">"</span>
-    <blockquote class="bqt">L'AI in azienda non Ã¨ un problema di tecnologia. Ã un problema di traduzione tra chi decide, chi produce e chi misura. Noi facciamo i traduttori.</blockquote>
-    <div class="bqa">Silvia Rinaldi Â· Founder &amp; CEO, Echo S.r.l.<br>Radici nella manifattura, visione nel digitale.</div>
-  </div>
-</div>
-<section id="contatti">
-  <div class="container">
-    <div class="cgrid">
-      <div>
-        <div class="lbl lbl-w">07 â Iniziamo</div>
-        <h2 class="h2 hw" style="margin-bottom:20px">Iniziamo dal<br><span class="muw">tuo problema vero.</span></h2>
-        <p class="ctext2">Una call di 30 minuti, in italiano, senza slide. Ci racconti dove sei, ti diciamo se possiamo davvero esserti utili â e, se sÃ¬, come.</p>
-        <div class="btns">
-          <a href="https://calendly.com/echowebagency-info/formazione" target="_blank" class="btn-lime">Prenota una call â</a>
-        </div>
+
+<!-- 06 CONTATTI -->
+<section class="contatti" id="contatti">
+  <p class="section-label">06 — Contatti</p>
+  <h2 class="section-title" style="max-width:700px;">Parliamo di cosa<br><em>pu&ograve; cambiare</em><br>nella tua azienda.</h2>
+  <div class="contatti-grid">
+    <div>
+      <p class="section-body">Una call esplorativa di 30 minuti, senza impegno. Raccontaci i tuoi processi: capiamo insieme dove l'AI fa davvero la differenza.</p>
+      <a href="https://calendly.com/echowebagency-info/formazione" target="_blank" rel="noopener" class="calendly-cta">Prenota la call gratuita</a>
+    </div>
+    <div class="contatti-info">
+      <div class="contatti-item">
+        <label>Email</label>
+        <a href="mailto:info@echowebagency.it">info@echowebagency.it</a>
       </div>
-      <div class="clist">
-        <div class="ci"><div class="cil">Email</div><a href="mailto:info@echowebagency.it" class="civ">info@echowebagency.it</a></div>
-        <div class="ci"><div class="cil">Telefono</div><a href="tel:+393517027294" class="civ">+39 351 702 7294</a></div>
-        <div class="ci"><div class="cil">Indirizzo</div><span class="civ">Via Lelio e Fausto Socini 32<br>42122 Reggio Emilia, Italia</span></div>
-        <div class="ci"><div class="cil">Seguici</div>
-          <span class="civ">
-            <a href="https://www.linkedin.com/company/echo-srl-re" target="_blank" style="color:var(--lime);text-decoration:none;margin-right:16px">LinkedIn</a>
-            <a href="https://www.instagram.com/echowebagency/" target="_blank" style="color:var(--lime);text-decoration:none">Instagram</a>
-          </span>
-        </div>
+      <div class="contatti-item">
+        <label>Telefono</label>
+        <a href="tel:+393517027294">+39 351 702 7294</a>
+      </div>
+      <div class="contatti-item">
+        <label>Sede</label>
+        <span>Via Lelio e Fausto Socini 32<br>42122 Reggio Emilia (RE)</span>
+      </div>
+      <div class="contatti-item">
+        <label>LinkedIn</label>
+        <a href="https://www.linkedin.com/company/echo-srl-re" target="_blank" rel="noopener">Echo S.r.l. su LinkedIn</a>
+      </div>
+      <div class="contatti-item">
+        <label>Instagram</label>
+        <a href="https://www.instagram.com/echowebagency/" target="_blank" rel="noopener">@echowebagency</a>
       </div>
     </div>
   </div>
 </section>
+
+<!-- FOOTER -->
 <footer>
-  <div class="container">
-    <div class="fgrid">
-      <div>
-        <div class="flogo"><img src="https://echo.srl/wp-content/uploads/2025/09/01_logo_bianco.png" alt="Echo S.r.l."></div>
-        <p class="ftag">Consulenza AI per PMI di moda, beauty e manifattura. Da chi la filiera la conosce davvero.</p>
-      </div>
-      <div>
-        <div class="ftitle">Contatti</div>
-        <ul class="flist">
-          <li><a href="mailto:info@echowebagency.it">info@echowebagency.it</a></li>
-          <li><a href="tel:+393517027294">+39 351 702 7294</a></li>
-          <li><span style="color:rgba(255,255,255,.55)">Reggio Emilia, Italia</span></li>
-          <li><span style="color:rgba(255,255,255,.55)">P.IVA 03135740359</span></li>
-        </ul>
-      </div>
-      <div>
-        <div class="ftitle">Seguici</div>
-        <ul class="flist">
-          <li><a href="https://www.linkedin.com/company/echo-srl-re" target="_blank">LinkedIn</a></li>
-          <li><a href="https://www.instagram.com/echowebagency/" target="_blank">Instagram</a></li>
-        </ul>
-      </div>
-    </div>
-    <div class="fbot">
-      <span class="fcopy">Â© 2026 Echo S.r.l. â Tutti i diritti riservati.</span>
-      <span class="fmade">Made in Italy</span>
-    </div>
+  <a href="/" class="footer-logo">
+    <img src="https://echo.srl/wp-content/uploads/2025/09/01_logo_bianco.png" alt="Echo S.r.l." onerror="this.style.display='none';this.nextSibling.style.display='block'">
+    <span style="display:none;font-family:var(--font-serif);font-weight:600;">Echo</span>
+  </a>
+  <p class="footer-copy">Echo S.r.l. &mdash; P.IVA 03135740359 &mdash; Via Lelio e Fausto Socini 32, 42122 Reggio Emilia</p>
+  <div class="footer-links">
+    <a href="mailto:info@echowebagency.it">info@echowebagency.it</a>
+    <a href="https://www.linkedin.com/company/echo-srl-re" target="_blank" rel="noopener">LinkedIn</a>
+    <a href="https://www.instagram.com/echowebagency/" target="_blank" rel="noopener">Instagram</a>
   </div>
 </footer>
+
 </body>
 </html>
