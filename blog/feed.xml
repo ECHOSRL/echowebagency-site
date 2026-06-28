@@ -6,39 +6,123 @@
   <description>AI, governance, processi per PMI italiane. Scritto da Silvia Rinaldi.</description>
   <language>it-IT</language>
   <item>
-    <title>Cosa il Made in Italy può imparare dalla Francia sul tessile sostenibile</title>
+    <title>Tracciabilit&#xe0; e dati prodotto: il ruolo dell&#x27;AI</title>
+    <link>https://www.echo.srl/blog/tracciabilita-prodotto-ai-dpp</link>
+    <guid isPermaLink="true">https://www.echo.srl/blog/tracciabilita-prodotto-ai-dpp</guid>
+    <pubDate>2026-12-15T09:00:00+00:00</pubDate>
+    <description>Come l&#x27;AI aiuta a raccogliere, strutturare e gestire i dati di tracciabilit&#xe0; prodotto per il DPP. Per aziende moda e manifattura.</description>
+  </item>
+  <item>
+    <title>AI e ufficio stile: come cambia il campionario</title>
+    <link>https://www.echo.srl/blog/ai-ufficio-stile-moda-campionario</link>
+    <guid isPermaLink="true">https://www.echo.srl/blog/ai-ufficio-stile-moda-campionario</guid>
+    <pubDate>2026-12-01T09:00:00+00:00</pubDate>
+    <description>Come l&#x27;AI trasforma l&#x27;ufficio stile e il processo di campionario nella moda. Trend analysis, mood board, briefing: casi concreti.</description>
+  </item>
+  <item>
+    <title>Rischi dell&#x27;AI non governata in azienda</title>
+    <link>https://www.echo.srl/blog/rischi-intelligenza-artificiale-azienda</link>
+    <guid isPermaLink="true">https://www.echo.srl/blog/rischi-intelligenza-artificiale-azienda</guid>
+    <pubDate>2026-11-15T09:00:00+00:00</pubDate>
+    <description>I rischi operativi dell&#x27;AI non governata nelle PMI. Dati, reputazione, conformit&#xe0;: cosa pu&#xf2; andare storto e come prevenirlo.</description>
+  </item>
+  <item>
+    <title>Misurare il ROI dell&#x27;AI in azienda</title>
+    <link>https://www.echo.srl/blog/roi-intelligenza-artificiale-azienda</link>
+    <guid isPermaLink="true">https://www.echo.srl/blog/roi-intelligenza-artificiale-azienda</guid>
+    <pubDate>2026-11-01T09:00:00+00:00</pubDate>
+    <description>Come misurare il ritorno dell&#x27;investimento in AI. KPI concreti, metriche per reparto, errori di misurazione da evitare nelle PMI.</description>
+  </item>
+  <item>
+    <title>Adozione spontanea dell&#x27;AI: perch&#xe9; &#xe8; un rischio</title>
+    <link>https://www.echo.srl/blog/adozione-ai-non-governata-rischi</link>
+    <guid isPermaLink="true">https://www.echo.srl/blog/adozione-ai-non-governata-rischi</guid>
+    <pubDate>2026-10-15T09:00:00+00:00</pubDate>
+    <description>Quando i dipendenti usano l&#x27;AI senza guida, l&#x27;azienda rischia. Shadow AI, dati sensibili, output incontrollati. Come governare l&#x27;adozione.</description>
+  </item>
+  <item>
+    <title>DPP e manifattura: come prepararsi</title>
+    <link>https://www.echo.srl/blog/digital-product-passport-manifattura</link>
+    <guid isPermaLink="true">https://www.echo.srl/blog/digital-product-passport-manifattura</guid>
+    <pubDate>2026-10-01T09:00:00+00:00</pubDate>
+    <description>Come le PMI manifatturiere possono prepararsi al Digital Product Passport. Dati, sistemi, processi: guida operativa passo passo.</description>
+  </item>
+  <item>
+    <title>AI per il customer care nelle PMI</title>
+    <link>https://www.echo.srl/blog/ai-customer-care-pmi</link>
+    <guid isPermaLink="true">https://www.echo.srl/blog/ai-customer-care-pmi</guid>
+    <pubDate>2026-09-15T09:00:00+00:00</pubDate>
+    <description>Come usare l&#x27;AI nel customer care di una PMI. Automazione intelligente, risposte personalizzate, integrazione con i sistemi esistenti.</description>
+  </item>
+  <item>
+    <title>Policy AI interna: come scriverla</title>
+    <link>https://www.echo.srl/blog/policy-ai-aziendale-come-scriverla</link>
+    <guid isPermaLink="true">https://www.echo.srl/blog/policy-ai-aziendale-come-scriverla</guid>
+    <pubDate>2026-09-01T09:00:00+00:00</pubDate>
+    <description>Come scrivere una policy AI interna per la tua azienda. Struttura, contenuti, errori da evitare. Guida pratica per PMI.</description>
+  </item>
+  <item>
+    <title>Formare il team all&#x27;AI senza bloccare il lavoro</title>
+    <link>https://www.echo.srl/blog/formazione-ai-team-aziendale</link>
+    <guid isPermaLink="true">https://www.echo.srl/blog/formazione-ai-team-aziendale</guid>
+    <pubDate>2026-08-15T09:00:00+00:00</pubDate>
+    <description>Come strutturare la formazione AI in azienda senza fermare la produzione. Formati pratici, tempi reali, adozione misurabile.</description>
+  </item>
+  <item>
+    <title>AI nel reparto produzione: casi reali</title>
+    <link>https://www.echo.srl/blog/ai-produzione-pmi-casi-reali</link>
+    <guid isPermaLink="true">https://www.echo.srl/blog/ai-produzione-pmi-casi-reali</guid>
+    <pubDate>2026-08-01T09:00:00+00:00</pubDate>
+    <description>Come le PMI manifatturiere usano l&#x27;AI in produzione. Casi reali di controllo qualit&#xe0;, pianificazione e manutenzione predittiva.</description>
+  </item>
+  <item>
+    <title>Digital Product Passport nella moda: guida operativa</title>
+    <link>https://www.echo.srl/blog/digital-product-passport-moda-guida</link>
+    <guid isPermaLink="true">https://www.echo.srl/blog/digital-product-passport-moda-guida</guid>
+    <pubDate>2026-07-15T09:00:00+00:00</pubDate>
+    <description>Guida operativa al Digital Product Passport per aziende moda. Quali dati servono, come raccoglierli, come prepararsi all&#x27;ESPR.</description>
+  </item>
+  <item>
+    <title>AI Act per le PMI: cosa cambia davvero</title>
+    <link>https://www.echo.srl/blog/ai-act-pmi-cosa-cambia</link>
+    <guid isPermaLink="true">https://www.echo.srl/blog/ai-act-pmi-cosa-cambia</guid>
+    <pubDate>2026-07-01T09:00:00+00:00</pubDate>
+    <description>Cosa prevede l&#x27;AI Act per le PMI italiane e quali obblighi operativi riguardano le aziende con 5-50 dipendenti. Guida pratica, non legale.</description>
+  </item>
+  <item>
+    <title>Cosa il Made in Italy pu&#xf2; imparare dalla Francia sul tessile sostenibile</title>
     <link>https://www.echo.srl/blog/cosa-imparare-dalla-francia-tessile-sostenibilita</link>
     <guid isPermaLink="true">https://www.echo.srl/blog/cosa-imparare-dalla-francia-tessile-sostenibilita</guid>
     <pubDate>2026-06-15T09:00:00+00:00</pubDate>
-    <description>Tracciabilità obbligatoria, divieto di distruzione invenduto, etichette d&#x27;impatto ambientale. Cosa la Francia ha già deciso sul tessile e perché serve coraggio simile in Italia.</description>
+    <description>Tracciabilit&#xe0; obbligatoria, divieto di distruzione invenduto, etichette d&#x27;impatto ambientale. Cosa la Francia ha gi&#xe0; deciso sul tessile e perch&#xe9; serve coraggio simile in Italia.</description>
   </item>
   <item>
     <title>Prima vengono i processi. Poi arriva l&#x27;AI.</title>
     <link>https://www.echo.srl/blog/prima-vengono-i-processi-poi-arriva-lai</link>
     <guid isPermaLink="true">https://www.echo.srl/blog/prima-vengono-i-processi-poi-arriva-lai</guid>
     <pubDate>2026-06-06T09:00:00+00:00</pubDate>
-    <description>La tecnologia accelera qualsiasi cosa, anche la direzione sbagliata. Perché capire un processo prima di automatizzarlo è il vero punto di partenza dell&#x27;AI in azienda.</description>
+    <description>La tecnologia accelera qualsiasi cosa, anche la direzione sbagliata. Perch&#xe9; capire un processo prima di automatizzarlo &#xe8; il vero punto di partenza dell&#x27;AI in azienda.</description>
   </item>
   <item>
     <title>Missoni, FSI, Katjes. Cosa succede quando un brand italiano perde la famiglia</title>
     <link>https://www.echo.srl/blog/missoni-cosa-significa-quando-un-brand-italiano-perde-la-famiglia</link>
     <guid isPermaLink="true">https://www.echo.srl/blog/missoni-cosa-significa-quando-un-brand-italiano-perde-la-famiglia</guid>
     <pubDate>2026-05-22T09:00:00+00:00</pubDate>
-    <description>Missoni passa al 73% a FSI e al 27% a Katjes. Non è solo una notizia finanziaria: è una fotografia di cosa sta accadendo alla moda italiana e alla sua governance.</description>
+    <description>Missoni passa al 73% a FSI e al 27% a Katjes. Non &#xe8; solo una notizia finanziaria: &#xe8; una fotografia di cosa sta accadendo alla moda italiana e alla sua governance.</description>
   </item>
   <item>
-    <title>Moda italiana: il problema non è la crisi, è il silenzio</title>
+    <title>Moda italiana: il problema non &#xe8; la crisi, &#xe8; il silenzio</title>
     <link>https://www.echo.srl/blog/moda-italiana-il-problema-non-e-la-crisi-e-il-silenzio</link>
     <guid isPermaLink="true">https://www.echo.srl/blog/moda-italiana-il-problema-non-e-la-crisi-e-il-silenzio</guid>
     <pubDate>2026-05-19T09:00:00+00:00</pubDate>
-    <description>Per anni la manifattura ha trainato il Paese. Oggi sembra qualcosa da nascondere. Tra normative europee, AI, sostenibilità e margini sottili, serve un ponte tra persone, competenze e innovazione.</description>
+    <description>Per anni la manifattura ha trainato il Paese. Oggi sembra qualcosa da nascondere. Tra normative europee, AI, sostenibilit&#xe0; e margini sottili, serve un ponte tra persone, competenze e innovazione.</description>
   </item>
   <item>
-    <title>Stai usando l&#x27;AI fuori legge — e probabilmente non lo sai</title>
+    <title>Stai usando l&#x27;AI fuori legge &#x2014; e probabilmente non lo sai</title>
     <link>https://www.echo.srl/blog/stai-usando-ai-fuori-legge-ai-act-pmi</link>
     <guid isPermaLink="true">https://www.echo.srl/blog/stai-usando-ai-fuori-legge-ai-act-pmi</guid>
     <pubDate>2026-03-20T09:00:00+00:00</pubDate>
-    <description>L&#x27;AI Act è già in vigore. ChatGPT in azienda, decisioni automatizzate, integrazioni AI nei processi: cosa significa concretamente per moda, beauty e manifattura.</description>
+    <description>L&#x27;AI Act &#xe8; gi&#xe0; in vigore. ChatGPT in azienda, decisioni automatizzate, integrazioni AI nei processi: cosa significa concretamente per moda, beauty e manifattura.</description>
   </item>
 </channel>
 </rss>
