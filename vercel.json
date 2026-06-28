@@ -50,8 +50,6 @@
       "destination": "https://www.echo.srl/:path*",
       "permanent": true
     },
-    { "source": "/blog", "destination": "/#casi", "permanent": true },
-    { "source": "/blog/:slug*", "destination": "/#casi", "permanent": true },
     { "source": "/soluzioni", "destination": "/#metodo", "permanent": true },
     { "source": "/soluzioni/:slug*", "destination": "/#metodo", "permanent": true },
     { "source": "/casi-studio", "destination": "/#casi", "permanent": true },
