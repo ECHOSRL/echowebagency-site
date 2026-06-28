@@ -96,6 +96,27 @@ ul.check-list li::before { content: '\2713'; position: absolute; left: 0; color:
 .breadcrumb a { color: var(--muted); text-decoration: none; }
 .breadcrumb a:hover { color: var(--text); }
 
+.article-list { padding: 0 3rem 3rem; }
+.article-card { padding: 2.5rem 0; border-bottom: 1px solid var(--border); }
+.article-card:first-child { padding-top: 0; }
+.article-date { font-size: 0.8rem; font-weight: 500; letter-spacing: 0.1em; color: var(--muted); margin-bottom: 0.75rem; font-family: var(--font-sans); }
+.article-card h2 { font-family: var(--font-serif); font-size: clamp(1.5rem, 2.5vw, 2rem); font-weight: 500; line-height: 1.25; margin-bottom: 0.75rem; }
+.article-card h2 a { color: var(--text); text-decoration: none; transition: opacity .2s; }
+.article-card h2 a:hover { opacity: 0.6; }
+.article-card p { font-size: 0.9375rem; color: var(--muted); line-height: 1.7; max-width: 640px; }
+.read-more { display: inline-block; margin-top: 0.75rem; font-size: 0.875rem; font-weight: 500; color: var(--text); text-decoration: none; border-bottom: 1px solid var(--border); padding-bottom: 2px; transition: border-color .2s; }
+.read-more:hover { border-color: var(--text); }
+
+.article-body { max-width: 720px; padding: 0 3rem; }
+.article-body h2 { margin-top: 2.5rem; }
+.article-body p { margin-bottom: 1.25rem; }
+.article-body ul, .article-body ol { margin: 1.25rem 0; padding-left: 1.5rem; }
+.article-body li { font-size: 0.9375rem; color: var(--muted); line-height: 1.8; margin-bottom: 0.5rem; }
+.article-body blockquote { border-left: 3px solid var(--accent); padding: 1rem 1.5rem; margin: 1.5rem 0; background: rgba(200,230,60,0.06); border-radius: 0 8px 8px 0; }
+.article-body blockquote p { margin-bottom: 0; }
+.article-body a { color: var(--text); font-weight: 500; text-decoration: underline; text-decoration-color: var(--accent); text-underline-offset: 3px; transition: text-decoration-color .2s; }
+.article-body a:hover { text-decoration-color: var(--text); }
+
 @media (max-width: 900px) {
   nav { padding: 1rem 1.5rem; }
   .nav-links { display: none; }
