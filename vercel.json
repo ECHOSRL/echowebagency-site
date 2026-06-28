@@ -1,0 +1,62 @@
+{
+  "$schema": "https://openapi.vercel.sh/vercel.json",
+  "cleanUrls": true,
+  "trailingSlash": false,
+
+  "headers": [
+    {
+      "source": "/(.*)",
+      "headers": [
+        { "key": "Strict-Transport-Security", "value": "max-age=63072000; includeSubDomains; preload" },
+        { "key": "X-Content-Type-Options", "value": "nosniff" },
+        { "key": "X-Frame-Options", "value": "DENY" },
+        { "key": "Referrer-Policy", "value": "strict-origin-when-cross-origin" },
+        { "key": "Permissions-Policy", "value": "camera=(), microphone=(), geolocation=(), interest-cohort=()" },
+        { "key": "Content-Security-Policy", "value": "default-src 'self'; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com data:; img-src 'self' data: https:; connect-src 'self' https://calendly.com; frame-src https://calendly.com; base-uri 'self'; form-action 'self'; frame-ancestors 'none'; upgrade-insecure-requests" }
+      ]
+    },
+    {
+      "source": "/(.*)\\.(?:png|jpg|jpeg|gif|svg|webp|ico|woff|woff2|ttf|css|js)",
+      "headers": [
+        { "key": "Cache-Control", "value": "public, max-age=31536000, immutable" }
+      ]
+    },
+    {
+      "source": "/sitemap.xml",
+      "headers": [
+        { "key": "Content-Type", "value": "application/xml; charset=utf-8" },
+        { "key": "Cache-Control", "value": "public, max-age=3600, must-revalidate" }
+      ]
+    },
+    {
+      "source": "/robots.txt",
+      "headers": [
+        { "key": "Content-Type", "value": "text/plain; charset=utf-8" },
+        { "key": "Cache-Control", "value": "public, max-age=86400" }
+      ]
+    }
+  ],
+
+  "redirects": [
+    { "source": "/blog", "destination": "/#casi", "permanent": true },
+    { "source": "/blog/:slug*", "destination": "/#casi", "permanent": true },
+    { "source": "/soluzioni", "destination": "/#metodo", "permanent": true },
+    { "source": "/soluzioni/:slug*", "destination": "/#metodo", "permanent": true },
+    { "source": "/casi-studio", "destination": "/#casi", "permanent": true },
+    { "source": "/casi-studio/:slug*", "destination": "/#casi", "permanent": true },
+    { "source": "/settori", "destination": "/#origine", "permanent": true },
+    { "source": "/settori/:slug*", "destination": "/#origine", "permanent": true },
+    { "source": "/risorse", "destination": "/#contatti", "permanent": true },
+    { "source": "/risorse/:slug*", "destination": "/#contatti", "permanent": true },
+    { "source": "/metodo", "destination": "/#metodo", "permanent": true },
+    { "source": "/chi-siamo", "destination": "/#origine", "permanent": true },
+    { "source": "/chi-siamo-echo-s-r-l", "destination": "/#origine", "permanent": true },
+    { "source": "/contattaci", "destination": "/#contatti", "permanent": true },
+    { "source": "/hello-post", "destination": "/", "permanent": true },
+    { "source": "/1495-2", "destination": "/", "permanent": true },
+    { "source": "/shop", "destination": "/", "permanent": true },
+    { "source": "/ai-act-timeline-2026-2027-pmi-italiane", "destination": "/#metodo", "permanent": true },
+    { "source": "/ai-allo-stato-brado-policy-aziendale", "destination": "/#paradosso", "permanent": true },
+    { "source": "/digital-product-passport-siamo-gia-tardi", "destination": "/#casi", "permanent": true }
+  ]
+}
