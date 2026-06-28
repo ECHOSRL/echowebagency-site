@@ -1,11 +1,11 @@
 # Echo S.r.l. — Reggio Emilia
-# https://www.echowebagency.it/
+# https://www.echo.srl/
 
 User-agent: *
 Allow: /
 
 # Sitemap
-Sitemap: https://www.echowebagency.it/sitemap.xml
+Sitemap: https://www.echo.srl/sitemap.xml
 
 # Block common WP scan paths (no-op ma riduce log noise da bot)
 Disallow: /wp-admin/
