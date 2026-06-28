@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  Echo S.r.l. — Open Graph cover 1200×630
+  Template SVG da convertire in PNG per deploy: og-cover.png
+  Comando ImageMagick:  convert -density 200 og-cover.svg -resize 1200x630 og-cover.png
+  Oppure: rsvg-convert -w 1200 -h 630 og-cover.svg > og-cover.png
+-->
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+  <defs>
+    <style>
+      .bg { fill: #F5F3EE; }
+      .accent-bar { fill: #C8E63C; }
+      .eyebrow { font-family: 'Inter', sans-serif; font-size: 22px; font-weight: 600; letter-spacing: 4px; text-transform: uppercase; fill: #6B6B68; }
+      .title { font-family: 'Playfair Display', Georgia, serif; font-size: 78px; font-weight: 500; fill: #111110; }
+      .title-em { font-family: 'Playfair Display', Georgia, serif; font-size: 78px; font-weight: 500; font-style: italic; fill: #6B6B68; }
+      .subtitle { font-family: 'Inter', sans-serif; font-size: 28px; font-weight: 400; fill: #6B6B68; }
+      .domain { font-family: 'Inter', sans-serif; font-size: 24px; font-weight: 500; fill: #111110; }
+      .location { font-family: 'Inter', sans-serif; font-size: 20px; font-weight: 400; fill: #6B6B68; }
+    </style>
+  </defs>
+
+  <!-- Background -->
+  <rect class="bg" width="1200" height="630"/>
+
+  <!-- Lime accent bar on left -->
+  <rect class="accent-bar" x="0" y="0" width="16" height="630"/>
+
+  <!-- Eyebrow -->
+  <text class="eyebrow" x="80" y="120">ECHO · INTELLIGENZA ARTIFICIALE</text>
+
+  <!-- Main title -->
+  <text class="title" x="80" y="240">L'AI integrata</text>
+  <text class="title" x="80" y="330">nei reparti, <tspan class="title-em">non solo</tspan></text>
+  <text class="title-em" x="80" y="420">nei discorsi.</text>
+
+  <!-- Subtitle -->
+  <text class="subtitle" x="80" y="490">Radici manifatturiere. Visione digitale.</text>
+
+  <!-- Footer line: accent dash + domain -->
+  <line x1="80" y1="555" x2="140" y2="555" stroke="#C8E63C" stroke-width="3"/>
+  <text class="domain" x="155" y="563">www.echowebagency.it</text>
+
+  <!-- Location bottom right -->
+  <text class="location" x="1120" y="563" text-anchor="end">Reggio Emilia · IT</text>
+</svg>
