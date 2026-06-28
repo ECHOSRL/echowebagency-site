@@ -52,8 +52,6 @@
     },
     { "source": "/soluzioni", "destination": "/#metodo", "permanent": true },
     { "source": "/soluzioni/:slug*", "destination": "/#metodo", "permanent": true },
-    { "source": "/casi-studio", "destination": "/#casi", "permanent": true },
-    { "source": "/casi-studio/:slug*", "destination": "/#casi", "permanent": true },
     { "source": "/settori", "destination": "/#origine", "permanent": true },
     { "source": "/risorse", "destination": "/#contatti", "permanent": true },
     { "source": "/risorse/:slug*", "destination": "/#contatti", "permanent": true },
