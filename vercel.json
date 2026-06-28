@@ -40,7 +40,13 @@
   "redirects": [
     {
       "source": "/:path*",
-      "has": [{ "type": "host", "value": "(www\\.)?echowebagency\\.it" }],
+      "has": [{ "type": "host", "value": "echowebagency.it" }],
+      "destination": "https://www.echo.srl/:path*",
+      "permanent": true
+    },
+    {
+      "source": "/:path*",
+      "has": [{ "type": "host", "value": "www.echowebagency.it" }],
       "destination": "https://www.echo.srl/:path*",
       "permanent": true
     },
@@ -51,7 +57,6 @@
     { "source": "/casi-studio", "destination": "/#casi", "permanent": true },
     { "source": "/casi-studio/:slug*", "destination": "/#casi", "permanent": true },
     { "source": "/settori", "destination": "/#origine", "permanent": true },
-    { "source": "/settori/:slug*", "destination": "/#origine", "permanent": true },
     { "source": "/risorse", "destination": "/#contatti", "permanent": true },
     { "source": "/risorse/:slug*", "destination": "/#contatti", "permanent": true },
     { "source": "/metodo", "destination": "/#metodo", "permanent": true },
