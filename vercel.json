@@ -38,6 +38,12 @@
   ],
 
   "redirects": [
+    {
+      "source": "/:path*",
+      "has": [{ "type": "host", "value": "(www\\.)?echowebagency\\.it" }],
+      "destination": "https://www.echo.srl/:path*",
+      "permanent": true
+    },
     { "source": "/blog", "destination": "/#casi", "permanent": true },
     { "source": "/blog/:slug*", "destination": "/#casi", "permanent": true },
     { "source": "/soluzioni", "destination": "/#metodo", "permanent": true },
