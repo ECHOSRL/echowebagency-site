@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0">
+<channel>
+  <title>Blog Echo S.r.l.</title>
+  <link>https://www.echo.srl/blog/</link>
+  <description>AI, governance, processi per PMI italiane. Scritto da Silvia Rinaldi.</description>
+  <language>it-IT</language>
+  <item>
+    <title>Cosa il Made in Italy può imparare dalla Francia sul tessile sostenibile</title>
+    <link>https://www.echo.srl/blog/cosa-imparare-dalla-francia-tessile-sostenibilita</link>
+    <guid isPermaLink="true">https://www.echo.srl/blog/cosa-imparare-dalla-francia-tessile-sostenibilita</guid>
+    <pubDate>2026-06-15T09:00:00+00:00</pubDate>
+    <description>Tracciabilità obbligatoria, divieto di distruzione invenduto, etichette d&#x27;impatto ambientale. Cosa la Francia ha già deciso sul tessile e perché serve coraggio simile in Italia.</description>
+  </item>
+  <item>
+    <title>Prima vengono i processi. Poi arriva l&#x27;AI.</title>
+    <link>https://www.echo.srl/blog/prima-vengono-i-processi-poi-arriva-lai</link>
+    <guid isPermaLink="true">https://www.echo.srl/blog/prima-vengono-i-processi-poi-arriva-lai</guid>
+    <pubDate>2026-06-06T09:00:00+00:00</pubDate>
+    <description>La tecnologia accelera qualsiasi cosa, anche la direzione sbagliata. Perché capire un processo prima di automatizzarlo è il vero punto di partenza dell&#x27;AI in azienda.</description>
+  </item>
+  <item>
+    <title>Missoni, FSI, Katjes. Cosa succede quando un brand italiano perde la famiglia</title>
+    <link>https://www.echo.srl/blog/missoni-cosa-significa-quando-un-brand-italiano-perde-la-famiglia</link>
+    <guid isPermaLink="true">https://www.echo.srl/blog/missoni-cosa-significa-quando-un-brand-italiano-perde-la-famiglia</guid>
+    <pubDate>2026-05-22T09:00:00+00:00</pubDate>
+    <description>Missoni passa al 73% a FSI e al 27% a Katjes. Non è solo una notizia finanziaria: è una fotografia di cosa sta accadendo alla moda italiana e alla sua governance.</description>
+  </item>
+  <item>
+    <title>Moda italiana: il problema non è la crisi, è il silenzio</title>
+    <link>https://www.echo.srl/blog/moda-italiana-il-problema-non-e-la-crisi-e-il-silenzio</link>
+    <guid isPermaLink="true">https://www.echo.srl/blog/moda-italiana-il-problema-non-e-la-crisi-e-il-silenzio</guid>
+    <pubDate>2026-05-19T09:00:00+00:00</pubDate>
+    <description>Per anni la manifattura ha trainato il Paese. Oggi sembra qualcosa da nascondere. Tra normative europee, AI, sostenibilità e margini sottili, serve un ponte tra persone, competenze e innovazione.</description>
+  </item>
+  <item>
+    <title>Stai usando l&#x27;AI fuori legge — e probabilmente non lo sai</title>
+    <link>https://www.echo.srl/blog/stai-usando-ai-fuori-legge-ai-act-pmi</link>
+    <guid isPermaLink="true">https://www.echo.srl/blog/stai-usando-ai-fuori-legge-ai-act-pmi</guid>
+    <pubDate>2026-03-20T09:00:00+00:00</pubDate>
+    <description>L&#x27;AI Act è già in vigore. ChatGPT in azienda, decisioni automatizzate, integrazioni AI nei processi: cosa significa concretamente per moda, beauty e manifattura.</description>
+  </item>
+</channel>
+</rss>
