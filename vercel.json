@@ -63,6 +63,10 @@
     { "source": "/shop", "destination": "/", "permanent": true },
     { "source": "/ai-act-timeline-2026-2027-pmi-italiane", "destination": "/#metodo", "permanent": true },
     { "source": "/ai-allo-stato-brado-policy-aziendale", "destination": "/#paradosso", "permanent": true },
-    { "source": "/digital-product-passport-siamo-gia-tardi", "destination": "/#casi", "permanent": true }
+    { "source": "/digital-product-passport-siamo-gia-tardi", "destination": "/#casi", "permanent": true },
+    { "source": "/servizi", "destination": "/#metodo", "permanent": true },
+    { "source": "/web", "destination": "/#metodo", "permanent": true },
+    { "source": "/portfolio", "destination": "/#casi", "permanent": true },
+    { "source": "/metodo-echo-2", "destination": "/#metodo", "permanent": true }
   ]
 }
