@@ -191,6 +191,7 @@ def head(title: str, description: str, url: str, image: str = "/logo-on-cream.pn
 <meta name="twitter:description" content="{html.escape(description)}" />
 <meta name="twitter:image" content="{img_full}" />
 {article_json_ld}
+<script defer src="/_vercel/insights/script.js"></script>
 </head>
 <body>
 '''
@@ -361,6 +362,28 @@ def update_sitemap(articles: list):
     SITEMAP.write_text(body, encoding="utf-8")
 
 
+def discover_html_only(built_slugs: set) -> list:
+    """Find blog/<slug>.html files that have NO .md source (es. articoli aggiunti
+    a mano) and extract their metadata so index/RSS/sitemap li includano comunque."""
+    found = []
+    for p in sorted(OUT.glob("*.html")):
+        slug = p.stem
+        if slug == "index" or slug in built_slugs:
+            continue
+        text = p.read_text(encoding="utf-8")
+        m_title = re.search(r"<title>(.*?)</title>", text, re.DOTALL)
+        title = (m_title.group(1).strip() if m_title else slug).split("|")[0].strip()
+        title = title.replace("&#x27;", "'").replace("&amp;", "&")
+        m_desc = re.search(r'<meta name="description" content="(.*?)"', text, re.DOTALL)
+        desc = m_desc.group(1).strip().replace("&#x27;", "'") if m_desc else ""
+        m_date = re.search(r'"datePublished":\s*"(\d{4}-\d{2}-\d{2})"', text)
+        if not m_date:
+            m_date = re.search(r'<p class="eyebrow">(\d{4}-\d{2}-\d{2})</p>', text)
+        date = m_date.group(1) if m_date else "2026-01-01"
+        found.append({"slug": slug, "title": title, "description": desc, "date": date})
+    return found
+
+
 def main():
     if not SRC.exists():
         print(f"No {SRC}, exiting", file=sys.stderr); sys.exit(1)
@@ -379,6 +402,12 @@ def main():
         out_path.write_text(render_article(fm), encoding="utf-8")
         print(f"  ✓ {out_path.relative_to(ROOT)}")
         articles.append(fm)
+
+    # Include articoli HTML-only (senza sorgente .md) in index/RSS/sitemap
+    html_only = discover_html_only({a["slug"] for a in articles})
+    if html_only:
+        print(f"  + {len(html_only)} articoli HTML-only inclusi in index/RSS/sitemap")
+        articles.extend(html_only)
 
     # Index + RSS
     (OUT / "index.html").write_text(render_index(articles), encoding="utf-8")
