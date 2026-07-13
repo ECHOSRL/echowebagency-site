@@ -1,10 +1,11 @@
 ---
-title: Il test dei 5 anni: quando la durabilità racconta la verità sulla sostenibilità
+title: Il test dei 5 anni: durabilità e sostenibilità
+headline: Il test dei 5 anni: quando la durabilità racconta la verità sulla sostenibilità
 slug: test-cinque-anni-durabilita-sostenibilita
 date: 2025-04-24
-description: Un maglione in pura lana made in Italy contro uno fast fashion, cinque anni dopo. La sostenibilità non è un'etichetta verde: è una scelta, un'abitudine, un rispetto per ciò che dura.
+description: Un maglione in pura lana made in Italy contro uno fast fashion, 5 anni dopo. La sostenibilità non è un'etichetta: è una scelta che dura.
 keywords: durabilità capi moda, fast fashion vs qualità, sostenibilità moda concreta, made in italy qualità
-related: /settori/moda, /blog/futuro-tessile-sostenibilita-nuove-leggi, /casi-studio/maison-knit-luxury
+related: /settori/moda|AI per la moda, /blog/filati-rigenerati-economia-circolare-materia-prima|Filati rigenerati, /blog/futuro-tessile-sostenibilita-nuove-leggi|Il futuro del tessile sostenibile, /casi-studio/maison-knit-luxury|Caso studio: maison luxury
 ---
 
 Cinque anni fa ho messo da parte un maglione. Un capo semplice, senza tempo, in pura lana. Made in Italy, prodotto in un piccolo laboratorio di maglieria di cui mi fidavo. Nessun brand famoso. Nessuna campagna marketing. Solo artigianalità.

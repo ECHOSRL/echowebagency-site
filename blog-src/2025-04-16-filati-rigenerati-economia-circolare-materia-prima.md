@@ -1,10 +1,11 @@
 ---
-title: Filati rigenerati: l'economia circolare parte dalla materia prima
+title: Filati rigenerati ed economia circolare tessile
+headline: Filati rigenerati: l'economia circolare parte dalla materia prima
 slug: filati-rigenerati-economia-circolare-materia-prima
 date: 2025-04-16
-description: In Italia diverse filature riciclano internamente gli scarti tessili e producono filati rigenerati di altissima qualità. Non solo riciclo: una visione di filiera circolare per la maglieria sostenibile.
+description: Diverse filature italiane riciclano gli scarti tessili in filati rigenerati di alta qualità. Una filiera circolare per la maglieria sostenibile.
 keywords: filati rigenerati italia, economia circolare tessile, maglieria sostenibile, filiera circolare moda
-related: /settori/moda, /digital-product-passport, /blog/futuro-tessile-sostenibilita-nuove-leggi
+related: /settori/moda|AI per la moda, /blog/futuro-tessile-sostenibilita-nuove-leggi|Il futuro del tessile sostenibile, /blog/test-cinque-anni-durabilita-sostenibilita|Il test dei 5 anni, /digital-product-passport|Digital Product Passport
 ---
 
 Parliamo spesso di sostenibilità in termini generici. Ma a volte il cambiamento più autentico nasce dal lavoro silenzioso di chi trasforma gli scarti in valore — fibra dopo fibra.

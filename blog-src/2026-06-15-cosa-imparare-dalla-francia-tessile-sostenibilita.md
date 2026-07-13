@@ -1,10 +1,11 @@
 ---
-title: Cosa il Made in Italy può imparare dalla Francia sul tessile sostenibile
+title: Tessile sostenibile: cosa imparare dalla Francia
+headline: Cosa il Made in Italy può imparare dalla Francia sul tessile sostenibile
 slug: cosa-imparare-dalla-francia-tessile-sostenibilita
 date: 2026-06-15
-description: Tracciabilità obbligatoria, divieto di distruzione invenduto, etichette d'impatto ambientale. Cosa la Francia ha già deciso sul tessile e perché serve coraggio simile in Italia.
+description: Tracciabilità obbligatoria, stop all'invenduto distrutto, etichette d'impatto: cosa la Francia ha già deciso sul tessile e perché serve in Italia.
 keywords: made in italy sostenibilità, tessile sostenibile francia, tracciabilità moda, dpp francia
-related: /settori/moda, /digital-product-passport, /governance-ai
+related: /digital-product-passport|Digital Product Passport, /blog/espr-ecodesign-tessile-nuove-regole-ue|ESPR ed ecodesign tessile, /blog/futuro-tessile-sostenibilita-nuove-leggi|Il futuro del tessile sostenibile, /settori/moda|AI per la moda
 ---
 
 Sto scrivendo mentre rientro da una settimana in Francia.

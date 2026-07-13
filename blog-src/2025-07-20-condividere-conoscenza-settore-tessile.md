@@ -1,10 +1,11 @@
 ---
-title: Perché condividere la conoscenza fa crescere il settore tessile
+title: Condividere la conoscenza nel settore tessile
+headline: Perché condividere la conoscenza fa crescere il settore tessile
 slug: condividere-conoscenza-settore-tessile
 date: 2025-07-20
-description: Quando il sapere resta chiuso in un cassetto non cambia nulla. Nel tessile, dove il know-how è spesso custodito da pochi, condividere la conoscenza è un atto di forza, non di debolezza.
+description: Nel tessile il know-how resta chiuso in pochi. Perché condividere la conoscenza è un atto di forza che fa crescere tutta la filiera.
 keywords: know-how tessile, knowledge management manifattura, trasferimento competenze moda, cultura aziendale tessile
-related: /formazione-ai, /settori/manifattura, /chi-siamo
+related: /formazione-ai|Formazione AI, /settori/manifattura|AI per la manifattura, /blog/futuro-tessile-sostenibilita-nuove-leggi|Il futuro del tessile sostenibile, /chi-siamo|Chi siamo
 ---
 
 Quando il sapere resta chiuso in un cassetto, non cambia nulla. Ma quando lo condividiamo, può cambiare tutto.

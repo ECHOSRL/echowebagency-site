@@ -1,10 +1,11 @@
 ---
-title: Missoni, FSI, Katjes. Cosa succede quando un brand italiano perde la famiglia
+title: Missoni a FSI: quando un brand perde la famiglia
+headline: Missoni, FSI, Katjes. Cosa succede quando un brand italiano perde la famiglia
 slug: missoni-cosa-significa-quando-un-brand-italiano-perde-la-famiglia
 date: 2026-05-22
-description: Missoni passa al 73% a FSI e al 27% a Katjes. Non è solo una notizia finanziaria: è una fotografia di cosa sta accadendo alla moda italiana e alla sua governance.
+description: Missoni passa al 73% a FSI e al 27% a Katjes. Non è solo finanza: è la fotografia di cosa accade alla moda italiana e alla sua governance.
 keywords: missoni fsi katjes, governance brand italiani, moda italiana acquisizioni, brand heritage management
-related: /settori/moda, /governance-ai, /digital-product-passport
+related: /settori/moda|AI per la moda, /blog/moda-italiana-crisi-di-sistema-i-numeri|I numeri della crisi moda, /blog/moda-italiana-il-problema-non-e-la-crisi-e-il-silenzio|Moda italiana e il silenzio, /digital-product-passport|Digital Product Passport
 ---
 
 **Missoni non è più della famiglia Missoni.** E questa non è solo una notizia finanziaria. È una fotografia molto chiara di quello che sta accadendo alla moda italiana.

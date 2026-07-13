@@ -1,10 +1,11 @@
 ---
-title: La moda italiana è in apnea: i numeri di una crisi di sistema
+title: Moda italiana: i numeri di una crisi di sistema
+headline: La moda italiana è in apnea: i numeri di una crisi di sistema
 slug: moda-italiana-crisi-di-sistema-i-numeri
 date: 2025-10-31
-description: Il mercato moda in Italia vale 12 miliardi, l'8% in meno del 2019. Chiudono 18 negozi al giorno. I dati di una crisi che non è di consumi ma di sistema, e cosa serve davvero per uscirne.
+description: Il mercato moda in Italia vale 12 miliardi, l'8% in meno del 2019. Chiudono 18 negozi al giorno: i dati di una crisi di sistema.
 keywords: crisi moda italiana dati, mercato moda italia 2025, filiera tessile italiana, made in italy crisi
-related: /settori/moda, /blog/moda-italiana-il-problema-non-e-la-crisi-e-il-silenzio, /integrazione-ai
+related: /settori/moda|AI per la moda, /blog/moda-italiana-il-problema-non-e-la-crisi-e-il-silenzio|Moda italiana e il silenzio, /blog/missoni-cosa-significa-quando-un-brand-italiano-perde-la-famiglia|Il caso Missoni, /integrazione-ai|Integrazione AI
 ---
 
 La moda italiana è in apnea. Ma qualcuno fa ancora finta di non vederlo.

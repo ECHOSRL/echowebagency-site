@@ -124,6 +124,7 @@ def parse_article(path: Path) -> dict:
     if missing:
         raise ValueError(f"{path.name}: missing frontmatter keys {missing}")
     fm["body_html"] = md_to_html(body)
+    fm.setdefault("headline", fm["title"])  # H1/index/RSS; title resta il tag SEO
     fm["src_path"] = path
     return fm
 
@@ -204,7 +205,7 @@ def render_article(fm: dict) -> str:
         "@context": "https://schema.org",
         "@type": "Article",
         "@id": f"{url}#article",
-        "headline": fm["title"],
+        "headline": fm.get("headline", fm["title"]),
         "description": fm["description"],
         "url": url,
         "datePublished": fm["date"],
@@ -235,8 +236,14 @@ def render_article(fm: dict) -> str:
     if related_links:
         items = [l.strip() for l in related_links.split(",") if l.strip()]
         if items:
+            def render_link(item):
+                # formato "href|Anchor" per anchor custom; altrimenti auto-generato dallo slug
+                if "|" in item:
+                    href, anchor = item.split("|", 1)
+                    return f'<a href="{href.strip()}">{html.escape(anchor.strip())}</a>'
+                return f'<a href="{item}">{item.strip("/").replace("-", " ").title()}</a>'
             related_html = '<div class="internal-links"><h3>Approfondisci</h3>' \
-                + "".join(f'<a href="{i}">{i.strip("/").replace("-", " ").title()}</a>' for i in items) \
+                + "".join(render_link(i) for i in items) \
                 + "</div>"
 
     body = head(
@@ -250,9 +257,9 @@ def render_article(fm: dict) -> str:
     body += f'''
 <article>
 <section class="page-hero">
-  <nav class="breadcrumb" aria-label="Breadcrumb"><a href="/">Home</a> &rsaquo; <a href="/blog/">Blog</a> &rsaquo; {html.escape(fm['title'])}</nav>
+  <nav class="breadcrumb" aria-label="Breadcrumb"><a href="/">Home</a> &rsaquo; <a href="/blog/">Blog</a> &rsaquo; {html.escape(fm.get('headline', fm['title']))}</nav>
   <p class="eyebrow">{fm['date']}</p>
-  <h1>{html.escape(fm['title'])}</h1>
+  <h1>{html.escape(fm.get('headline', fm['title']))}</h1>
   <p class="intro">{html.escape(fm['description'])}</p>
 </section>
 
@@ -296,7 +303,7 @@ def render_index(articles: list) -> str:
     for a in sorted(articles, key=lambda x: x["date"], reverse=True):
         body += f'''  <article class="article-card">
     <p class="article-date">{a['date']}</p>
-    <h2><a href="/blog/{a['slug']}">{html.escape(a['title'])}</a></h2>
+    <h2><a href="/blog/{a['slug']}">{html.escape(a.get('headline', a['title']))}</a></h2>
     <p>{html.escape(a['description'])}</p>
     <a href="/blog/{a['slug']}" class="read-more">Leggi &rsaquo;</a>
   </article>
@@ -313,7 +320,7 @@ def render_rss(articles: list) -> str:
         url = f"{SITE}/blog/{a['slug']}"
         pub = a["date"] + "T09:00:00+00:00"
         items.append(f'''  <item>
-    <title>{html.escape(a['title'])}</title>
+    <title>{html.escape(a.get('headline', a['title']))}</title>
     <link>{url}</link>
     <guid isPermaLink="true">{url}</guid>
     <pubDate>{pub}</pubDate>
@@ -380,7 +387,11 @@ def discover_html_only(built_slugs: set) -> list:
         if not m_date:
             m_date = re.search(r'<p class="eyebrow">(\d{4}-\d{2}-\d{2})</p>', text)
         date = m_date.group(1) if m_date else "2026-01-01"
-        found.append({"slug": slug, "title": title, "description": desc, "date": date})
+        m_h1 = re.search(r"<h1[^>]*>(.*?)</h1>", text, re.DOTALL)
+        headline = (re.sub(r"<[^>]+>", "", m_h1.group(1)).strip()
+                    .replace("&#x27;", "'").replace("&amp;", "&")) if m_h1 else title
+        found.append({"slug": slug, "title": title, "description": desc,
+                      "date": date, "headline": headline})
     return found
 
 

@@ -1,10 +1,11 @@
 ---
 title: Prima vengono i processi. Poi arriva l'AI.
+headline: Prima vengono i processi. Poi arriva l'AI.
 slug: prima-vengono-i-processi-poi-arriva-lai
 date: 2026-06-06
-description: La tecnologia accelera qualsiasi cosa, anche la direzione sbagliata. Perché capire un processo prima di automatizzarlo è il vero punto di partenza dell'AI in azienda.
+description: La tecnologia accelera tutto, anche la direzione sbagliata. Capire un processo prima di automatizzarlo è il vero punto di partenza dell'AI in azienda.
 keywords: ai processi aziendali, automazione processi pmi, digitalizzazione processi, ai nelle pmi italiane
-related: /integrazione-ai, /ai-readiness-audit, /settori/manifattura
+related: /integrazione-ai|Integrazione AI, /blog/introdurre-ai-in-azienda-metodo-non-tool|Introdurre l'AI con metodo, /blog/ai-produzione-pmi-casi-reali|AI nel reparto produzione, /ai-readiness-audit|AI Readiness Audit
 ---
 
 Oggi non voglio parlare di Intelligenza Artificiale.

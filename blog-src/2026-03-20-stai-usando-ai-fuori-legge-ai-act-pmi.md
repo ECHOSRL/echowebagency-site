@@ -1,10 +1,11 @@
 ---
-title: Stai usando l'AI fuori legge — e probabilmente non lo sai
+title: Stai usando l'AI fuori legge? AI Act e PMI
+headline: Stai usando l'AI fuori legge — e probabilmente non lo sai
 slug: stai-usando-ai-fuori-legge-ai-act-pmi
 date: 2026-03-20
-description: L'AI Act è già in vigore. ChatGPT in azienda, decisioni automatizzate, integrazioni AI nei processi: cosa significa concretamente per moda, beauty e manifattura.
+description: L'AI Act è già in vigore. ChatGPT in azienda, decisioni automatizzate, integrazioni AI: cosa significa per moda, beauty e manifattura.
 keywords: ai act pmi italiane, ai act in vigore, compliance ai act, governance ai aziende
-related: /governance-ai, /ai-readiness-audit, /formazione-ai
+related: /blog/ai-act-pmi-cosa-cambia|AI Act per le PMI, /governance-ai|Governance AI, /blog/rischi-intelligenza-artificiale-azienda|I rischi dell'AI non governata, /ai-readiness-audit|AI Readiness Audit
 ---
 
 **Stai usando l'AI fuori legge — e probabilmente non lo sai.**

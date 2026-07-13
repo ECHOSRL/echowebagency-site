@@ -1,10 +1,11 @@
 ---
-title: Come cambia il mercato del lavoro nell'era dell'AI integrata
+title: AI e mercato del lavoro: cosa cambia davvero
+headline: Come cambia il mercato del lavoro nell'era dell'AI integrata
 slug: ai-generativa-come-cambia-mercato-lavoro
 date: 2026-05-10
-description: L'AI generativa non sostituisce gli operai, colpisce l'economia della conoscenza. Automazione cognitiva, capability gap, impatto asimmetrico: i trend che ridisegnano il mercato del lavoro e cosa fare adesso.
+description: L'AI generativa non sostituisce gli operai: colpisce l'economia della conoscenza. Automazione cognitiva, capability gap e cosa fare adesso.
 keywords: ai impatto lavoro, ai generativa mercato lavoro, automazione cognitiva, ai colletti bianchi
-related: /formazione-ai, /integrazione-ai, /blog/introdurre-ai-in-azienda-metodo-non-tool
+related: /formazione-ai|Formazione AI, /blog/introdurre-ai-in-azienda-metodo-non-tool|Introdurre l'AI con metodo, /blog/roi-intelligenza-artificiale-azienda|Misurare il ROI dell'AI, /integrazione-ai|Integrazione AI
 ---
 
 L'Intelligenza Artificiale generativa sta ridisegnando le regole del mondo del lavoro, ma non come ci aspettavamo.

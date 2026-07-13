@@ -1,10 +1,11 @@
 ---
-title: Il futuro del settore tessile: sostenibilità e nuove leggi in arrivo
+title: Futuro del tessile: sostenibilità e nuove leggi
+headline: Il futuro del settore tessile: sostenibilità e nuove leggi in arrivo
 slug: futuro-tessile-sostenibilita-nuove-leggi
 date: 2025-03-03
-description: Green Deal, tracciabilità obbligatoria entro il 2030, materiali innovativi, economia circolare. Le normative che stanno cambiando il settore tessile e come le aziende possono prepararsi.
+description: Green Deal, tracciabilità obbligatoria entro il 2030, economia circolare: le normative che cambiano il tessile e come le aziende possono prepararsi.
 keywords: green deal tessile, normative sostenibilità moda, tracciabilità tessile 2030, economia circolare tessile
-related: /digital-product-passport, /settori/moda, /blog/espr-ecodesign-tessile-nuove-regole-ue
+related: /digital-product-passport|Digital Product Passport, /blog/espr-ecodesign-tessile-nuove-regole-ue|ESPR ed ecodesign tessile, /blog/digital-product-passport-moda-guida|Guida al DPP nella moda, /settori/moda|AI per la moda
 ---
 
 Il settore tessile sta per affrontare una vera rivoluzione, grazie a nuove leggi che spingeranno le aziende verso un futuro più sostenibile. Per chi lavora nel settore è fondamentale capire come adattarsi e sfruttare queste novità per restare competitivi e responsabili.

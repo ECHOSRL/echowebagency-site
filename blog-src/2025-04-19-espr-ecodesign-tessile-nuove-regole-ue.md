@@ -1,10 +1,11 @@
 ---
-title: ESPR ed ecodesign tessile: le nuove regole UE che cambiano la moda
+title: ESPR ed ecodesign tessile: le nuove regole UE
+headline: ESPR ed ecodesign tessile: le nuove regole UE che cambiano la moda
 slug: espr-ecodesign-tessile-nuove-regole-ue
 date: 2025-04-19
-description: Il regolamento ESPR (EU 2024/1781) è in vigore. Stop alla distruzione dell'invenduto, Digital Product Passport obbligatorio, responsabilità estesa del produttore. Cosa cambia per le aziende tessili italiane.
+description: Il regolamento ESPR è in vigore: stop alla distruzione dell'invenduto e Digital Product Passport obbligatorio. Cosa cambia per il tessile italiano.
 keywords: espr tessile, ecodesign regolamento ue, digital product passport moda, economia circolare tessile
-related: /digital-product-passport, /settori/moda, /blog/digital-product-passport-moda-guida
+related: /digital-product-passport|Digital Product Passport, /blog/digital-product-passport-moda-guida|Guida al DPP nella moda, /blog/futuro-tessile-sostenibilita-nuove-leggi|Il futuro del tessile sostenibile, /settori/moda|AI per la moda
 ---
 
 L'Unione Europea accelera verso una moda sostenibile con il **regolamento ESPR — Ecodesign for Sustainable Products Regulation (EU 2024/1781)**, ora in vigore. Il settore tessile è una delle priorità, e le nuove regole toccano ogni fase del ciclo di vita del prodotto: dal design allo smaltimento.

@@ -1,10 +1,11 @@
 ---
-title: L'AI in azienda non entra con un tool. Entra con un metodo.
+title: Introdurre l'AI in azienda: serve un metodo
+headline: L'AI in azienda non entra con un tool. Entra con un metodo.
 slug: introdurre-ai-in-azienda-metodo-non-tool
 date: 2026-02-01
-description: Introdurre l'AI "a caso" produce sempre lo stesso caos: chi la usa male, chi non la usa, chi la usa di nascosto. Il metodo Echo in 4 step per integrare l'intelligenza artificiale con governance.
+description: Introdurre l'AI "a caso" produce sempre lo stesso caos. Il metodo Echo in 4 step per integrare l'intelligenza artificiale con governance.
 keywords: introdurre ai in azienda, governance ai pmi, metodo integrazione ai, llm literacy aziende
-related: /governance-ai, /formazione-ai, /integrazione-ai
+related: /integrazione-ai|Integrazione AI, /blog/prima-vengono-i-processi-poi-arriva-lai|Prima i processi, poi l'AI, /blog/roi-intelligenza-artificiale-azienda|Misurare il ROI dell'AI, /governance-ai|Governance AI
 ---
 
 Negli ultimi mesi ho capito una cosa molto semplice: **in azienda l'AI non entra con un tool. Entra con un metodo.**

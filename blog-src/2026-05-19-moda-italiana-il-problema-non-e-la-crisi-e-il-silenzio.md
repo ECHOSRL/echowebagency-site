@@ -1,10 +1,11 @@
 ---
-title: Moda italiana: il problema non è la crisi, è il silenzio
+title: Moda italiana: il vero problema è il silenzio
+headline: Moda italiana: il problema non è la crisi, è il silenzio
 slug: moda-italiana-il-problema-non-e-la-crisi-e-il-silenzio
 date: 2026-05-19
-description: Per anni la manifattura ha trainato il Paese. Oggi sembra qualcosa da nascondere. Tra normative europee, AI, sostenibilità e margini sottili, serve un ponte tra persone, competenze e innovazione.
+description: La manifattura ha trainato il Paese, oggi sembra da nascondere. Tra normative UE, AI e margini sottili serve un ponte tra competenze e innovazione.
 keywords: crisi moda italiana, manifattura made in italy, futuro tessile italiano, ai moda
-related: /settori/moda, /settori/manifattura, /integrazione-ai
+related: /settori/moda|AI per la moda, /blog/moda-italiana-crisi-di-sistema-i-numeri|I numeri della crisi moda, /blog/missoni-cosa-significa-quando-un-brand-italiano-perde-la-famiglia|Il caso Missoni, /settori/manifattura|AI per la manifattura
 ---
 
 Il settore moda sta cambiando. Molto più profondamente di quanto vogliamo raccontarci.
