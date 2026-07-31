@@ -83,6 +83,9 @@ p:last-child { margin-bottom: 0; }
 .cta-section h2 { max-width: 600px; margin: 0 auto 1rem; }
 .cta-section p { max-width: 500px; margin: 0 auto 2rem; }
 .btn-primary {
+  /* la proprieta' display qui sotto e' obbligatoria: 37 pagine applicano questa
+     classe a un <a>, che senza sarebbe inline e ignorerebbe il padding verticale. */
+  display: inline-block;
   background: var(--accent);
   color: var(--text);
   padding: 0.95rem 2.1rem;
@@ -97,6 +100,7 @@ p:last-child { margin-bottom: 0; }
 .btn-primary:hover { background: var(--text); color: var(--accent); }
 
 .btn-secondary {
+  display: inline-block;
   background: transparent;
   color: var(--text);
   padding: 0.95rem 2.1rem;
@@ -110,22 +114,6 @@ p:last-child { margin-bottom: 0; }
   transition: background .2s, color .2s;
 }
 .btn-secondary:hover { background: var(--text); color: var(--bg); }
-
-.calendly-cta {
-  background: var(--accent);
-  color: var(--text);
-  padding: 1rem 2.5rem;
-  border-radius: 0;
-  font-size: 0.8rem;
-  font-weight: 600;
-  letter-spacing: 0.1em;
-  text-transform: uppercase;
-  text-decoration: none;
-  display: inline-block;
-  margin-top: 1rem;
-  transition: background .2s, color .2s;
-}
-.calendly-cta:hover { background: var(--text); color: var(--accent); }
 
 .faq-list { margin-top: 2rem; }
 .faq-item { border-bottom: 1px solid var(--border); }
