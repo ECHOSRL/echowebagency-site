@@ -182,6 +182,82 @@ img { max-width: 100%; height: auto; }
   padding: 0.7rem 1.4rem;
 }
 
+/* ===== TICKER ===== */
+.ticker-wrap {
+  overflow: hidden;
+  display: flex;
+  gap: 3rem;
+  border-top: 1px solid var(--border);
+  border-bottom: 1px solid var(--border);
+  padding: 1rem 0;
+}
+.ticker-track {
+  display: flex;
+  gap: 3rem;
+  padding-right: 3rem;
+  flex-shrink: 0;
+  animation: ticker 40s linear infinite;
+}
+.ticker-wrap:hover .ticker-track { animation-play-state: paused; }
+.ticker-item {
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--muted);
+  white-space: nowrap;
+}
+@keyframes ticker { from { transform: translateX(0); } to { transform: translateX(-100%); } }
+@media (prefers-reduced-motion: reduce) {
+  .ticker-track { animation: none; }
+}
+
+/* ===== PILASTRI ===== */
+.pilastri {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1.5rem;
+  margin-top: 3.5rem;
+}
+.pilastro-badge {
+  display: inline-block;
+  background: var(--text);
+  color: var(--accent);
+  font-family: var(--font-sans);
+  font-size: 0.72rem;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  padding: 0.5rem 1rem;
+  margin-bottom: 1rem;
+}
+.pilastro p { font-size: 0.9375rem; color: var(--text); line-height: 1.7; opacity: 0.75; }
+
+/* ===== METODO ===== */
+.metodo-steps { margin-top: 3rem; }
+.metodo-step {
+  display: grid;
+  grid-template-columns: 80px 1fr;
+  gap: 2rem;
+  padding: 2rem 0;
+  border-bottom: 1px solid var(--border);
+  align-items: start;
+}
+.step-num { font-family: var(--font-serif); font-size: 2.5rem; color: var(--accent-soft); font-weight: 500; line-height: 1; }
+.step-content h3 { font-family: var(--font-serif); font-size: 1.3rem; font-weight: 500; margin-bottom: 0.5rem; }
+.step-content p { font-size: 0.9375rem; color: var(--muted); line-height: 1.7; }
+.step-tag {
+  display: inline-block;
+  background: var(--accent-soft);
+  color: var(--text);
+  font-size: 0.68rem;
+  font-weight: 600;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  padding: 0.25rem 0.75rem;
+  margin-bottom: 0.6rem;
+}
+
 /* ===== RESPONSIVE — impalcatura ===== */
 @media (max-width: 900px) {
   .site-nav { padding: 1rem 1.5rem; }
@@ -193,4 +269,6 @@ img { max-width: 100%; height: auto; }
     padding: calc(var(--nav-h) + 3rem) 1.5rem 3rem;
     min-height: auto;
   }
+  .pilastri { grid-template-columns: 1fr; }
+  .metodo-step { grid-template-columns: 48px 1fr; gap: 1rem; }
 }
