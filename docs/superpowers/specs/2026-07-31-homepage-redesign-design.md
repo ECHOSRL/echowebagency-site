@@ -38,7 +38,9 @@ Si resta su HTML statico. Nessun build step, nessun rischio di regressione SEO.
 
 - `index.html` — riscritta, ogni sezione delimitata da un commento `<!-- ===== NOME SEZIONE ===== -->`
 - `home.css` — **nuovo file**, stili specifici della home, linkato solo da `index.html`
-- `styles.css` — modificato **solo** nelle regole di `nav`, `footer` e pulsanti, per propagare il nuovo linguaggio visivo alle 38 pagine interne senza toccare il loro HTML
+- `styles.css` — modificato **solo** nelle regole dei pulsanti (`.nav-cta`, `.btn-primary`, `.btn-secondary`, `.calendly-cta`), per propagare il nuovo linguaggio visivo alle 38 pagine interne senza toccare il loro HTML
+
+Il perimetro su `styles.css` è ristretto ai soli pulsanti, non a `nav` e `footer` come ipotizzato inizialmente: le 38 pagine condividono lo stesso markup piatto del footer (`.footer-logo`, `.footer-copy`, `.footer-links`), quindi cambiare la regola `footer` per farne un layout a colonne le romperebbe tutte. Il footer a colonne della home vive solo in `home.css`, che è isolato perché `index.html` non carica `styles.css`.
 
 La "separazione in componenti" chiesta dal brief si realizza come sezioni delimitate e un foglio di stile dedicato, non come componenti React.
 
