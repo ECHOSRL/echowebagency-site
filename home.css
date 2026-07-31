@@ -1,0 +1,133 @@
+/* ============================================================
+   home.css — stili della sola homepage.
+   index.html non carica styles.css (condiviso da 38 pagine):
+   questo file e' autosufficiente, token compresi.
+   ============================================================ */
+
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+:root {
+  --bg: #F5F3EE;
+  --text: #111110;
+  --accent: #C8E63C;
+  --accent-soft: #DEE8C4;
+  --muted: #6B6B68;
+  --border: #E0DDD6;
+  --font-serif: 'Playfair Display', Georgia, serif;
+  --font-sans: 'Inter', system-ui, sans-serif;
+  --nav-h: 76px;
+}
+
+html { scroll-behavior: smooth; }
+body {
+  background: var(--bg);
+  color: var(--text);
+  font-family: var(--font-sans);
+  line-height: 1.6;
+  overflow-x: hidden;
+}
+
+/* La nav e' fissa: senza questo gli anchor target finiscono sotto la barra.
+   Difetto presente anche nella home attuale. */
+[id] { scroll-margin-top: calc(var(--nav-h) + 1rem); }
+
+img { max-width: 100%; height: auto; }
+
+/* ===== PULSANTI ===== */
+/* Rettangolari, spigoli vivi, maiuscolo. Sostituiscono le pillole nere. */
+.btn {
+  display: inline-block;
+  padding: 0.95rem 2.1rem;
+  font-size: 0.8rem;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  text-decoration: none;
+  border: 1.5px solid transparent;
+  border-radius: 0;
+  transition: background .2s, color .2s, border-color .2s;
+}
+.btn-lime { background: var(--accent); color: var(--text); }
+.btn-lime:hover { background: var(--text); color: var(--accent); }
+
+/* ===== NAV ===== */
+.site-nav {
+  position: fixed;
+  top: 0; left: 0; right: 0;
+  z-index: 100;
+  min-height: var(--nav-h);
+  padding: 1.25rem 3rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1.5rem;
+  background: rgba(245, 243, 238, 0.95);
+  backdrop-filter: blur(8px);
+  border-bottom: 1px solid var(--border);
+}
+.nav-logo img { height: 32px; display: block; }
+.nav-links { display: flex; gap: 2rem; list-style: none; }
+.nav-links a {
+  text-decoration: none;
+  color: var(--text);
+  font-size: 0.78rem;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  transition: opacity .2s;
+}
+.nav-links a:hover { opacity: 0.6; }
+.nav-cta { padding: 0.7rem 1.5rem; font-size: 0.72rem; }
+
+/* ===== IMPALCATURA DELLE SEZIONI ===== */
+.section { padding: 7rem 3rem; border-bottom: 1px solid var(--border); }
+.section-sage { background: var(--accent-soft); }
+.section-dark { background: var(--text); color: var(--bg); }
+
+.section-label {
+  font-size: 0.72rem;
+  font-weight: 600;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--muted);
+  margin-bottom: 2.5rem;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.section-label::after {
+  content: '';
+  flex: 1;
+  height: 1px;
+  background: var(--border);
+  max-width: 60px;
+}
+.section-dark .section-label { color: rgba(245, 243, 238, 0.5); }
+.section-dark .section-label::after { background: rgba(245, 243, 238, 0.2); }
+
+.section-title {
+  font-family: var(--font-serif);
+  font-size: clamp(2rem, 4vw, 3.4rem);
+  font-weight: 500;
+  line-height: 1.15;
+  margin-bottom: 1.5rem;
+  max-width: 800px;
+}
+.section-title em { font-style: italic; color: var(--muted); }
+.section-dark .section-title { color: var(--bg); }
+.section-dark .section-title em { color: var(--accent); }
+
+.section-body {
+  font-size: 1.0625rem;
+  color: var(--muted);
+  max-width: 640px;
+  line-height: 1.8;
+}
+.section-dark .section-body { color: rgba(245, 243, 238, 0.7); }
+
+/* ===== RESPONSIVE — impalcatura ===== */
+@media (max-width: 900px) {
+  .site-nav { padding: 1rem 1.5rem; }
+  .nav-links { display: none; }
+  .section { padding: 4rem 1.5rem; }
+}
