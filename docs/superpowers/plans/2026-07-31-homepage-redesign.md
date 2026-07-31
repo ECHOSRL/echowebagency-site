@@ -12,7 +12,7 @@
 
 - Il sito **non è Next.js**: nessun React, nessun npm, nessun build step per la home.
 - `index.html` **non carica** `styles.css` e non deve iniziare a farlo. Carica solo `home.css`.
-- `styles.css` è condiviso da **38 pagine**: modificarne solo le regole dei pulsanti `.nav-cta`, `.btn-primary`, `.btn-secondary`, `.calendly-cta`. Mai `nav`, `footer`, `:root`.
+- `styles.css` è condiviso da **38 pagine**: modificarne solo le regole dei pulsanti `.nav-cta`, `.btn-primary`, `.btn-secondary`. Mai `nav`, `footer`, `:root`. Non introdurre `.calendly-cta`: nessuna pagina la usa.
 - I quattro ID storici `#metodo`, `#contatti`, `#origine`, `#casi` devono esistere nella pagina finale. Valgono 68 link interni.
 - Token di colore e font già definiti, da riusare senza inventarne di nuovi: `--bg #F5F3EE`, `--text #111110`, `--accent #C8E63C`, `--accent-soft #DEE8C4`, `--muted #6B6B68`, `--border #E0DDD6`, Playfair Display, Inter.
 - **Nessuna testimonianza virgolettata.** I risultati dei sei casi studio si formulano come esiti di progetto, mai come frasi attribuite a clienti.
@@ -1331,6 +1331,9 @@ Annotare i numeri di riga: sono le uniche righe che si possono modificare.
 .nav-cta:hover { background: var(--text); color: var(--accent); }
 
 .btn-primary {
+  /* inline-block e' obbligatorio: 37 pagine applicano questa classe a un <a>,
+     che senza sarebbe inline e ignorerebbe il padding verticale. */
+  display: inline-block;
   background: var(--accent);
   color: var(--text);
   padding: 0.95rem 2.1rem;
@@ -1345,6 +1348,7 @@ Annotare i numeri di riga: sono le uniche righe che si possono modificare.
 .btn-primary:hover { background: var(--text); color: var(--accent); }
 
 .btn-secondary {
+  display: inline-block;
   background: transparent;
   color: var(--text);
   padding: 0.95rem 2.1rem;
@@ -1359,22 +1363,9 @@ Annotare i numeri di riga: sono le uniche righe che si possono modificare.
 }
 .btn-secondary:hover { background: var(--text); color: var(--bg); }
 
-.calendly-cta {
-  background: var(--accent);
-  color: var(--text);
-  padding: 1rem 2.5rem;
-  border-radius: 0;
-  font-size: 0.8rem;
-  font-weight: 600;
-  letter-spacing: 0.1em;
-  text-transform: uppercase;
-  text-decoration: none;
-  display: inline-block;
-  margin-top: 1rem;
-  transition: background .2s, color .2s;
-}
-.calendly-cta:hover { background: var(--text); color: var(--accent); }
 ```
+
+**`.calendly-cta` non va aggiunta.** Esisteva solo nel CSS inline della vecchia home, che non c'è più, e nessuna delle 38 pagine la usa (`grep -rl "calendly-cta" --include="*.html" .` non restituisce nulla). Aggiungerla a `styles.css` significherebbe introdurre codice morto in un file condiviso. Le regole da modificare sono quindi **tre**, non quattro.
 
 - [ ] **Step 3: Verificare che nulla fuori dai pulsanti sia cambiato**
 
