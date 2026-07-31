@@ -500,9 +500,12 @@ img { max-width: 100%; height: auto; }
   line-height: 1.8;
 }
 .section-dark .section-body { color: rgba(245, 243, 238, 0.7); }
-/* Sul salvia il grigio standard non raggiunge il contrasto AA: si scurisce. */
+/* Sul salvia il grigio standard non raggiunge il contrasto AA: si scurisce.
+   .section-title em e' large text, quindi gli basterebbe 3:1, ma allinearlo
+   evita di dover ragionare per soglie diverse dentro la stessa sezione. */
 .section-sage .section-label,
-.section-sage .section-body { color: var(--muted-sage); }
+.section-sage .section-body,
+.section-sage .section-title em { color: var(--muted-sage); }
 
 /* ===== RESPONSIVE — impalcatura ===== */
 @media (max-width: 900px) {
@@ -1471,6 +1474,7 @@ prove = [
     ("nero su lime", "#111110", "#C8E63C"),
     ("muted su crema", "#6B6B68", "#F5F3EE"),
     ("muted-sage su salvia", "#5A5A57", "#DEE8C4"),
+    ("section-title em su salvia", "#5A5A57", "#DEE8C4"),
     ("pilastro p (text @75%) su salvia", blend("#111110", "#DEE8C4", 0.75), "#DEE8C4"),
     ("impatto-meta (bg @60%) su nero", blend("#F5F3EE", "#111110", 0.6), "#111110"),
     ("section-label scuro (bg @50%) su nero", blend("#F5F3EE", "#111110", 0.5), "#111110"),
