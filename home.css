@@ -12,6 +12,9 @@
   --accent: #C8E63C;
   --accent-soft: #DEE8C4;
   --muted: #6B6B68;
+  /* --muted su verde salvia da' 4.19:1, sotto la soglia AA di 4.5.
+     Sulle sezioni salvia il testo secondario usa questa variante. */
+  --muted-sage: #5A5A57;
   --border: #E0DDD6;
   --font-serif: 'Playfair Display', Georgia, serif;
   --font-sans: 'Inter', system-ui, sans-serif;
@@ -124,6 +127,9 @@ img { max-width: 100%; height: auto; }
   line-height: 1.8;
 }
 .section-dark .section-body { color: rgba(245, 243, 238, 0.7); }
+/* Sul salvia il grigio standard non raggiunge il contrasto AA: si scurisce. */
+.section-sage .section-label,
+.section-sage .section-body { color: var(--muted-sage); }
 
 /* ===== RESPONSIVE — impalcatura ===== */
 @media (max-width: 900px) {
