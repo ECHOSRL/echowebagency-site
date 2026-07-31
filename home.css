@@ -134,9 +134,63 @@ img { max-width: 100%; height: auto; }
 .section-sage .section-body,
 .section-sage .section-title em { color: var(--muted-sage); }
 
+/* ===== HERO ===== */
+.hero {
+  min-height: 100vh;
+  padding: calc(var(--nav-h) + 5rem) 3rem 5rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4rem;
+  align-items: center;
+  border-bottom: 1px solid var(--border);
+}
+.hero-eyebrow {
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: var(--muted);
+  margin-bottom: 1.75rem;
+}
+.hero-title {
+  font-family: var(--font-serif);
+  font-size: clamp(2.6rem, 5.5vw, 5rem);
+  font-weight: 500;
+  line-height: 1.08;
+  margin-bottom: 2rem;
+}
+.hero-title em { font-style: italic; color: var(--muted); }
+.hero-subtitle {
+  font-size: 1.0625rem;
+  color: var(--muted);
+  max-width: 520px;
+  line-height: 1.75;
+  margin-bottom: 2.5rem;
+}
+.hero-media { position: relative; }
+.hero-media img { display: block; width: 100%; }
+.hero-caption {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  background: var(--accent);
+  color: var(--text);
+  font-size: 0.72rem;
+  font-weight: 600;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  padding: 0.7rem 1.4rem;
+}
+
 /* ===== RESPONSIVE — impalcatura ===== */
 @media (max-width: 900px) {
   .site-nav { padding: 1rem 1.5rem; }
   .nav-links { display: none; }
   .section { padding: 4rem 1.5rem; }
+  .hero {
+    grid-template-columns: 1fr;
+    gap: 2.5rem;
+    padding: calc(var(--nav-h) + 3rem) 1.5rem 3rem;
+    min-height: auto;
+  }
 }
