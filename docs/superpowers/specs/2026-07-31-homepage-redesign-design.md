@@ -50,13 +50,12 @@ La "separazione in componenti" chiesta dal brief si realizza come sezioni delimi
 | 2 | Hero | crema | riscritta, con foto |
 | 3 | Ticker clienti | crema | conservata, +4 nomi, resa accessibile |
 | 4 | Un approccio orientato ai processi | salvia | nuova |
-| 5 | Il Paradosso digitale | nero | conservata |
-| 6 | Il Metodo | crema | conservata |
-| 7 | Competenze operative | crema | nuova |
-| 8 | I Numeri | salvia | conservata |
-| 9 | L'impatto misurabile | nero | riscritta |
-| 10 | CTA finale | crema | nuova |
-| 11 | Footer | crema | riscritto a colonne |
+| 5 | Il Metodo | crema | conservata |
+| 6 | Competenze operative | crema | nuova |
+| 7 | I Numeri | salvia | conservata |
+| 8 | L'impatto misurabile | nero | riscritta |
+| 9 | CTA finale | crema | nuova |
+| 10 | Footer | crema | riscritto a colonne |
 
 Sezione **Origine** rimossa come sezione autonoma: la sua lista di quattro servizi confluisce nella griglia Competenze operative, il passaggio su Reggio Emilia e il distretto manifatturiero diventa l'intro della sezione pilastri, che ne eredita anche l'`id="origine"`. Il radicamento territoriale, rilevante per la local SEO, non si perde.
 
@@ -66,10 +65,10 @@ Le 38 pagine interne linkano ancore della home in massa. Rimuoverle o rinominarl
 
 | Ancora | Link entranti | Sezione che ne eredita l'ID |
 |---|---|---|
-| `#metodo` | 38 | 6 — Il Metodo |
-| `#contatti` | 38 | 10 — CTA finale |
+| `#metodo` | 38 | 5 — Il Metodo |
+| `#contatti` | 38 | 9 — CTA finale |
 | `#origine` | 22 | 4 — Un approccio orientato ai processi |
-| `#casi` | 8 | 9 — L'impatto misurabile |
+| `#casi` | 8 | 8 — L'impatto misurabile |
 
 Gli ID storici restano quelli primari anche dove il titolo della sezione cambia: gli ID non sono visibili all'utente, e riusarli costa nulla mentre cambiarli costa 68 link. La sezione Competenze operative, che non ha antenati, prende `id="servizi"`.
 
@@ -91,7 +90,7 @@ Più CTA `PRENOTA AUDIT` in verde lime con testo nero, maiuscolo, rettangolare.
 
 `BLOG` è un'aggiunta rispetto al brief. Le ultime otto commit del repo sono tutte lavoro SEO: 25 articoli, cluster di link interni, schema FAQPage. La homepage è la sorgente di link interni più forte del sito; toglierle il link al blog vanifica parte di quel lavoro.
 
-`METODO` punta a `#metodo`, che continua a esistere (vedi sezione 6). Nel brief l'ancora sarebbe stata rotta.
+`METODO` punta a `#metodo`, che continua a esistere (vedi sezione 5). Nel brief l'ancora sarebbe stata rotta.
 
 ### 2. Hero
 
@@ -120,15 +119,11 @@ Quattro card in riga, ciascuna con badge titolo su sfondo nero e testo lime, pi�
 
 Sotto i 900px: una colonna.
 
-### 5. Il Paradosso digitale
-
-Conservata invariata. Le tre card su adozione superficiale, formazione senza follow-up e soluzioni calate dall'alto sono il passaggio di posizionamento più netto del sito. Senza, la home diventa un catalogo di servizi indistinguibile dai concorrenti.
-
-### 6. Il Metodo
+### 5. Il Metodo
 
 Conservata invariata: quattro step (Discovery, Mappa, Implementazione, Consolidamento). Serve l'ancora `#metodo` della nav.
 
-### 7. Competenze operative
+### 6. Competenze operative
 
 Sfondo crema, otto card con bordi sottili, titolo serif più descrizione. Testi dal brief.
 
@@ -147,11 +142,11 @@ Cinque card diventano link a pagine che esistono già, rinforzando l'internal li
 
 Il brief chiede una griglia 3x3 per otto card: sarebbe una griglia con un buco. Si usa 4x2 su desktop, 2x2 su tablet, una colonna su mobile.
 
-### 8. I Numeri
+### 7. I Numeri
 
 Conservata invariata: 40+ aziende, 12 settori, 3x velocità, 98% rinnovo. Coincidono con quanto indicato nel brief.
 
-### 9. L'impatto misurabile — `id="casi"`
+### 8. L'impatto misurabile — `id="casi"`
 
 Sfondo nero, testo bianco, accenti lime, bordo sinistro lime su ogni scheda. Tutti e **sei** i risultati, non quattro: si conservano anche "Formazione, 120 dipendenti, 87% adozione" e "Milano, reporting, −70% tempo analisi".
 
@@ -159,13 +154,13 @@ Sfondo nero, testo bianco, accenti lime, bordo sinistro lime su ogni scheda. Tut
 
 Se in futuro arrivano dichiarazioni reali e attribuibili, la sezione è pronta a ospitarle come virgolettati veri.
 
-### 10. CTA finale — `id="contatti"`
+### 9. CTA finale — `id="contatti"`
 
 Sfondo crema. Titolo `Pronto per l'integrazione?`, testo e pulsante `Prenota un appuntamento` dal brief.
 
 Raccoglie l'ancora `#contatti`: chi arriva da una delle 38 pagine interne atterra sull'invito a prenotare, con i recapiti completi nel footer immediatamente sotto.
 
-### 11. Footer
+### 10. Footer
 
 Riscritto a colonne: logo Echo · `SEDE & CONTATTI` (Via Lelio e Fausto Socini 32/B, 42122 Reggio Emilia RE, info@echowebagency.it, +39 351 702 7294) · `ORARI OPERATIVI` (Lun–Ven 9:00–18:00, Sab e Dom chiuso) · icone Instagram e LinkedIn · riga copyright con P.IVA 03135740359.
 
@@ -177,7 +172,9 @@ Nuovo stile: rettangolari, spigoli vivi, testo maiuscolo, lime su testo nero. So
 
 Applicato in `styles.css` alle regole di `nav`, `footer` e pulsanti, così le 38 pagine interne ereditano il nuovo look senza modifiche al loro HTML. Le voci di menu delle pagine interne restano quelle attuali.
 
-**Deviazione dal brief da confermare in revisione.** Il brief indica anche un header nero. La proposta è di **mantenere la nav crema traslucida** attuale, cambiando solo il pulsante CTA in lime rettangolare. Motivo: la pagina ha già due sezioni a fondo nero (Paradosso e Impatto misurabile); una nav nera fissa in cima aggiungerebbe una terza massa scura e appesantirebbe una home già lunga. Se preferisci l'header nero del prototipo, si cambia una regola.
+**Header: nav crema, deciso.** Il brief indica un header nero. Si mantiene invece la **nav crema traslucida** attuale, cambiando solo il pulsante CTA in lime rettangolare.
+
+L'argomento originale era che la pagina avesse già due sezioni a fondo nero. Con il Paradosso rimosso ne resta una sola, quindi quell'argomento non regge più. Restano però due motivi validi: la nav crema è ereditata da tutte le 38 pagine interne tramite `styles.css`, quindi renderla nera è un cambiamento di identità su tutto il sito e non un ritocco alla home; e il contrasto del pulsante lime, che è l'elemento su cui si vuole l'attenzione, è più forte su crema che su nero. Resta una singola regola CSS, reversibile in qualsiasi momento.
 
 ## Immagine hero
 
