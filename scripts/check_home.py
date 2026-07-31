@@ -178,6 +178,33 @@ def main():
             if kb > budget_kb:
                 errori.append(f"{nome} pesa {kb}KB, budget {budget_kb}KB")
 
+    # 13. Ogni classe usata nell'HTML deve esistere in home.css.
+    #     E' il controllo che avrebbe intercettato .two-col, usata ma mai definita.
+    css_path = ROOT / "home.css"
+    if not css_path.exists():
+        errori.append("home.css non esiste")
+    else:
+        css = css_path.read_text(encoding="utf-8")
+        usate = set()
+        for attr in re.findall(r'class="([^"]+)"', sorgente):
+            usate.update(attr.split())
+        definite = set(re.findall(r"\.([A-Za-z][\w-]*)", css))
+        orfane = sorted(usate - definite)
+        if orfane:
+            errori.append(
+                "classi usate nell'HTML ma non definite in home.css: " + ", ".join(orfane)
+            )
+
+    # 14. Ogni link interno a una pagina deve corrispondere a un file esistente.
+    #     Con cleanUrls di Vercel il .html non compare negli href.
+    for href in set(re.findall(r'href="(/[^"#?][^"]*)"', sorgente)):
+        if href.startswith("/_") or href.startswith("//"):
+            continue
+        rel = href.lstrip("/")
+        candidati = [ROOT / rel, ROOT / (rel + ".html"), ROOT / rel / "index.html"]
+        if not any(c.exists() for c in candidati):
+            errori.append(f"link interno a una pagina inesistente: {href}")
+
     if errori:
         print(f"FAIL — {len(errori)} problemi:\n")
         for e in errori:

@@ -132,7 +132,8 @@ img { max-width: 100%; height: auto; }
    evita di dover ragionare per soglie diverse dentro la stessa sezione. */
 .section-sage .section-label,
 .section-sage .section-body,
-.section-sage .section-title em { color: var(--muted-sage); }
+.section-sage .section-title em,
+.section-sage .numero-label { color: var(--muted-sage); }
 
 /* ===== HERO ===== */
 .hero {
@@ -186,7 +187,6 @@ img { max-width: 100%; height: auto; }
 .ticker-wrap {
   overflow: hidden;
   display: flex;
-  gap: 3rem;
   border-top: 1px solid var(--border);
   border-bottom: 1px solid var(--border);
   padding: 1rem 0;
@@ -210,6 +210,7 @@ img { max-width: 100%; height: auto; }
 @keyframes ticker { from { transform: translateX(0); } to { transform: translateX(-100%); } }
 @media (prefers-reduced-motion: reduce) {
   .ticker-track { animation: none; }
+  html { scroll-behavior: auto; }
 }
 
 /* ===== PILASTRI ===== */
@@ -232,6 +233,12 @@ img { max-width: 100%; height: auto; }
   margin-bottom: 1rem;
 }
 .pilastro p { font-size: 0.9375rem; color: var(--text); line-height: 1.7; opacity: 0.75; }
+
+/* ===== LAYOUT A DUE COLONNE ===== */
+/* Usata dalla sezione Metodo. Definita anche in styles.css, che pero'
+   la home non carica: senza questa regola il Metodo rende impilato. */
+.two-col { display: grid; grid-template-columns: 1fr 1fr; gap: 5rem; align-items: start; }
+.two-col .section-title { max-width: 100%; }
 
 /* ===== METODO ===== */
 .metodo-steps { margin-top: 3rem; }
@@ -360,7 +367,8 @@ a.servizio:focus-visible { background: var(--accent-soft); }
   }
   .pilastri { grid-template-columns: 1fr; }
   .metodo-step { grid-template-columns: 48px 1fr; gap: 1rem; }
-  .servizi-grid { grid-template-columns: 1fr; }
+  .two-col { grid-template-columns: 1fr; gap: 2.5rem; }
+  .servizi-grid { grid-template-columns: repeat(2, 1fr); }
   .numeri-grid { grid-template-columns: repeat(2, 1fr); }
   .impatto-grid { grid-template-columns: 1fr; gap: 2.5rem; }
   .site-footer { padding: 3rem 1.5rem 2rem; }
@@ -369,4 +377,8 @@ a.servizio:focus-visible { background: var(--accent-soft); }
 
 @media (min-width: 901px) and (max-width: 1200px) {
   .servizi-grid { grid-template-columns: repeat(2, 1fr); }
+}
+
+@media (max-width: 600px) {
+  .servizi-grid { grid-template-columns: 1fr; }
 }
