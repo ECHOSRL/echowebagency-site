@@ -385,6 +385,9 @@ Co-Authored-By: Claude <noreply@anthropic.com>"
   --accent: #C8E63C;
   --accent-soft: #DEE8C4;
   --muted: #6B6B68;
+  /* --muted su verde salvia da' 4.19:1, sotto la soglia AA di 4.5.
+     Sulle sezioni salvia il testo secondario usa questa variante. */
+  --muted-sage: #5A5A57;
   --border: #E0DDD6;
   --font-serif: 'Playfair Display', Georgia, serif;
   --font-sans: 'Inter', system-ui, sans-serif;
@@ -497,6 +500,9 @@ img { max-width: 100%; height: auto; }
   line-height: 1.8;
 }
 .section-dark .section-body { color: rgba(245, 243, 238, 0.7); }
+/* Sul salvia il grigio standard non raggiunge il contrasto AA: si scurisce. */
+.section-sage .section-label,
+.section-sage .section-body { color: var(--muted-sage); }
 
 /* ===== RESPONSIVE — impalcatura ===== */
 @media (max-width: 900px) {
@@ -1091,7 +1097,8 @@ a.servizio:hover { background: var(--accent-soft); }
   font-weight: 600;
   letter-spacing: 0.12em;
   text-transform: uppercase;
-  color: rgba(245, 243, 238, 0.45);
+  /* 0.45 darebbe 4.22:1 su nero, sotto AA. 0.60 porta a 6.63:1. */
+  color: rgba(245, 243, 238, 0.6);
 }
 ```
 
@@ -1436,7 +1443,9 @@ Poi provare a mano `http://localhost:8765/#metodo` e `http://localhost:8765/#con
 
 - [ ] **Step 4: Verificare i contrasti sulle combinazioni critiche**
 
-Le tre a rischio sono: lime `#C8E63C` su nero `#111110` (badge pilastri e valori impatto), nero su lime (pulsanti), e `rgba(245,243,238,0.45)` su nero (`.impatto-meta`).
+Le combinazioni a rischio sono: lime `#C8E63C` su nero `#111110` (badge pilastri e valori impatto), nero su lime (pulsanti), il grigio secondario sul verde salvia, e i grigi in trasparenza sul nero.
+
+Due di queste sono già state corrette a monte durante l'esecuzione, perché i valori originali del piano non passavano: il testo secondario sulle sezioni salvia usa `--muted-sage` invece di `--muted` (4.19 → 5.42), e `.impatto-meta` usa opacità `0.6` invece di `0.45` (4.22 → 6.63). Questo passo serve a confermarlo sul codice reale.
 
 ```bash
 python3 - <<'PY'
@@ -1451,18 +1460,35 @@ def ratio(a, b):
     hi, lo = max(la, lb), min(la, lb)
     return (hi + 0.05) / (lo + 0.05)
 
-for nome, a, b in [
+def blend(fg, bg, a):
+    out = "#"
+    for i in (1, 3, 5):
+        out += f"{round(a * int(fg[i:i+2], 16) + (1 - a) * int(bg[i:i+2], 16)):02X}"
+    return out
+
+prove = [
     ("lime su nero", "#C8E63C", "#111110"),
     ("nero su lime", "#111110", "#C8E63C"),
     ("muted su crema", "#6B6B68", "#F5F3EE"),
-    ("impatto-meta su nero", "#6E6D68", "#111110"),
-]:
+    ("muted-sage su salvia", "#5A5A57", "#DEE8C4"),
+    ("pilastro p (text @75%) su salvia", blend("#111110", "#DEE8C4", 0.75), "#DEE8C4"),
+    ("impatto-meta (bg @60%) su nero", blend("#F5F3EE", "#111110", 0.6), "#111110"),
+    ("section-label scuro (bg @50%) su nero", blend("#F5F3EE", "#111110", 0.5), "#111110"),
+    ("section-body scuro (bg @70%) su nero", blend("#F5F3EE", "#111110", 0.7), "#111110"),
+]
+sotto = 0
+for nome, a, b in prove:
     r = ratio(a, b)
-    print(f"{nome}: {r:.2f}  {'OK AA' if r >= 4.5 else 'SOTTO AA (4.5)'}")
+    ok = r >= 4.5
+    sotto += not ok
+    print(f"{nome:42s} {r:5.2f}  {'OK AA' if ok else '*** SOTTO AA ***'}")
+print("\nESITO:", "tutte conformi AA" if not sotto else f"{sotto} combinazioni sotto soglia")
 PY
 ```
 
-Expected: le prime tre sopra 4.5. Se `impatto-meta` risulta sotto, alzare l'opacità da `0.45` a `0.6` in `home.css` e rieseguire.
+Expected: tutte e otto sopra 4.5, `ESITO: tutte conformi AA`.
+
+Se una combinazione risulta sotto soglia, scurire il colore corrispondente in `home.css` finché non passa, e rieseguire. Non abbassare la soglia.
 
 - [ ] **Step 5: Verificare che le 38 pagine interne non siano regredite**
 
