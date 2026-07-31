@@ -570,10 +570,10 @@ In `index.html`, cancellare tutto il blocco da `<style>` (riga 11) fino a `</sty
 Sostituire la riga 7:
 
 ```html
-<meta name="description" content="Consulenza AI per PMI manifatturiere: ottimizzazione dei processi, formazione dei team e governance. Radici manifatturiere, visione digitale. Reggio Emilia.">
+<meta name="description" content="Consulenza AI per PMI manifatturiere: ottimizzazione dei processi, formazione dei team e governance. Radici manifatturiere. Reggio Emilia.">
 ```
 
-Sono 154 caratteri, sotto il limite di 155 che lo script verifica. Non toccare il `<title>` sopra.
+Sono 138 caratteri, con margine sotto il limite di 155 che lo script verifica. Non toccare il `<title>` sopra.
 
 - [ ] **Step 3: Sostituire la nav**
 
@@ -692,7 +692,13 @@ E dentro il blocco `@media (max-width: 900px)` esistente aggiungere:
 
 Run: `cd /Users/silviarinaldi/Desktop/echowebagency-site && python3 scripts/check_home.py`
 
-Expected: FAIL, ma con meno problemi di prima. Devono essere spariti "home.css non e' collegata", "immagine hero mancante" e "meta description". Devono restare i fallimenti sulle ancore `#servizi`, `#casi`, `#contatti` e sul ticker, perché quelle sezioni non sono ancora state riscritte.
+Expected: FAIL con **5** problemi, lo stesso numero di prima ma non gli stessi.
+
+Sparisce "home.css non e' collegata", ma la nuova nav introduce un link a `#servizi`, sezione che non esiste ancora: lo script lo conta **due volte**, una come ancora mancante e una come link che non risolve. I due errori si compensano.
+
+I 5 attesi sono: ancora `#servizi` assente; link `#servizi` che non punta a nulla; due salti di livello `h2 -> h4` (Paradosso e Metodo, riscritti nei task successivi); `aria-hidden` sul contenitore del ticker.
+
+Nessuno di questi è un difetto del tuo lavoro. Se il numero è diverso da 5, fermati e segnala invece di aggiustare lo script o il testo.
 
 - [ ] **Step 7: Commit**
 
@@ -920,7 +926,13 @@ E dentro `@media (max-width: 900px)`:
 
 Run: `cd /Users/silviarinaldi/Desktop/echowebagency-site && python3 scripts/check_home.py`
 
-Expected: FAIL, ma devono essere spariti l'errore sul ticker (`aria-hidden`) e quelli su `#origine` e `#metodo`. Restano `#servizi`, `#casi`, `#contatti`.
+Expected: FAIL con **2** problemi, in calo da 5.
+
+Spariscono: `aria-hidden` sul ticker, il salto `h2 -> h4` del Paradosso (sezione eliminata) e quello del Metodo (i quattro `<h4>` diventano `<h3>`).
+
+Restano i due su `#servizi`, che il Task 6 chiuderà: ancora assente e link che non risolve.
+
+Se il numero è diverso da 2, fermati e segnala.
 
 - [ ] **Step 6: Commit**
 
@@ -1125,7 +1137,11 @@ Aggiungere anche un breakpoint intermedio, in fondo al file:
 
 Run: `cd /Users/silviarinaldi/Desktop/echowebagency-site && python3 scripts/check_home.py`
 
-Expected: FAIL solo su `#contatti`, l'ultima ancora mancante.
+Expected: **PASS** — `OK — tutti gli invarianti della homepage sono rispettati`.
+
+Lo script diventa verde qui, un task prima della fine: la sezione `#contatti` che riscriverai nel Task 7 esiste ancora nella sua forma vecchia, quindi quell'ancora risolve già.
+
+Il Task 7 dovrà mantenere il verde, non riconquistarlo. Se qui lo script non passa, fermati e segnala.
 
 - [ ] **Step 6: Commit**
 
