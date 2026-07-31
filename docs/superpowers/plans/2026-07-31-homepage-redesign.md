@@ -259,8 +259,8 @@ Co-Authored-By: Claude <noreply@anthropic.com>"
 ### Task 2: Asset della foto hero
 
 **Files:**
-- Create: `hero-formazione.jpg` (1200×917, ~204KB)
-- Create: `hero-formazione@2x.jpg` (1800×1375, ~288KB)
+- Create: `hero-formazione.jpg` (1200×945, ~197KB)
+- Create: `hero-formazione@2x.jpg` (1800×1418, ~298KB)
 
 **Interfaces:**
 - Consumes: niente
@@ -268,7 +268,11 @@ Co-Authored-By: Claude <noreply@anthropic.com>"
 
 Sorgente: `/Users/silviarinaldi/Desktop/03_Marketing_LinkedIn/HUMAN FIRST FORMAZIONE AI CHE PARTE DALLE PERSONE.jpg` (5712×4284).
 
-Il ritaglio elimina la cornice bianca e la didascalia "HUMAN FIRST / FORMAZIONE AI CHE PARTE DALLE PERSONE" impressa nei pixel. La cornice è bianco puro e stonerebbe contro il crema `#F5F3EE`; il testo nei pixel non è leggibile dagli screen reader né indicizzabile. Le coordinate sotto sono già state verificate visivamente: producono la sola fotografia, senza bordi residui.
+Il ritaglio elimina la cornice bianca e la didascalia "HUMAN FIRST / FORMAZIONE AI CHE PARTE DALLE PERSONE" impressa nei pixel. La cornice è bianco puro e stonerebbe contro il crema `#F5F3EE`; il testo nei pixel non è leggibile dagli screen reader né indicizzabile.
+
+Le coordinate sono state ricavate campionando i pixel del sorgente, non a occhio: la cornice non bianca sta in `x 526..5089`, la foto finisce a `y≈3816` e sotto ci sono una banda bianca e le due righe di didascalia. Il ritaglio prescritto sotto applica un margine di sicurezza di qualche pixel su ogni lato.
+
+**Non verificare questo ritaglio guardandolo.** Una striscia bianca di 26px sul bordo destro è già sfuggita una volta a un'ispezione a occhio: contro lo sfondo chiaro di un visualizzatore di immagini è invisibile. Lo Step 3 la controlla campionando i pixel.
 
 `sips` non sa scrivere WebP su questa macchina (lo legge soltanto), quindi si resta su JPEG.
 
@@ -277,11 +281,11 @@ Il ritaglio elimina la cornice bianca e la didascalia "HUMAN FIRST / FORMAZIONE 
 ```bash
 cd /Users/silviarinaldi/Desktop/echowebagency-site
 SRC="/Users/silviarinaldi/Desktop/03_Marketing_LinkedIn/HUMAN FIRST FORMAZIONE AI CHE PARTE DALLE PERSONE.jpg"
-sips -c 3565 4661 --cropOffset 234 528 "$SRC" --out /tmp/hero-crop.jpg
+sips -c 3588 4553 --cropOffset 222 530 "$SRC" --out /tmp/hero-crop.jpg
 sips -g pixelWidth -g pixelHeight /tmp/hero-crop.jpg | tail -2
 ```
 
-Expected: `pixelWidth: 4661`, `pixelHeight: 3565`.
+Expected: `pixelWidth: 4553`, `pixelHeight: 3588`.
 
 - [ ] **Step 2: Generare le due versioni per il web**
 
@@ -292,15 +296,51 @@ sips -Z 1800 -s format jpeg -s formatOptions 55 /tmp/hero-crop.jpg --out "hero-f
 ls -lh hero-formazione.jpg "hero-formazione@2x.jpg"
 ```
 
-Expected: `hero-formazione.jpg` circa 204KB, `hero-formazione@2x.jpg` circa 288KB. Entrambi sotto i budget dello script di verifica (260KB e 340KB).
+Expected: `hero-formazione.jpg` circa 197KB a 1200×945, `hero-formazione@2x.jpg` circa 298KB a 1800×1418. Entrambi sotto i budget dello script di verifica (260KB e 340KB).
 
-- [ ] **Step 3: Ispezionare visivamente il risultato**
+Annotare le altezze reali riportate da `sips`: servono al Task 4, che le scrive come attributo `height` dell'`<img>`. Se non corrispondono, il browser calcola un rapporto d'aspetto sbagliato.
+
+- [ ] **Step 3: Verificare al pixel che non resti cornice**
 
 ```bash
-open /Users/silviarinaldi/Desktop/echowebagency-site/hero-formazione.jpg
+cd /Users/silviarinaldi/Desktop/echowebagency-site
+sips -s format bmp hero-formazione.jpg --out /tmp/hero-check.bmp >/dev/null
+python3 - <<'PY'
+import struct, pathlib
+d = pathlib.Path("/tmp/hero-check.bmp").read_bytes()
+off = struct.unpack_from("<I", d, 10)[0]
+w, h = struct.unpack_from("<ii", d, 18)
+bpp = struct.unpack_from("<H", d, 28)[0]
+topdown = h < 0
+h = abs(h)
+row = (w * bpp // 8 + 3) // 4 * 4
+
+def px(x, y):
+    yy = y if topdown else h - 1 - y
+    i = off + yy * row + x * (bpp // 8)
+    return d[i + 2], d[i + 1], d[i]
+
+def bianco(c):
+    return c[0] > 246 and c[1] > 246 and c[2] > 246
+
+print(f"{w}x{h}")
+peggio = 0
+for lato, punti in [
+    ("destro",   [(w - 1 - k, y) for y in range(20, h - 20, 60) for k in range(40)]),
+    ("sinistro", [(k, y)         for y in range(20, h - 20, 60) for k in range(40)]),
+    ("alto",     [(x, k)         for x in range(20, w - 20, 60) for k in range(40)]),
+    ("basso",    [(x, h - 1 - k) for x in range(20, w - 20, 60) for k in range(40)]),
+]:
+    cnt = sum(1 for p in punti if bianco(px(*p)))
+    print(f"  bordo {lato}: {cnt} pixel bianchi su {len(punti)}")
+    peggio = max(peggio, cnt)
+print("ESITO:", "PULITO" if peggio == 0 else "RESIDUO DI CORNICE")
+PY
 ```
 
-Verificare a occhio: nessun bordo bianco su nessun lato, nessuna scritta residua in basso, i volti non tagliati. Se resta una striscia bianca, aumentare l'offset corrispondente di ~20px e ripetere dallo Step 1.
+Expected: `1200x945`, zero pixel bianchi su tutti e quattro i bordi, `ESITO: PULITO`.
+
+Se un bordo riporta pixel bianchi, la cornice non è stata eliminata del tutto: stringere di 30px l'offset o la dimensione sul lato interessato e ripetere dallo Step 1. Non accettare il risultato perché "a occhio sembra a posto" — la striscia bianca è invisibile in un visualizzatore di immagini con sfondo chiaro.
 
 - [ ] **Step 4: Commit**
 
@@ -566,7 +606,7 @@ Sostituire l'intero blocco `<section class="hero">...</section>`:
     <img src="/hero-formazione.jpg"
          srcset="/hero-formazione.jpg 1200w, /hero-formazione@2x.jpg 1800w"
          sizes="(max-width: 900px) 100vw, 48vw"
-         width="1200" height="917"
+         width="1200" height="945"
          loading="eager" fetchpriority="high"
          alt="Sessione di formazione AI di Echo con un team aziendale attorno al tavolo riunioni">
     <figcaption class="hero-caption">Human first</figcaption>
