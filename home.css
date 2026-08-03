@@ -50,7 +50,7 @@ img { max-width: 100%; height: auto; }
   border-radius: 0;
   transition: background .2s, color .2s, border-color .2s;
 }
-.btn-lime { background: var(--accent); color: var(--text); }
+.btn-lime { background: var(--accent); color: var(--text); border-color: var(--text); }
 .btn-lime:hover { background: var(--text); color: var(--accent); }
 
 /* ===== NAV ===== */

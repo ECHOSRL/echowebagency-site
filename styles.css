@@ -27,6 +27,7 @@ nav { position: fixed; top: 0; left: 0; right: 0; z-index: 100; padding: 1.25rem
   letter-spacing: 0.1em;
   text-transform: uppercase;
   text-decoration: none;
+  border: 1.5px solid var(--text);
   transition: background .2s, color .2s;
 }
 .nav-cta:hover { background: var(--text); color: var(--accent); }
@@ -95,6 +96,7 @@ p:last-child { margin-bottom: 0; }
   letter-spacing: 0.1em;
   text-transform: uppercase;
   text-decoration: none;
+  border: 1.5px solid var(--text);
   transition: background .2s, color .2s;
 }
 .btn-primary:hover { background: var(--text); color: var(--accent); }
