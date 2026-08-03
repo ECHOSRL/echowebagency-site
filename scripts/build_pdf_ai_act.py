@@ -124,7 +124,7 @@ story.append(Paragraph(
     BODY,
 ))
 story.append(Paragraph(
-    "La buona notizia: nei prossimi 5 step ti diamo l'ossatura per arrivare ad avere "
+    "La buona notizia: nei prossimi 5 step ti diamo il metodo per arrivare ad avere "
     "<b>una governance proporzionata alla tua dimensione</b>, in 3–4 settimane di lavoro interno.",
     CALLOUT,
 ))
