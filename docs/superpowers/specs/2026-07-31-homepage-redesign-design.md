@@ -86,9 +86,12 @@ Voci e destinazioni:
 | `SERVIZI` | `#servizi` |
 | `RISULTATI` | `#casi` |
 | `BLOG` | `/blog/` |
+| `CHI SIAMO` | `/chi-siamo` |
 | `CONTATTI` | `#contatti` |
 
 Più CTA `PRENOTA AUDIT` in verde lime con testo nero, maiuscolo, rettangolare.
+
+`CHI SIAMO` era stato eliminato dalla nav approvata e reintrodotto su richiesta dell'autrice. La pagina resta linkata da 17 altre pagine, quindi non sarebbe rimasta orfana, ma avrebbe perso il link dalla pagina più forte del sito: lo stesso motivo per cui era stato aggiunto `BLOG`.
 
 `BLOG` è un'aggiunta rispetto al brief. Le ultime otto commit del repo sono tutte lavoro SEO: 25 articoli, cluster di link interni, schema FAQPage. La homepage è la sorgente di link interni più forte del sito; toglierle il link al blog vanifica parte di quel lavoro.
 
@@ -176,7 +179,19 @@ Applicato in `styles.css` alle regole di `nav`, `footer` e pulsanti, così le 38
 
 **Header: nav crema, deciso.** Il brief indica un header nero. Si mantiene invece la **nav crema traslucida** attuale, cambiando solo il pulsante CTA in lime rettangolare.
 
-L'argomento originale era che la pagina avesse già due sezioni a fondo nero. Con il Paradosso rimosso ne resta una sola, quindi quell'argomento non regge più. Restano però due motivi validi: la nav crema è ereditata da tutte le 38 pagine interne tramite `styles.css`, quindi renderla nera è un cambiamento di identità su tutto il sito e non un ritocco alla home; e il contrasto del pulsante lime, che è l'elemento su cui si vuole l'attenzione, è più forte su crema che su nero. Resta una singola regola CSS, reversibile in qualsiasi momento.
+L'argomento originale era che la pagina avesse già due sezioni a fondo nero. Con il Paradosso rimosso ne resta una sola, quindi quell'argomento non regge più. Resta valido il motivo principale: la nav crema è ereditata da tutte le 38 pagine interne tramite `styles.css`, quindi renderla nera è un cambiamento di identità su tutto il sito e non un ritocco alla home.
+
+**Correzione a un errore di questa specifica.** Una versione precedente sosteneva che il pulsante lime contrastasse meglio su crema che su nero. È l'opposto, e i numeri sono netti:
+
+| Contorno del pulsante lime contro | Rapporto | WCAG 1.4.11 richiede 3:1 |
+|---|---|---|
+| Nero `#111110` | 13.35 | conforme |
+| Crema `#F5F3EE` | 1.28 | non conforme |
+| Verde salvia `#DEE8C4` | 1.11 | non conforme |
+
+Il testo dentro il pulsante è sempre a posto (13.35:1), ma su sfondo chiaro la **forma** del pulsante è quasi invisibile: si legge la scritta senza capire che è un elemento cliccabile. Il problema è più grave sulle 38 pagine interne, dove `.btn-primary` vive dentro `.cta-section`, che ha sfondo salvia.
+
+Rimedio adottato: un bordo `1.5px solid var(--text)` su tutti i pulsanti lime, che porta il contorno a 14.80:1 su salvia e 17.04:1 su crema. Nessun pulsante lime si trova su fondo nero, quindi il bordo scuro non crea il problema inverso.
 
 ## Immagine hero
 
