@@ -16,9 +16,15 @@
       ]
     },
     {
-      "source": "/(.*)\\.(png|jpg|jpeg|gif|svg|webp|ico|woff|woff2|ttf|css|js)",
+      "source": "/(.*)\\.(png|jpg|jpeg|gif|svg|webp|ico|woff|woff2|ttf)",
       "headers": [
         { "key": "Cache-Control", "value": "public, max-age=31536000, immutable" }
+      ]
+    },
+    {
+      "source": "/(.*)\\.(css|js)",
+      "headers": [
+        { "key": "Cache-Control", "value": "public, max-age=0, must-revalidate" }
       ]
     },
     {
@@ -62,7 +68,7 @@
     { "source": "/1495-2", "destination": "/", "permanent": true },
     { "source": "/shop", "destination": "/", "permanent": true },
     { "source": "/ai-act-timeline-2026-2027-pmi-italiane", "destination": "/#metodo", "permanent": true },
-    { "source": "/ai-allo-stato-brado-policy-aziendale", "destination": "/#paradosso", "permanent": true },
+    { "source": "/ai-allo-stato-brado-policy-aziendale", "destination": "/blog/policy-ai-aziendale-come-scriverla", "permanent": true },
     { "source": "/digital-product-passport-siamo-gia-tardi", "destination": "/#casi", "permanent": true },
     { "source": "/servizi", "destination": "/#metodo", "permanent": true },
     { "source": "/web", "destination": "/#metodo", "permanent": true },
