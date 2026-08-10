@@ -73,6 +73,8 @@
     { "source": "/servizi", "destination": "/#metodo", "permanent": true },
     { "source": "/web", "destination": "/#metodo", "permanent": true },
     { "source": "/portfolio", "destination": "/#casi", "permanent": true },
-    { "source": "/metodo-echo-2", "destination": "/#metodo", "permanent": true }
+    { "source": "/metodo-echo-2", "destination": "/#metodo", "permanent": true },
+    { "source": "/casi-studio/maglificio-pmi-emilia", "destination": "/casi-studio/maglificio-conto-terzi-pratese", "permanent": true },
+    { "source": "/casi-studio/maison-knit-luxury", "destination": "/casi-studio/maglificio-conto-terzi-pratese", "permanent": true }
   ]
 }
