@@ -5,7 +5,7 @@ slug: test-cinque-anni-durabilita-sostenibilita
 date: 2025-04-24
 description: Un maglione in pura lana made in Italy contro uno fast fashion, 5 anni dopo. La sostenibilità non è un'etichetta: è una scelta che dura.
 keywords: durabilità capi moda, fast fashion vs qualità, sostenibilità moda concreta, made in italy qualità
-related: /settori/moda|AI per la moda, /blog/filati-rigenerati-economia-circolare-materia-prima|Filati rigenerati, /blog/futuro-tessile-sostenibilita-nuove-leggi|Il futuro del tessile sostenibile, /casi-studio/maison-knit-luxury|Caso studio: maison luxury
+related: /settori/moda|AI per la moda, /blog/filati-rigenerati-economia-circolare-materia-prima|Filati rigenerati, /blog/futuro-tessile-sostenibilita-nuove-leggi|Il futuro del tessile sostenibile
 ---
 
 Cinque anni fa ho messo da parte un maglione. Un capo semplice, senza tempo, in pura lana. Made in Italy, prodotto in un piccolo laboratorio di maglieria di cui mi fidavo. Nessun brand famoso. Nessuna campagna marketing. Solo artigianalità.
@@ -38,4 +38,4 @@ Ma "dimostrare" richiede dati: composizione, origine dei materiali, processo pro
 
 La qualità che dura va raccontata con i fatti, non con i cartellini. E i fatti, oggi, si chiamano dati di filiera strutturati.
 
-> **Raccontare la durabilità richiede dati, non slogan.** È il terreno del [Digital Product Passport](/digital-product-passport) e delle [normative sul futuro tessile](/blog/futuro-tessile-sostenibilita-nuove-leggi). Abbiamo raccontato come una [maison di alta maglieria](/casi-studio/maison-knit-luxury) ha costruito questo vantaggio.
+> **Raccontare la durabilità richiede dati, non slogan.** È il terreno del [Digital Product Passport](/digital-product-passport) e delle [normative sul futuro tessile](/blog/futuro-tessile-sostenibilita-nuove-leggi).
