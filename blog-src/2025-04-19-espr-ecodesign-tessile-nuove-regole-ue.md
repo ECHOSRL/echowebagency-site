@@ -49,4 +49,4 @@ La risposta non è "compra un software DPP". È:
 - **Struttura la raccolta** con i fornitori principali, in modo incrementale
 - **Costruisci il passaporto digitale** sopra i sistemi esistenti, non come progetto isolato
 
-> **La tua azienda è pronta al cambiamento?** Il [Digital Product Passport](/digital-product-passport) è la prima risposta operativa: non per moda, ma perché tra meno di 18 mesi sarà un requisito. Abbiamo raccontato un percorso concreto nel [case study del maglificio PMI](/casi-studio/maglificio-pmi-emilia) che ha iniziato con 18 mesi di anticipo.
+> **La tua azienda è pronta al cambiamento?** Il [Digital Product Passport](/digital-product-passport) è la prima risposta operativa: non per moda, ma perché tra meno di 18 mesi sarà un requisito.

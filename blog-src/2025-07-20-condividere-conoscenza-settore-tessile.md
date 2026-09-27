@@ -46,4 +46,4 @@ Voglio immaginare un settore tessile dove ci si ascolta, ci si aiuta e si cresce
 
 Perché la rete si costruisce così: non con i numeri, ma con la fiducia.
 
-> **Il know-how della tua azienda è documentato o vive in poche teste?** La [formazione AI](/formazione-ai) e i percorsi per la [manifattura](/settori/manifattura) partono spesso proprio da qui: far emergere e strutturare il sapere prima che vada perso. Abbiamo raccontato un caso concreto nel [case study del maglificio](/casi-studio/maglificio-pmi-emilia).
+> **Il know-how della tua azienda è documentato o vive in poche teste?** La [formazione AI](/formazione-ai) e i percorsi per la [manifattura](/settori/manifattura) partono spesso proprio da qui: far emergere e strutturare il sapere prima che vada perso. Abbiamo raccontato un caso concreto nel [case study del maglificio](/casi-studio/maglificio-conto-terzi-pratese).
