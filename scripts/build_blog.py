@@ -16,6 +16,7 @@ import html
 import json
 import xml.etree.ElementTree as ET
 from datetime import datetime, timezone
+from email.utils import format_datetime
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
@@ -23,7 +24,7 @@ SRC = ROOT / "blog-src"
 OUT = ROOT / "blog"
 SITEMAP = ROOT / "sitemap.xml"
 SITE = "https://www.echo.srl"
-CALENDLY = "https://calendly.com/echowebagency-info/formazione"
+CALENDLY = "https://calendar.app.google/UVXPPWQVyTQ6PSTS9"
 
 
 # ---------- markdown ----------
@@ -62,7 +63,21 @@ def md_to_html(md: str) -> str:
                 out.append("</blockquote>")
                 in_blockquote = False
             continue
-        if line.startswith("## "):
+        image_match = re.fullmatch(r'!\[([^]]*)\]\((/images/[^)]+)\)', line)
+        if image_match:
+            flush_para()
+            if in_ul:
+                out.append("</ul>")
+                in_ul = False
+            if in_blockquote:
+                out.append("</blockquote>")
+                in_blockquote = False
+            alt, src = image_match.groups()
+            out.append(f'<figure class="article-figure"><img src="{html.escape(src, quote=True)}" alt="{html.escape(alt, quote=True)}" width="1672" height="941" loading="lazy" decoding="async"></figure>')
+        elif line == "---":
+            flush_para()
+            out.append("<hr>")
+        elif line.startswith("## "):
             flush_para()
             if in_ul:
                 out.append("</ul>")
@@ -137,7 +152,7 @@ NAV = '''<nav>
     <span style="display:none;font-family:var(--font-serif);font-size:1.25rem;font-weight:600;">Echo</span>
   </a>
   <ul class="nav-links">
-    <li><a href="/#origine">Chi siamo</a></li>
+    <li><a href="/chi-siamo">Chi siamo</a></li>
     <li><a href="/#metodo">Metodo</a></li>
     <li><a href="/blog/">Blog</a></li>
     <li><a href="/#contatti">Contatti</a></li>
@@ -269,8 +284,8 @@ def render_article(fm: dict) -> str:
 </section>
 
 <section class="cta-section">
-  <h2>Vuoi capire come l'AI<br><em>può lavorare nei tuoi processi?</em></h2>
-  <p>Prenota una call gratuita di 30 minuti. Ti aiuto a capire da dove partire, senza vendere niente.</p>
+  <h2>Quale passaggio del tuo lavoro<br><em>vuoi far crescere?</em></h2>
+  <p>Raccontaci una competenza da rafforzare, un processo da ripensare o un valore da comunicare. Capiamo insieme da dove partire.</p>
   <a href="{CALENDLY}" target="_blank" rel="noopener" class="btn-primary">Prenota la call gratuita</a>
 </section>
 
@@ -286,8 +301,8 @@ def render_article(fm: dict) -> str:
 def render_index(articles: list) -> str:
     url = f"{SITE}/blog/"
     body = head(
-        title="Blog Echo — AI, governance, processi per PMI italiane",
-        description="Articoli operativi su AI Act, Digital Product Passport, AI nei processi aziendali e formazione. Scritto da Silvia Rinaldi, founder Echo S.r.l.",
+        title="Blog Echo — Formazione, visione e comunicazione",
+        description="Progetti e riflessioni su formazione, visione e comunicazione. Persone, prodotto e digitale nel lavoro di Echo e Silvia Rinaldi.",
         url=url,
     )
     body += NAV
@@ -296,7 +311,7 @@ def render_index(articles: list) -> str:
   <nav class="breadcrumb" aria-label="Breadcrumb"><a href="/">Home</a> &rsaquo; Blog</nav>
   <p class="eyebrow">Note di lavoro</p>
   <h1>Blog<br><em>Echo</em></h1>
-  <p class="intro">Riflessioni operative su AI, processi e governance. Per chi guida un'azienda manifatturiera, moda o beauty in Italia e vuole capire dove l'intelligenza artificiale fa davvero la differenza.</p>
+  <p class="intro">Persone, prodotto e digitale. Racconti dai progetti e riflessioni su formazione, visione e comunicazione, per chi vuole far crescere il valore del proprio lavoro.</p>
 </section>
 
 <section class="article-list">
@@ -319,7 +334,7 @@ def render_rss(articles: list) -> str:
     items = []
     for a in sorted(articles, key=lambda x: x["date"], reverse=True)[:30]:
         url = f"{SITE}/blog/{a['slug']}"
-        pub = a["date"] + "T09:00:00+00:00"
+        pub = format_datetime(datetime.fromisoformat(a["date"] + "T09:00:00+00:00"))
         items.append(f'''  <item>
     <title>{html.escape(a.get('headline', a['title']))}</title>
     <link>{url}</link>
@@ -332,7 +347,7 @@ def render_rss(articles: list) -> str:
 <channel>
   <title>Blog Echo S.r.l.</title>
   <link>{SITE}/blog/</link>
-  <description>AI, governance, processi per PMI italiane. Scritto da Silvia Rinaldi.</description>
+  <description>Formazione, visione e comunicazione. Progetti e riflessioni di Silvia Rinaldi ed Echo.</description>
   <language>it-IT</language>
 {chr(10).join(items)}
 </channel>

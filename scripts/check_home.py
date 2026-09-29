@@ -163,10 +163,9 @@ def main():
     elif len(m.group(1)) > 155:
         errori.append(f"meta description di {len(m.group(1))} caratteri, massimo 155")
 
-    # 11. Titolo invariato.
-    if "<title>Echo S.r.l. &mdash; Consulenza AI per le PMI | Reggio Emilia</title>" not in sorgente \
-            and "<title>Echo S.r.l. — Consulenza AI per le PMI | Reggio Emilia</title>" not in sorgente:
-        errori.append("il <title> e' cambiato: deve restare invariato")
+    # 11. Titolo coerente con i tre pilastri del posizionamento corrente.
+    if "<title>Echo S.r.l. — Formazione, visione e comunicazione</title>" not in sorgente:
+        errori.append("titolo non allineato ai tre pilastri Echo")
 
     # 12. Immagini hero presenti e entro budget.
     for nome, budget_kb in IMMAGINI_HERO:
@@ -200,7 +199,7 @@ def main():
     for href in set(re.findall(r'href="(/[^"#?][^"]*)"', sorgente)):
         if href.startswith("/_") or href.startswith("//"):
             continue
-        rel = href.lstrip("/")
+        rel = href.split("#", 1)[0].split("?", 1)[0].lstrip("/")
         candidati = [ROOT / rel, ROOT / (rel + ".html"), ROOT / rel / "index.html"]
         if not any(c.exists() for c in candidati):
             errori.append(f"link interno a una pagina inesistente: {href}")

@@ -174,3 +174,10 @@ ul.check-list li::before { content: '\2713'; position: absolute; left: 0; color:
   footer > * { max-width: 100%; }
   .footer-links { flex-wrap: wrap; gap: 0.75rem 1.5rem; }
 }
+
+/* Immagini dell’articolo: proporzioni originali e caricamento progressivo. */
+.article-figure { margin:2rem 0 1rem; }
+.article-figure img { display:block; width:100%; height:auto; }
+.article-body hr { border:0; border-top:1px solid var(--border); margin:2rem 0; }
+.article-body { padding-top:2.5rem; padding-bottom:3rem; }
+.footer-links { flex-wrap:wrap; }

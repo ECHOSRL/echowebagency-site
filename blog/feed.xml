@@ -3,181 +3,188 @@
 <channel>
   <title>Blog Echo S.r.l.</title>
   <link>https://www.echo.srl/blog/</link>
-  <description>AI, governance, processi per PMI italiane. Scritto da Silvia Rinaldi.</description>
+  <description>Formazione, visione e comunicazione. Progetti e riflessioni di Silvia Rinaldi ed Echo.</description>
   <language>it-IT</language>
   <item>
     <title>Tracciabilit&amp;agrave; e dati prodotto: il ruolo dell&amp;rsquo;AI</title>
     <link>https://www.echo.srl/blog/tracciabilita-prodotto-ai-dpp</link>
     <guid isPermaLink="true">https://www.echo.srl/blog/tracciabilita-prodotto-ai-dpp</guid>
-    <pubDate>2026-12-15T09:00:00+00:00</pubDate>
+    <pubDate>Tue, 15 Dec 2026 09:00:00 +0000</pubDate>
     <description>Come l&#x27;AI aiuta a raccogliere, strutturare e gestire i dati di tracciabilit&amp;agrave; prodotto per il DPP. Per aziende moda e manifattura.</description>
   </item>
   <item>
     <title>AI e ufficio stile: come cambia il campionario</title>
     <link>https://www.echo.srl/blog/ai-ufficio-stile-moda-campionario</link>
     <guid isPermaLink="true">https://www.echo.srl/blog/ai-ufficio-stile-moda-campionario</guid>
-    <pubDate>2026-12-01T09:00:00+00:00</pubDate>
+    <pubDate>Tue, 01 Dec 2026 09:00:00 +0000</pubDate>
     <description>Come l&#x27;AI trasforma l&#x27;ufficio stile e il processo di campionario nella moda. Trend analysis, mood board, briefing: casi concreti.</description>
   </item>
   <item>
     <title>Rischi dell&amp;rsquo;AI non governata in azienda</title>
     <link>https://www.echo.srl/blog/rischi-intelligenza-artificiale-azienda</link>
     <guid isPermaLink="true">https://www.echo.srl/blog/rischi-intelligenza-artificiale-azienda</guid>
-    <pubDate>2026-11-15T09:00:00+00:00</pubDate>
+    <pubDate>Sun, 15 Nov 2026 09:00:00 +0000</pubDate>
     <description>I rischi operativi dell&#x27;AI non governata nelle PMI. Dati, reputazione, conformit&amp;agrave;: cosa pu&amp;ograve; andare storto e come prevenirlo.</description>
   </item>
   <item>
     <title>Misurare il ROI dell&#x27;AI in azienda</title>
     <link>https://www.echo.srl/blog/roi-intelligenza-artificiale-azienda</link>
     <guid isPermaLink="true">https://www.echo.srl/blog/roi-intelligenza-artificiale-azienda</guid>
-    <pubDate>2026-11-01T09:00:00+00:00</pubDate>
+    <pubDate>Sun, 01 Nov 2026 09:00:00 +0000</pubDate>
     <description>Come misurare il ritorno dell&#x27;investimento in AI. KPI concreti, metriche per reparto, errori di misurazione da evitare nelle PMI.</description>
   </item>
   <item>
     <title>Adozione spontanea dell&#x27;AI: perch&amp;eacute; &amp;egrave; un rischio</title>
     <link>https://www.echo.srl/blog/adozione-ai-non-governata-rischi</link>
     <guid isPermaLink="true">https://www.echo.srl/blog/adozione-ai-non-governata-rischi</guid>
-    <pubDate>2026-10-15T09:00:00+00:00</pubDate>
+    <pubDate>Thu, 15 Oct 2026 09:00:00 +0000</pubDate>
     <description>Quando i dipendenti usano l&#x27;AI senza guida, l&#x27;azienda rischia. Shadow AI, dati sensibili, output incontrollati. Come governare.</description>
   </item>
   <item>
     <title>DPP e manifattura: come prepararsi</title>
     <link>https://www.echo.srl/blog/digital-product-passport-manifattura</link>
     <guid isPermaLink="true">https://www.echo.srl/blog/digital-product-passport-manifattura</guid>
-    <pubDate>2026-10-01T09:00:00+00:00</pubDate>
+    <pubDate>Thu, 01 Oct 2026 09:00:00 +0000</pubDate>
     <description>Come le PMI manifatturiere possono prepararsi al Digital Product Passport. Dati, sistemi, processi: guida operativa passo passo.</description>
+  </item>
+  <item>
+    <title>Il valore c’è. Il lavoro è farlo crescere.</title>
+    <link>https://www.echo.srl/blog/il-valore-ce-il-lavoro-e-farlo-crescere</link>
+    <guid isPermaLink="true">https://www.echo.srl/blog/il-valore-ce-il-lavoro-e-farlo-crescere</guid>
+    <pubDate>Tue, 29 Sep 2026 09:00:00 +0000</pubDate>
+    <description>Formazione, visione e comunicazione: venti interventi raccontano come Echo accompagna il cambiamento, dalle competenze ai progetti.</description>
   </item>
   <item>
     <title>AI per il customer care nelle PMI</title>
     <link>https://www.echo.srl/blog/ai-customer-care-pmi</link>
     <guid isPermaLink="true">https://www.echo.srl/blog/ai-customer-care-pmi</guid>
-    <pubDate>2026-09-15T09:00:00+00:00</pubDate>
+    <pubDate>Tue, 15 Sep 2026 09:00:00 +0000</pubDate>
     <description>Come usare l&#x27;AI nel customer care di una PMI. Automazione intelligente, risposte personalizzate, integrazione con i sistemi esistenti.</description>
   </item>
   <item>
     <title>Policy AI interna: come scriverla</title>
     <link>https://www.echo.srl/blog/policy-ai-aziendale-come-scriverla</link>
     <guid isPermaLink="true">https://www.echo.srl/blog/policy-ai-aziendale-come-scriverla</guid>
-    <pubDate>2026-09-01T09:00:00+00:00</pubDate>
+    <pubDate>Tue, 01 Sep 2026 09:00:00 +0000</pubDate>
     <description>Come scrivere una policy AI interna per la tua azienda. Struttura, contenuti, errori da evitare. Guida pratica per PMI.</description>
   </item>
   <item>
     <title>Formare il team all&#x27;AI senza bloccare il lavoro</title>
     <link>https://www.echo.srl/blog/formazione-ai-team-aziendale</link>
     <guid isPermaLink="true">https://www.echo.srl/blog/formazione-ai-team-aziendale</guid>
-    <pubDate>2026-08-15T09:00:00+00:00</pubDate>
+    <pubDate>Sat, 15 Aug 2026 09:00:00 +0000</pubDate>
     <description>Come strutturare la formazione AI in azienda senza fermare la produzione. Formati pratici, tempi reali, adozione misurabile.</description>
   </item>
   <item>
     <title>AI nel reparto produzione: casi reali</title>
     <link>https://www.echo.srl/blog/ai-produzione-pmi-casi-reali</link>
     <guid isPermaLink="true">https://www.echo.srl/blog/ai-produzione-pmi-casi-reali</guid>
-    <pubDate>2026-08-01T09:00:00+00:00</pubDate>
+    <pubDate>Sat, 01 Aug 2026 09:00:00 +0000</pubDate>
     <description>Come le PMI manifatturiere usano l&#x27;AI in produzione. Casi reali di controllo qualit&amp;agrave;, pianificazione e manutenzione predittiva.</description>
   </item>
   <item>
     <title>Digital Product Passport nella moda: guida operativa</title>
     <link>https://www.echo.srl/blog/digital-product-passport-moda-guida</link>
     <guid isPermaLink="true">https://www.echo.srl/blog/digital-product-passport-moda-guida</guid>
-    <pubDate>2026-07-15T09:00:00+00:00</pubDate>
+    <pubDate>Wed, 15 Jul 2026 09:00:00 +0000</pubDate>
     <description>Guida operativa al Digital Product Passport per moda e calzature. Quali dati servono, come raccoglierli, come prepararsi all&#x27;ESPR.</description>
   </item>
   <item>
     <title>AI Act per le PMI: cosa cambia davvero</title>
     <link>https://www.echo.srl/blog/ai-act-pmi-cosa-cambia</link>
     <guid isPermaLink="true">https://www.echo.srl/blog/ai-act-pmi-cosa-cambia</guid>
-    <pubDate>2026-07-01T09:00:00+00:00</pubDate>
+    <pubDate>Wed, 01 Jul 2026 09:00:00 +0000</pubDate>
     <description>Cosa prevede l&#x27;AI Act per le PMI italiane e quali obblighi operativi riguardano le aziende con 5-50 dipendenti. Guida pratica, non legale.</description>
   </item>
   <item>
     <title>Cosa il Made in Italy può imparare dalla Francia sul tessile sostenibile</title>
     <link>https://www.echo.srl/blog/cosa-imparare-dalla-francia-tessile-sostenibilita</link>
     <guid isPermaLink="true">https://www.echo.srl/blog/cosa-imparare-dalla-francia-tessile-sostenibilita</guid>
-    <pubDate>2026-06-15T09:00:00+00:00</pubDate>
+    <pubDate>Mon, 15 Jun 2026 09:00:00 +0000</pubDate>
     <description>Tracciabilità obbligatoria, stop all&#x27;invenduto distrutto, etichette d&#x27;impatto: cosa la Francia ha già deciso sul tessile e perché serve in Italia.</description>
   </item>
   <item>
     <title>Prima vengono i processi. Poi arriva l&#x27;AI.</title>
     <link>https://www.echo.srl/blog/prima-vengono-i-processi-poi-arriva-lai</link>
     <guid isPermaLink="true">https://www.echo.srl/blog/prima-vengono-i-processi-poi-arriva-lai</guid>
-    <pubDate>2026-06-06T09:00:00+00:00</pubDate>
+    <pubDate>Sat, 06 Jun 2026 09:00:00 +0000</pubDate>
     <description>La tecnologia accelera tutto, anche la direzione sbagliata. Capire un processo prima di automatizzarlo è il vero punto di partenza dell&#x27;AI in azienda.</description>
   </item>
   <item>
     <title>Missoni, FSI, Katjes. Cosa succede quando un brand italiano perde la famiglia</title>
     <link>https://www.echo.srl/blog/missoni-cosa-significa-quando-un-brand-italiano-perde-la-famiglia</link>
     <guid isPermaLink="true">https://www.echo.srl/blog/missoni-cosa-significa-quando-un-brand-italiano-perde-la-famiglia</guid>
-    <pubDate>2026-05-22T09:00:00+00:00</pubDate>
+    <pubDate>Fri, 22 May 2026 09:00:00 +0000</pubDate>
     <description>Missoni passa al 73% a FSI e al 27% a Katjes. Non è solo finanza: è la fotografia di cosa accade alla moda italiana e alla sua governance.</description>
   </item>
   <item>
     <title>Moda italiana: il problema non è la crisi, è il silenzio</title>
     <link>https://www.echo.srl/blog/moda-italiana-il-problema-non-e-la-crisi-e-il-silenzio</link>
     <guid isPermaLink="true">https://www.echo.srl/blog/moda-italiana-il-problema-non-e-la-crisi-e-il-silenzio</guid>
-    <pubDate>2026-05-19T09:00:00+00:00</pubDate>
+    <pubDate>Tue, 19 May 2026 09:00:00 +0000</pubDate>
     <description>La manifattura ha trainato il Paese, oggi sembra da nascondere. Tra normative UE, AI e margini sottili serve un ponte tra competenze e innovazione.</description>
   </item>
   <item>
     <title>Come cambia il mercato del lavoro nell&#x27;era dell&#x27;AI integrata</title>
     <link>https://www.echo.srl/blog/ai-generativa-come-cambia-mercato-lavoro</link>
     <guid isPermaLink="true">https://www.echo.srl/blog/ai-generativa-come-cambia-mercato-lavoro</guid>
-    <pubDate>2026-05-10T09:00:00+00:00</pubDate>
+    <pubDate>Sun, 10 May 2026 09:00:00 +0000</pubDate>
     <description>L&#x27;AI generativa non sostituisce gli operai: colpisce l&#x27;economia della conoscenza. Automazione cognitiva, capability gap e cosa fare adesso.</description>
   </item>
   <item>
     <title>Stai usando l&#x27;AI fuori legge — e probabilmente non lo sai</title>
     <link>https://www.echo.srl/blog/stai-usando-ai-fuori-legge-ai-act-pmi</link>
     <guid isPermaLink="true">https://www.echo.srl/blog/stai-usando-ai-fuori-legge-ai-act-pmi</guid>
-    <pubDate>2026-03-20T09:00:00+00:00</pubDate>
+    <pubDate>Fri, 20 Mar 2026 09:00:00 +0000</pubDate>
     <description>L&#x27;AI Act è già in vigore. ChatGPT in azienda, decisioni automatizzate, integrazioni AI: cosa significa per moda, beauty e manifattura.</description>
   </item>
   <item>
     <title>L&#x27;AI in azienda non entra con un tool. Entra con un metodo.</title>
     <link>https://www.echo.srl/blog/introdurre-ai-in-azienda-metodo-non-tool</link>
     <guid isPermaLink="true">https://www.echo.srl/blog/introdurre-ai-in-azienda-metodo-non-tool</guid>
-    <pubDate>2026-02-01T09:00:00+00:00</pubDate>
+    <pubDate>Sun, 01 Feb 2026 09:00:00 +0000</pubDate>
     <description>Introdurre l&#x27;AI &quot;a caso&quot; produce sempre lo stesso caos. Il metodo Echo in 4 step per integrare l&#x27;intelligenza artificiale con governance.</description>
   </item>
   <item>
     <title>La moda italiana è in apnea: i numeri di una crisi di sistema</title>
     <link>https://www.echo.srl/blog/moda-italiana-crisi-di-sistema-i-numeri</link>
     <guid isPermaLink="true">https://www.echo.srl/blog/moda-italiana-crisi-di-sistema-i-numeri</guid>
-    <pubDate>2025-10-31T09:00:00+00:00</pubDate>
+    <pubDate>Fri, 31 Oct 2025 09:00:00 +0000</pubDate>
     <description>Il mercato moda in Italia vale 12 miliardi, l&#x27;8% in meno del 2019. Chiudono 18 negozi al giorno: i dati di una crisi di sistema.</description>
   </item>
   <item>
     <title>Perché condividere la conoscenza fa crescere il settore tessile</title>
     <link>https://www.echo.srl/blog/condividere-conoscenza-settore-tessile</link>
     <guid isPermaLink="true">https://www.echo.srl/blog/condividere-conoscenza-settore-tessile</guid>
-    <pubDate>2025-07-20T09:00:00+00:00</pubDate>
+    <pubDate>Sun, 20 Jul 2025 09:00:00 +0000</pubDate>
     <description>Nel tessile il know-how resta chiuso in pochi. Perché condividere la conoscenza è un atto di forza che fa crescere tutta la filiera.</description>
   </item>
   <item>
     <title>Il test dei 5 anni: quando la durabilità racconta la verità sulla sostenibilità</title>
     <link>https://www.echo.srl/blog/test-cinque-anni-durabilita-sostenibilita</link>
     <guid isPermaLink="true">https://www.echo.srl/blog/test-cinque-anni-durabilita-sostenibilita</guid>
-    <pubDate>2025-04-24T09:00:00+00:00</pubDate>
+    <pubDate>Thu, 24 Apr 2025 09:00:00 +0000</pubDate>
     <description>Un maglione in pura lana made in Italy contro uno fast fashion, 5 anni dopo. La sostenibilità non è un&#x27;etichetta: è una scelta che dura.</description>
   </item>
   <item>
     <title>ESPR ed ecodesign tessile: le nuove regole UE che cambiano la moda</title>
     <link>https://www.echo.srl/blog/espr-ecodesign-tessile-nuove-regole-ue</link>
     <guid isPermaLink="true">https://www.echo.srl/blog/espr-ecodesign-tessile-nuove-regole-ue</guid>
-    <pubDate>2025-04-19T09:00:00+00:00</pubDate>
+    <pubDate>Sat, 19 Apr 2025 09:00:00 +0000</pubDate>
     <description>Il regolamento ESPR è in vigore: stop alla distruzione dell&#x27;invenduto e Digital Product Passport obbligatorio. Cosa cambia per il tessile italiano.</description>
   </item>
   <item>
     <title>Filati rigenerati: l&#x27;economia circolare parte dalla materia prima</title>
     <link>https://www.echo.srl/blog/filati-rigenerati-economia-circolare-materia-prima</link>
     <guid isPermaLink="true">https://www.echo.srl/blog/filati-rigenerati-economia-circolare-materia-prima</guid>
-    <pubDate>2025-04-16T09:00:00+00:00</pubDate>
+    <pubDate>Wed, 16 Apr 2025 09:00:00 +0000</pubDate>
     <description>Diverse filature italiane riciclano gli scarti tessili in filati rigenerati di alta qualità. Una filiera circolare per la maglieria sostenibile.</description>
   </item>
   <item>
     <title>Il futuro del settore tessile: sostenibilità e nuove leggi in arrivo</title>
     <link>https://www.echo.srl/blog/futuro-tessile-sostenibilita-nuove-leggi</link>
     <guid isPermaLink="true">https://www.echo.srl/blog/futuro-tessile-sostenibilita-nuove-leggi</guid>
-    <pubDate>2025-03-03T09:00:00+00:00</pubDate>
+    <pubDate>Mon, 03 Mar 2025 09:00:00 +0000</pubDate>
     <description>Green Deal, tracciabilità obbligatoria entro il 2030, economia circolare: le normative che cambiano il tessile e come le aziende possono prepararsi.</description>
   </item>
 </channel>

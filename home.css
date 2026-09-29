@@ -216,7 +216,7 @@ img { max-width: 100%; height: auto; }
 /* ===== PILASTRI ===== */
 .pilastri {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(3, 1fr);
   gap: 1.5rem;
   margin-top: 3.5rem;
 }
@@ -268,7 +268,7 @@ img { max-width: 100%; height: auto; }
 /* ===== COMPETENZE OPERATIVE ===== */
 .servizi-grid {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(3, 1fr);
   gap: 0;
   margin-top: 3.5rem;
   border-top: 1px solid var(--border);
@@ -382,3 +382,8 @@ a.servizio:focus-visible { background: var(--accent-soft); }
 @media (max-width: 600px) {
   .servizi-grid { grid-template-columns: 1fr; }
 }
+
+/* Articolo illustrato, nel linguaggio visivo della home. */
+.editorial-media img { display:block; width:100%; height:auto; }
+.editorial-media figcaption { margin-top:1rem; font-size:.875rem; line-height:1.6; color:var(--muted-sage); }
+@media (min-width:901px) and (max-width:1150px) { .nav-links { gap:1rem; } .site-nav { padding-inline:1.5rem; gap:1rem; } }
