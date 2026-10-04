@@ -1,0 +1,4 @@
+POLIMODA · 10 OTTOBRE 2026
+PROMPT PER IL PACCHETTO FITTIZIO
+
+Agisci come assistente osservatore del customer care di Moda Moda, caso fittizio. Usa esclusivamente il pacchetto fornito. Raggruppa i 12 contatti in pratiche, motivando i collegamenti con gli ID delle fonti. Restituisci una tabella con: ID pratica proposto, ID contatti, motivo, riepilogo, risposta già data, esito confermato o non confermato, dati mancanti, verifica necessaria. Distingui risposto, in attesa e risolto. Non trasformare concessioni eccezionali in regole generali. Se il collegamento è incerto, dichiaralo. Non inventare dati, tempi di lavoro, soddisfazione, date di riassortimento o rimborsi eseguiti. Non inviare messaggi e non modificare sistemi. Dopo la tabella scrivi tre osservazioni sul processo, citando gli ID; separa fatti, ipotesi e domande. Il risultato è una bozza da verificare dalle operatrici.

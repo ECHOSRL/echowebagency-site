@@ -1,0 +1,24 @@
+POLIMODA — MATERIALI FITTIZI PER LE DIMOSTRAZIONI
+Nessun dato è riferito a un prodotto, ordine o cliente reale.
+
+SCHEDA MM-026 · v2 · 25/09/2026
+Maglione girocollo. Composizione: 70% lana merino, 30% cotone.
+Taglie: XS–XL. Colori confermati: blu notte e sabbia.
+Variante verde: proposta, senza approvazione.
+Campione approvato; produzione non avviata.
+Prova di lavaggio: non presente. Misure da verificare con ufficio prodotto.
+Origine, certificazioni, stock e prezzo: non presenti.
+
+MESSAGGIO 1 · 28/09/2026 · referente commerciale fittizio
+Il cliente chiede se possiamo aggiungere verde. Attendo la conferma dell'ufficio prodotto. Nessun ordine confermato per questa variante.
+
+MESSAGGIO 2 · 29/09/2026 · referente prodotto fittizio
+Confermo blu notte e sabbia come nella scheda v2. Verde resta proposta. Prima della pubblicazione controlliamo composizione e misure. Non abbiamo ancora la prova di lavaggio.
+
+MESSAGGIO 3 · 30/09/2026 · referente pianificazione fittizio
+Il fornitore propone il 20 ottobre per la consegna del campione verde. Non è una data approvata e non riguarda la produzione. La precedente ipotesi era il 15 ottobre.
+
+CONSEGNA
+Prepara una tabella: informazione, stato, fonte e domanda da fare.
+Non inventare campi. Non inviare mail e non aggiornare sistemi.
+Controlla che proposta, conferma e lacuna restino separate.

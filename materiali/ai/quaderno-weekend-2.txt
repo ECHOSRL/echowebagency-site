@@ -1,0 +1,12 @@
+POLIMODA · COMPITO PER IL 16 OTTOBRE 2026, PRIMA DELLE 17:00
+
+Una pagina: introduzione AI nel tuo reparto.
+1. Problema e processo attuale.
+2. Fonti, persone, dati minimi e regole da verificare.
+3. Piano di osservazione e chi valida.
+4. Prompt provato su dati inventati.
+5. Risultato, errore o limite e correzione.
+6. Indicatore da rilevare e criterio di decisione.
+7. Possibile integrazione, ancora da verificare.
+
+Allega, se utile, la tabella verificata del laboratorio. Nessun dato aziendale riservato. Se non hai accesso alle app, descrivi la prova e i controlli.

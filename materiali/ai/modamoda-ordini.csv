@@ -1,0 +1,7 @@
+ordine;reparto;quantita;consegna_prevista;stato
+MM101;maglieria;100;2026-10-05;in_lavorazione
+MM102;confezione;80;2026-10-06;aperto
+MM103;logistica;50;2026-10-09;aperto
+MM104;maglieria;60;2026-10-04;completato
+MM105;confezione;40;;aperto
+MM106;logistica;30;2026-10-07;da_confermare

@@ -1,0 +1,177 @@
+MODA MODA • PACCHETTO DA CONSEGNARE VENERDÌ 9 OTTOBRE 2026
+Caso interamente fittizio • Compito preparatorio per sabato
+
+
+VENERDÌ • LE RISPOSTE DEL REPARTO, 1/2
+
+Contesto e problema
+
+D1. Chi usa il servizio?
+R. Due operatrici del customer care Moda Moda; il referente aziendale approva regole ed eccezioni.
+
+D2. Da dove arrivano le richieste?
+R. Email, form e telefono. Nel laboratorio le telefonate sono rappresentate da note inventate.
+
+D3. Quale difficoltà vogliamo affrontare?
+R. Ricostruire lo storico di una pratica distribuita su più contatti. A e F offrono esempi; la frequenza reale del problema non è misurata.
+
+D4. Qual è il primo risultato utile?
+R. Una vista per pratica con contatti, risposta già data, stato, informazioni mancanti e fonti.
+
+Materiali e regole
+
+D5. Quali dati consegniamo?
+R. P1 v1 e C01–C12: 12 contatti fittizi, con codici sintetici. Non rappresentano tre mesi di attività.
+
+D6. Qual è la procedura?
+R. P1 usa una finestra didattica di 30 giorni per il cambio taglia ordinario e richiede verifica dello stato del capo. I difetti seguono una verifica dedicata.
+
+D7. Come trattiamo le eccezioni?
+R. L’approvazione C06 vale solo per C. Non modifica P1.
+
+D8. Una risposta inviata è riutilizzabile?
+R. Solo dopo verifica e approvazione: può contenere un errore, un’informazione superata o un’eccezione.
+
+D1–D8 sintetizzano il caso e il pacchetto già presenti nel corso. P1 è una regola inventata, non una spiegazione dei diritti dei consumatori.
+
+VENERDÌ • LE RISPOSTE DEL REPARTO, 2/2
+
+Che cosa può fare l’assistente
+
+D9. L’AI risponde direttamente?
+R. Nella prima fase osserva, collega e riassume. Può proporre una bozza; l’operatrice la verifica e decide.
+
+D10. Può modificare ordini o rimborsi?
+R. No. Queste azioni sono fuori dal perimetro della prova e della fase osservativa.
+
+D11. Quali sistemi integriamo?
+R. Nessuno nel prototipo: dati fittizi in memoria, senza CRM, ERP o caselle email. I sistemi reali e le API restano da censire.
+
+D12. Quanto costa e quanto fa risparmiare?
+R. Budget, volumi e tempi reali non sono disponibili. Non promettiamo risparmi o un preventivo sulla base dei 12 contatti.
+
+Che cosa mostreremo al committente
+
+D13. Quali schermate immaginiamo?
+R. Proposta per l’aula: elenco pratiche, storico con fonti, stato distinto dalle azioni e spazio per la bozza da approvare.
+
+D14. Quando la prova è riuscita?
+R. Gli ID sono coperti, A e F sono collegati correttamente, C resta eccezione, H non risulta rimborsato e G ha esito risolto.
+
+D15. Quale licenza è disponibile?
+R. Ogni studente indica quella assegnata dalla propria azienda. Il caso non impone una marca né un nuovo acquisto.
+
+D16. Qual è il passo dopo la demo?
+R. Validare il flusso con le operatrici; poi definire dati, ruoli, integrazioni e una prova circoscritta.
+
+D11 e D13 sono scelte aggiunte per questa esercitazione. Le altre risposte mantengono il perimetro del caso; ciò che manca resta esplicitamente da verificare.
+
+IL COMPITO TRA VENERDÌ E SABATO
+
+Domanda guida
+
+«Quale strumento potrebbe essere adatto al caso Moda Moda, per quale funzione precisa e a quali condizioni? Parti dalla dotazione della tua azienda. Porta una prima ipotesi: sabato potrai correggerla.»
+
+Consegna di una pagina
+
+1. Bisogno prioritario e contatti che lo mostrano.
+2. Strumento aziendale e licenza nota/da verificare.
+3. Funzione proposta e risultato atteso.
+4. Tre elementi da mostrare nell’interfaccia.
+5. Due limiti o informazioni mancanti.
+6. Un test di correttezza e chi approva.
+
+Non è richiesto costruire l’app, comprare un piano o conoscere già tutti i prodotti. Si valuta il ragionamento; la scelta iniziale può cambiare.
+
+Esempio di risposta motivata
+
+«Vorrei una vista unica della pratica A perché C01–C03 sono distribuiti su tre canali. Propongo di usare lo strumento aziendale per estrarre lo storico e un’anteprima interattiva per mostrarlo. Verificherò licenza e disponibilità dell’anteprima. Il test è che A non venga segnata come cambio completato.»
+
+Criteri di valutazione
+
+2 punti: bisogno fondato sugli ID.
+2 punti: funzione coerente con l’output.
+2 punti: licenza e vincoli riconosciuti.
+2 punti: proposta visiva comprensibile.
+2 punti: test e revisione umana.
+
+Se non hai una dotazione aziendale, scegli un candidato come ipotesi e dichiara che l’accesso deve essere verificato. Nessuna penalità per la marca scelta.
+
+Da consegnare venerdì: queste risposte, P1, C01–C12 e traccia del compito. La soluzione degli 8 raggruppamenti resta al docente fino alla verifica.
+
+
+MATERIALI DEL CASO • PROCEDURA E CONTATTI
+
+
+POLIMODA · LABORATORIO 10 OTTOBRE 2026
+MODA MODA · CUSTOMER CARE · DATI INTERAMENTE INVENTATI
+
+Questo campione serve a provare classificazione e verifica. Non è una raccolta reale, non rappresenta tre mesi e non consente di stimare benefici aziendali.
+I codici cliente e ordine sono sintetici. Le note telefoniche sono scritte per l'esercizio, non trascrizioni di persone reali.
+
+PROCEDURA DIDATTICA P1 — versione 1, approvata per l'esercizio
+Per le richieste ordinarie di cambio taglia del caso simulato si verifica una finestra interna di 30 giorni dalla consegna e lo stato del capo. Una richiesta fuori finestra viene sottoposta al responsabile. Un'approvazione eccezionale vale soltanto per quella pratica. Per un difetto richiedere documentazione e verifica dedicata: non applicare automaticamente la procedura del cambio taglia.
+Queste sono regole inventate per l'esercizio, non condizioni di vendita né indicazioni sui diritti legali dei consumatori.
+
+C01 · 01/09/2026 09:00 · FORM · Cliente A · Ordine SIM-101
+Domanda: Ho ricevuto la maglia da 8 giorni, vorrei cambiare M con L. Capo non usato.
+Risposta: Verifichiamo disponibilità della L e istruzioni. Nessun cambio ancora approvato.
+
+C02 · 01/09/2026 14:00 · EMAIL · Cliente A · Ordine SIM-101
+Domanda: Scrivo dopo il form di stamani. Ci sono notizie sul cambio M con L?
+Risposta: Stiamo aspettando la verifica del magazzino.
+
+C03 · 02/09/2026 10:00 · NOTA TELEFONICA · Cliente A · Ordine SIM-101
+Richiesta: Chiede aggiornamento sulla pratica del form e dell'email.
+Informazione verificata: L disponibile, verificata con il magazzino.
+Azione: Istruzioni del cambio inviate. Il cliente conferma di averle ricevute.
+Esito: Istruzioni ricevute; cambio fisico non ancora completato.
+
+C04 · 02/09/2026 11:00 · EMAIL · Cliente B · Ordine SIM-102
+Domanda: Dove si trova il mio ordine?
+Risposta: Comunicato il riferimento di tracking sintetico TRACK-B. Non risultano altre informazioni nel campione.
+Esito consegna: non confermato.
+
+C05 · 03/09/2026 09:00 · FORM · Cliente C · Ordine SIM-103
+Domanda: Vorrei un cambio taglia, ricevuto da 45 giorni; capo non usato.
+Risposta: Richiesta fuori dalla finestra della procedura P1; sottoposta al responsabile.
+
+C06 · 03/09/2026 16:00 · EMAIL INTERNA SULLA PRATICA · Cliente C · Ordine SIM-103
+Decisione del responsabile: Autorizzo eccezionalmente questo cambio; non modificare la procedura generale.
+Risposta al cliente: Comunicate le istruzioni autorizzate.
+Esito cambio fisico: non confermato.
+
+C07 · 04/09/2026 10:00 · EMAIL · Cliente D · Ordine SIM-104
+Domanda: Il capo è arrivato con un difetto alla cucitura.
+Risposta: Richieste foto per la verifica del difetto.
+Esito: In attesa delle foto. Nessun rimborso approvato o eseguito nel campione.
+
+C08 · 04/09/2026 12:00 · FORM · Cliente E · Nessun ordine
+Domanda: Che differenza c'è tra le misure M e L di questo modello?
+Risposta: Tabella misure inviata; non c'è conferma del cliente nel campione.
+Dato mancante: il modello non è identificato nel testo fornito.
+
+C09 · 05/09/2026 09:00 · EMAIL · Cliente F · Nessun ordine
+Domanda: Quando torna disponibile la maglia blu taglia S?
+Risposta: Al momento esaurita. Non abbiamo una data di riassortimento confermata.
+
+C10 · 05/09/2026 15:00 · NOTA TELEFONICA · Cliente F · Nessun ordine
+Richiesta: Fa riferimento alla mail della mattina sulla maglia blu S.
+Risposta: Confermata assenza di una data di riassortimento. Il cliente chiede di essere aggiornato.
+Esito: Nessuna data promessa; iscrizione a un avviso non confermata.
+
+C11 · 06/09/2026 10:00 · EMAIL · Cliente G · Ordine SIM-107
+Domanda: Posso correggere l'indirizzo di consegna?
+Risposta: L'operatrice verifica l'ordine non ancora spedito e registra la correzione autorizzata nel caso simulato.
+Esito: Il cliente conferma che la correzione è corretta. Richiesta risolta.
+
+C12 · 06/09/2026 11:00 · FORM · Cliente H · Ordine SIM-108
+Domanda: Avete ricevuto il mio reso?
+Risposta: Merce ricevuta secondo il magazzino. Verifica amministrativa ancora in corso.
+Esito: Rimborso non confermato; non dedurre che sia stato eseguito.
+
+
+
+Fonte del caso: https://www.echo.srl/materiali/ai/osservatorio-moda-moda.html
+Fonte dei contatti: https://www.echo.srl/materiali/ai/moda-moda-customer-care-fittizio.txt
+Le schermate proposte e il perimetro tecnico della demo sono aggiunte didattiche esplicite, non requisiti di una società reale.

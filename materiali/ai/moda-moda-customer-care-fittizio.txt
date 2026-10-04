@@ -1,0 +1,72 @@
+POLIMODA · LABORATORIO 10 OTTOBRE 2026
+MODA MODA · CUSTOMER CARE · DATI INTERAMENTE INVENTATI
+
+Questo campione serve a provare classificazione e verifica. Non è una raccolta reale, non rappresenta tre mesi e non consente di stimare benefici aziendali.
+I codici cliente e ordine sono sintetici. Le note telefoniche sono scritte per l'esercizio, non trascrizioni di persone reali.
+
+PROCEDURA DIDATTICA P1 — versione 1, approvata per l'esercizio
+Per le richieste ordinarie di cambio taglia del caso simulato si verifica una finestra interna di 30 giorni dalla consegna e lo stato del capo. Una richiesta fuori finestra viene sottoposta al responsabile. Un'approvazione eccezionale vale soltanto per quella pratica. Per un difetto richiedere documentazione e verifica dedicata: non applicare automaticamente la procedura del cambio taglia.
+Queste sono regole inventate per l'esercizio, non condizioni di vendita né indicazioni sui diritti legali dei consumatori.
+
+C01 · 01/09/2026 09:00 · FORM · Cliente A · Ordine SIM-101
+Domanda: Ho ricevuto la maglia da 8 giorni, vorrei cambiare M con L. Capo non usato.
+Risposta: Verifichiamo disponibilità della L e istruzioni. Nessun cambio ancora approvato.
+
+C02 · 01/09/2026 14:00 · EMAIL · Cliente A · Ordine SIM-101
+Domanda: Scrivo dopo il form di stamani. Ci sono notizie sul cambio M con L?
+Risposta: Stiamo aspettando la verifica del magazzino.
+
+C03 · 02/09/2026 10:00 · NOTA TELEFONICA · Cliente A · Ordine SIM-101
+Richiesta: Chiede aggiornamento sulla pratica del form e dell'email.
+Informazione verificata: L disponibile, verificata con il magazzino.
+Azione: Istruzioni del cambio inviate. Il cliente conferma di averle ricevute.
+Esito: Istruzioni ricevute; cambio fisico non ancora completato.
+
+C04 · 02/09/2026 11:00 · EMAIL · Cliente B · Ordine SIM-102
+Domanda: Dove si trova il mio ordine?
+Risposta: Comunicato il riferimento di tracking sintetico TRACK-B. Non risultano altre informazioni nel campione.
+Esito consegna: non confermato.
+
+C05 · 03/09/2026 09:00 · FORM · Cliente C · Ordine SIM-103
+Domanda: Vorrei un cambio taglia, ricevuto da 45 giorni; capo non usato.
+Risposta: Richiesta fuori dalla finestra della procedura P1; sottoposta al responsabile.
+
+C06 · 03/09/2026 16:00 · EMAIL INTERNA SULLA PRATICA · Cliente C · Ordine SIM-103
+Decisione del responsabile: Autorizzo eccezionalmente questo cambio; non modificare la procedura generale.
+Risposta al cliente: Comunicate le istruzioni autorizzate.
+Esito cambio fisico: non confermato.
+
+C07 · 04/09/2026 10:00 · EMAIL · Cliente D · Ordine SIM-104
+Domanda: Il capo è arrivato con un difetto alla cucitura.
+Risposta: Richieste foto per la verifica del difetto.
+Esito: In attesa delle foto. Nessun rimborso approvato o eseguito nel campione.
+
+C08 · 04/09/2026 12:00 · FORM · Cliente E · Nessun ordine
+Domanda: Che differenza c'è tra le misure M e L di questo modello?
+Risposta: Tabella misure inviata; non c'è conferma del cliente nel campione.
+Dato mancante: il modello non è identificato nel testo fornito.
+
+C09 · 05/09/2026 09:00 · EMAIL · Cliente F · Nessun ordine
+Domanda: Quando torna disponibile la maglia blu taglia S?
+Risposta: Al momento esaurita. Non abbiamo una data di riassortimento confermata.
+
+C10 · 05/09/2026 15:00 · NOTA TELEFONICA · Cliente F · Nessun ordine
+Richiesta: Fa riferimento alla mail della mattina sulla maglia blu S.
+Risposta: Confermata assenza di una data di riassortimento. Il cliente chiede di essere aggiornato.
+Esito: Nessuna data promessa; iscrizione a un avviso non confermata.
+
+C11 · 06/09/2026 10:00 · EMAIL · Cliente G · Ordine SIM-107
+Domanda: Posso correggere l'indirizzo di consegna?
+Risposta: L'operatrice verifica l'ordine non ancora spedito e registra la correzione autorizzata nel caso simulato.
+Esito: Il cliente conferma che la correzione è corretta. Richiesta risolta.
+
+C12 · 06/09/2026 11:00 · FORM · Cliente H · Ordine SIM-108
+Domanda: Avete ricevuto il mio reso?
+Risposta: Merce ricevuta secondo il magazzino. Verifica amministrativa ancora in corso.
+Esito: Rimborso non confermato; non dedurre che sia stato eseguito.
+
+CONTROLLO DIDATTICO DEL CAMPIONE
+12 contatti, 8 pratiche di riferimento A–H.
+A: C01+C02+C03. B: C04. C: C05+C06. D: C07. E: C08. F: C09+C10. G: C11. H: C12.
+G ha un esito di risoluzione esplicito. Istruzioni inviate, tracking comunicato e merce ricevuta non provano da soli il completamento della pratica.
+Nessun dato disponibile su minuti effettivi di lavoro, soddisfazione o risparmio economico.
