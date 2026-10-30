@@ -398,16 +398,15 @@ def discover_html_only(built_slugs: set) -> list:
         text = p.read_text(encoding="utf-8")
         m_title = re.search(r"<title>(.*?)</title>", text, re.DOTALL)
         title = (m_title.group(1).strip() if m_title else slug).split("|")[0].strip()
-        title = title.replace("&#x27;", "'").replace("&amp;", "&")
+        title = html.unescape(title)
         m_desc = re.search(r'<meta name="description" content="(.*?)"', text, re.DOTALL)
-        desc = m_desc.group(1).strip().replace("&#x27;", "'") if m_desc else ""
+        desc = html.unescape(m_desc.group(1).strip()) if m_desc else ""
         m_date = re.search(r'"datePublished":\s*"(\d{4}-\d{2}-\d{2})"', text)
         if not m_date:
             m_date = re.search(r'<p class="eyebrow">(\d{4}-\d{2}-\d{2})</p>', text)
         date = m_date.group(1) if m_date else "2026-01-01"
         m_h1 = re.search(r"<h1[^>]*>(.*?)</h1>", text, re.DOTALL)
-        headline = (re.sub(r"<[^>]+>", "", m_h1.group(1)).strip()
-                    .replace("&#x27;", "'").replace("&amp;", "&")) if m_h1 else title
+        headline = html.unescape(re.sub(r"<[^>]+>", "", m_h1.group(1)).strip()) if m_h1 else title
         found.append({"slug": slug, "title": title, "description": desc,
                       "date": date, "headline": headline})
     return found
