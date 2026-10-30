@@ -156,7 +156,7 @@ NAV = '''<nav>
     <li><a href="/chi-siamo">Chi siamo</a></li>
     <li><a href="/#metodo">Metodo</a></li>
     <li><a href="/blog/">Blog</a></li>
-    <li class="nav-drop"><a href="https://recut.echo.srl" class="nav-drop-toggle" aria-haspopup="true">Progetti <span aria-hidden="true">▾</span></a><ul class="nav-drop-menu"><li><a href="https://recut.echo.srl">ReCut di Echo<small>Scarica gratuitamente</small></a></li></ul></li>
+    <li class="nav-drop"><a href="/scarica-recut" class="nav-drop-toggle" aria-haspopup="true">Progetti <span aria-hidden="true">▾</span></a><ul class="nav-drop-menu"><li><a href="/scarica-recut">ReCut di Echo<small>Scarica gratuitamente</small></a></li></ul></li>
   <li><a href="/#contatti">Contatti</a></li>
   </ul>
   <a href="''' + CALENDLY + '''" target="_blank" rel="noopener" class="nav-cta">Prenota una call</a>
