@@ -5,6 +5,12 @@
 -- separati perche' sono due scopi diversi (aggiornamenti ReCut, invito EFN).
 -- Chi chiede di uscire si segna in revocato_il, la riga resta.
 --
+-- Il modulo e' pubblico: chiunque potrebbe scrivere l'indirizzo di un altro.
+-- Per questo una riga NON e' ancora un consenso valido. Lo diventa solo con
+-- confermato_il compilato, dopo che la persona ha risposto alla mail di
+-- conferma. Prima di quella data a quell'indirizzo parte una mail sola: la
+-- richiesta di conferma. Niente aggiornamenti, niente inviti EFN.
+--
 -- Da lanciare una volta sul database di Universe, da un utente proprietario.
 
 BEGIN;
@@ -21,6 +27,7 @@ CREATE TABLE IF NOT EXISTS iscrizioni_recut (
   pagina                 TEXT NOT NULL DEFAULT '/scarica-recut',
   user_agent             TEXT NOT NULL DEFAULT '',
   creato_il              TIMESTAMPTZ NOT NULL DEFAULT now(),
+  confermato_il          TIMESTAMPTZ,
   revocato_il            TIMESTAMPTZ,
   CONSTRAINT almeno_un_consenso CHECK (consenso_aggiornamenti OR consenso_invito_efn)
 );
@@ -28,12 +35,14 @@ CREATE TABLE IF NOT EXISTS iscrizioni_recut (
 CREATE INDEX IF NOT EXISTS idx_iscrizioni_recut_email ON iscrizioni_recut (lower(email));
 
 -- Utente che usa il sito: puo' solo aggiungere righe, non leggerle ne' cambiarle.
--- La password la sceglie Silvia al posto di CAMBIAMI, e la stessa va nella
--- variabile RECUT_DATABASE_URL del progetto Vercel echowebagency-site.
+-- Nessuna password in questo file. Prima di lanciarlo, Silvia crea l'utente
+-- sito_recut dalla console di Neon (Roles > New role): la password la genera
+-- Neon, e l'indirizzo di connessione di quell'utente va nella variabile
+-- RECUT_DATABASE_URL del progetto Vercel echowebagency-site.
 DO $$
 BEGIN
   IF NOT EXISTS (SELECT 1 FROM pg_roles WHERE rolname = 'sito_recut') THEN
-    CREATE ROLE sito_recut LOGIN PASSWORD 'CAMBIAMI';
+    RAISE EXCEPTION 'Manca l''utente sito_recut: crealo prima dalla console di Neon.';
   END IF;
 END $$;
 

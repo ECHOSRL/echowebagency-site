@@ -89,7 +89,7 @@
 
       <button type="submit" class="btn-primary">Iscrivimi e apri ReCut</button>
       <p class="recut-esito" id="recut-esito" role="status" aria-live="polite"></p>
-      <p class="recut-nota">Puoi scegliere una sola delle due cose, o entrambe. Ogni mail avr&agrave; il modo per smettere di riceverle, e puoi chiederci in qualunque momento di cancellare i tuoi dati scrivendo a <a href="mailto:info@echowebagency.it">info@echowebagency.it</a>. Come li trattiamo &egrave; scritto nella <a href="/privacy#recut">privacy</a>.</p>
+      <p class="recut-nota">Puoi scegliere una sola delle due cose, o entrambe. Prima di tutto ti arriva una mail per confermare che l'indirizzo &egrave; tuo: senza conferma non ti scriviamo altro. Ogni mail avr&agrave; il modo per smettere di riceverle, e puoi chiederci in qualunque momento di cancellare i tuoi dati scrivendo a <a href="mailto:info@echowebagency.it">info@echowebagency.it</a>. Come li trattiamo &egrave; scritto nella <a href="/privacy#recut">privacy</a>.</p>
     </form>
 
   </div>
@@ -143,7 +143,7 @@
       body: JSON.stringify(dati)
     }).then(function (r) {
       esito.textContent = r.ok
-        ? 'Grazie, ci sentiamo presto. Ti portiamo a ReCut.'
+        ? 'Grazie. Ti arriver\u00e0 una mail per confermare l\'indirizzo. Intanto ti portiamo a ReCut.'
         : 'Non siamo riusciti a salvare l\'iscrizione: scrivici a info@echowebagency.it. Intanto ti portiamo a ReCut.';
     }).catch(function () {
       esito.textContent = 'Non siamo riusciti a salvare l\'iscrizione: scrivici a info@echowebagency.it. Intanto ti portiamo a ReCut.';
