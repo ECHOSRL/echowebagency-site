@@ -43,11 +43,12 @@
     <img src="/logo-on-cream.png" alt="Echo S.r.l." onerror="this.style.display='none';this.nextSibling.style.display='block'">
     <span style="display:none;font-family:var(--font-serif);font-size:1.25rem;font-weight:600;">Echo</span>
   </a>
-  <ul class="nav-links">
+  <input type="checkbox" id="nav-toggle" class="nav-toggle-input" aria-hidden="true" tabindex="-1"><label for="nav-toggle" class="nav-toggle" role="button" tabindex="0" aria-label="Apri il menu"><span></span><span></span><span></span></label>
+  <ul class="nav-links" onclick="if(event.target.closest('a'))document.getElementById('nav-toggle').checked=false">
     <li><a href="/#origine">Chi siamo</a></li>
     <li><a href="/#metodo">Metodo</a></li>
     <li><a href="/#casi">Casi Studio</a></li>
-    <li class="nav-drop"><a href="https://recut.echo.srl" class="nav-drop-toggle" aria-haspopup="true">Progetti <span aria-hidden="true">▾</span></a><ul class="nav-drop-menu"><li><a href="https://recut.echo.srl">ReCut<small>Un progetto Echo</small></a></li></ul></li>
+    <li class="nav-drop"><a href="https://recut.echo.srl" class="nav-drop-toggle" aria-haspopup="true">Progetti <span aria-hidden="true">▾</span></a><ul class="nav-drop-menu"><li><a href="https://recut.echo.srl">ReCut di Echo<small>Scarica gratuitamente</small></a></li></ul></li>
   <li><a href="/#contatti">Contatti</a></li>
   </ul>
   <a href="https://calendar.app.google/UVXPPWQVyTQ6PSTS9" target="_blank" rel="noopener" class="nav-cta">Prenota una call</a>
