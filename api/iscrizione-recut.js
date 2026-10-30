@@ -1,6 +1,8 @@
-// Riceve il modulo di /scarica-recut e scrive una riga in iscrizioni_recut
-// (database di Universe, Neon) con l'utente sito_recut, che puo' solo inserire.
-// Usa l'endpoint HTTP di Neon: nessuna dipendenza da installare.
+// Riceve il modulo di /scarica-recut, scrive una riga in iscrizioni_recut
+// (database di Universe, Neon) e manda la mail per confermare l'indirizzo.
+// Nessuna dipendenza da installare: Neon e Resend si chiamano via HTTP.
+
+const { query, inviaConferma } = require('./_recut');
 
 const VERSIONE_INFORMATIVA = 'privacy-2026-10-30';
 const EMAIL_VALIDA = /^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/;
@@ -33,33 +35,36 @@ module.exports = async (req, res) => {
     return res.status(400).json({ ok: false, errore: 'nome o email mancanti' });
   }
 
-  const connessione = process.env.RECUT_DATABASE_URL;
-  if (!connessione) {
-    console.error('iscrizione-recut: RECUT_DATABASE_URL non impostata');
+  if (!process.env.RECUT_DATABASE_URL || !process.env.RESEND_API_KEY || !process.env.RECUT_LINK_SECRET) {
+    console.error('iscrizione-recut: manca RECUT_DATABASE_URL, RESEND_API_KEY o RECUT_LINK_SECRET');
     return res.status(503).json({ ok: false });
   }
 
   try {
-    const host = new URL(connessione).hostname;
-    const risposta = await fetch(`https://${host}/sql`, {
-      method: 'POST',
-      headers: { 'Content-Type': 'application/json', 'Neon-Connection-String': connessione },
-      body: JSON.stringify({
-        query: `INSERT INTO iscrizioni_recut
-                  (nome, cognome, email, azienda, consenso_aggiornamenti, consenso_invito_efn,
-                   versione_informativa, user_agent)
-                VALUES ($1, $2, $3, $4, $5, $6, $7, $8)`,
-        params: [nome, cognome, email, azienda, aggiornamenti, invitoEfn,
-                 VERSIONE_INFORMATIVA, pulisci(req.headers['user-agent'], 300)],
-      }),
-    });
-    if (!risposta.ok) {
-      console.error('iscrizione-recut: database', risposta.status, await risposta.text());
-      return res.status(502).json({ ok: false });
+    // Una sola mail di conferma al giorno per indirizzo: il modulo e' pubblico
+    // e non deve diventare un modo per tempestare di mail qualcun altro.
+    const recenti = await query(
+      `SELECT 1 FROM iscrizioni_recut
+        WHERE lower(email) = $1 AND creato_il > now() - interval '1 day' LIMIT 1`,
+      [email],
+    );
+
+    const righe = await query(
+      `INSERT INTO iscrizioni_recut
+         (nome, cognome, email, azienda, consenso_aggiornamenti, consenso_invito_efn,
+          versione_informativa, user_agent)
+       VALUES ($1, $2, $3, $4, $5, $6, $7, $8)
+       RETURNING id`,
+      [nome, cognome, email, azienda, aggiornamenti, invitoEfn,
+       VERSIONE_INFORMATIVA, pulisci(req.headers['user-agent'], 300)],
+    );
+
+    if (recenti.length === 0) {
+      await inviaConferma({ id: righe[0].id, nome, email, aggiornamenti, invitoEfn });
     }
     return res.status(200).json({ ok: true });
   } catch (errore) {
-    console.error('iscrizione-recut:', errore);
+    console.error('iscrizione-recut:', errore.message);
     return res.status(502).json({ ok: false });
   }
 };
