@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Scarica ReCut gratis | Echo</title>
+<meta name="description" content="ReCut è l'app gratuita di Echo per dare una nuova forma ai vestiti che non indossi. Senza account, le tue foto restano tue.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/styles.css">
+<link rel="canonical" href="https://www.echo.srl/scarica-recut" />
+<link rel="icon" type="image/png" href="/logo-on-cream.png" />
+<meta property="og:title" content="Scarica ReCut gratis" />
+<meta property="og:description" content="Dai una nuova forma ai vestiti che non indossi. L'app gratuita di Echo." />
+<meta property="og:url" content="https://www.echo.srl/scarica-recut" />
+<style>
+  .recut-box { max-width: 640px; margin: 0 auto; padding: 0 1.5rem 4rem; }
+  .recut-subito { text-align: center; margin-bottom: 3rem; }
+  .recut-subito p { margin-top: 1rem; font-size: .95rem; color: var(--muted); }
+  .recut-form { background: #fff; border: 1px solid var(--border); border-radius: 14px; padding: 2rem; }
+  .recut-form h2 { font-size: 1.6rem; margin-bottom: .5rem; }
+  .recut-form > p { color: var(--muted); font-size: .95rem; margin-bottom: 1.5rem; }
+  .recut-campi { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; }
+  .recut-campi label { display: flex; flex-direction: column; gap: .35rem; font-size: .85rem; font-weight: 500; }
+  .recut-campi .largo { grid-column: 1 / -1; }
+  .recut-campi input { font: inherit; font-size: 1rem; padding: .7rem .8rem; border: 1px solid var(--border); border-radius: 8px; background: var(--bg); color: var(--text); }
+  .recut-campi input:focus { outline: 2px solid var(--accent); outline-offset: 1px; }
+  .recut-consensi { margin: 1.5rem 0; display: flex; flex-direction: column; gap: .9rem; }
+  .recut-consensi label { display: flex; gap: .7rem; align-items: flex-start; font-size: .92rem; line-height: 1.5; cursor: pointer; }
+  .recut-consensi input { margin-top: .25rem; width: 18px; height: 18px; flex: none; accent-color: var(--text); }
+  .recut-nota { font-size: .8rem; color: var(--muted); margin-top: 1rem; }
+  .recut-trappola { position: absolute; left: -9999px; }
+  .recut-esito { margin-top: 1rem; font-size: .92rem; min-height: 1.4em; }
+  .recut-form button { width: 100%; border: 0; cursor: pointer; font: inherit; }
+  @media (max-width: 600px) { .recut-campi { grid-template-columns: 1fr; } .recut-form { padding: 1.5rem; } }
+</style>
+<script defer src="/_vercel/insights/script.js"></script>
+</head>
+<body>
+
+<nav>
+  <a href="/" class="nav-logo">
+    <img src="/logo-on-cream.png" alt="Echo S.r.l." onerror="this.style.display='none';this.nextSibling.style.display='block'">
+    <span style="display:none;font-family:var(--font-serif);font-size:1.25rem;font-weight:600;">Echo</span>
+  </a>
+  <input type="checkbox" id="nav-toggle" class="nav-toggle-input" aria-hidden="true" tabindex="-1"><label for="nav-toggle" class="nav-toggle" role="button" tabindex="0" aria-label="Apri il menu"><span></span><span></span><span></span></label>
+  <ul class="nav-links" onclick="if(event.target.closest('a'))document.getElementById('nav-toggle').checked=false">
+    <li><a href="/chi-siamo">Chi siamo</a></li>
+    <li><a href="/#metodo">Metodo</a></li>
+    <li><a href="/blog/">Blog</a></li>
+    <li class="nav-drop"><a href="/scarica-recut" class="nav-drop-toggle" aria-haspopup="true">Progetti <span aria-hidden="true">▾</span></a><ul class="nav-drop-menu"><li><a href="/scarica-recut">ReCut di Echo<small>Scarica gratuitamente</small></a></li></ul></li>
+  <li><a href="/#contatti">Contatti</a></li>
+  </ul>
+  <a href="https://calendar.app.google/UVXPPWQVyTQ6PSTS9" target="_blank" rel="noopener" class="nav-cta">Prenota una call</a>
+</nav>
+
+<section class="page-hero">
+  <nav class="breadcrumb" aria-label="Breadcrumb"><a href="/">Home</a> &rsaquo; Scarica ReCut</nav>
+  <p class="eyebrow">Un progetto Echo &middot; Gratis &middot; Senza account</p>
+  <h1>ReCut<br><em>Non &egrave; vecchio. &Egrave; il tuo prossimo progetto.</em></h1>
+  <p class="intro">Dai una nuova forma ai vestiti che non indossi. Fotografi un capo, scegli un'idea in base al tempo e alla manualit&agrave; che hai, e ReCut ti accompagna un passo alla volta. Le tue foto restano sul tuo telefono.</p>
+</section>
+
+<section>
+  <div class="recut-box">
+
+    <div class="recut-subito">
+      <a href="https://recut.echo.srl" class="btn-primary" style="font-size:1.1rem;padding:1rem 2.4rem;">Apri ReCut e installalo</a>
+      <p>Per installarlo: aprilo dal telefono e scegli &ldquo;Aggiungi alla schermata Home&rdquo;. Non serve lasciare nessun dato.</p>
+    </div>
+
+    <form class="recut-form" id="recut-form" novalidate>
+      <h2>Vuoi sapere cosa arriva dopo?</h2>
+      <p>Se ti fa piacere, lasciaci nome e indirizzo: ti scriviamo solo per quello che scegli qui sotto. &Egrave; facoltativo, ReCut funziona lo stesso.</p>
+
+      <div class="recut-campi">
+        <label>Nome<input type="text" name="nome" autocomplete="given-name" maxlength="80" required></label>
+        <label>Cognome<input type="text" name="cognome" autocomplete="family-name" maxlength="80"></label>
+        <label class="largo">Email<input type="email" name="email" autocomplete="email" maxlength="200" required></label>
+        <label class="largo">Azienda o progetto (facoltativo)<input type="text" name="azienda" autocomplete="organization" maxlength="120"></label>
+      </div>
+      <label class="recut-trappola" aria-hidden="true">Sito<input type="text" name="sito" tabindex="-1" autocomplete="off"></label>
+
+      <div class="recut-consensi">
+        <label><input type="checkbox" name="consenso_aggiornamenti"> <span>S&igrave;, scrivetemi quando ReCut ha novit&agrave;: nuove idee, nuove funzioni, nuove versioni.</span></label>
+        <label><input type="checkbox" name="consenso_invito_efn"> <span>S&igrave;, invitatemi a <strong>Echo Fashion Network</strong>, la comunit&agrave; italiana di chi lavora in moda, beauty e manifattura.</span></label>
+      </div>
+
+      <button type="submit" class="btn-primary">Iscrivimi e apri ReCut</button>
+      <p class="recut-esito" id="recut-esito" role="status" aria-live="polite"></p>
+      <p class="recut-nota">Puoi scegliere una sola delle due cose, o entrambe. Prima di tutto ti arriva una mail per confermare che l'indirizzo &egrave; tuo: senza conferma non ti scriviamo altro. Ogni mail avr&agrave; il modo per smettere di riceverle, e puoi chiederci in qualunque momento di cancellare i tuoi dati scrivendo a <a href="mailto:info@echowebagency.it">info@echowebagency.it</a>. Come li trattiamo &egrave; scritto nella <a href="/privacy#recut">privacy</a>.</p>
+    </form>
+
+  </div>
+</section>
+
+<footer>
+  <a href="/" class="footer-logo">
+    <img src="/logo-on-cream.png" alt="Echo S.r.l." onerror="this.style.display='none';this.nextSibling.style.display='block'">
+    <span style="display:none;font-family:var(--font-serif);font-weight:600;">Echo</span>
+  </a>
+  <p class="footer-copy">Echo S.r.l. &mdash; P.IVA 03135740359 &mdash; Via Lelio e Fausto Socini 32/B, 42122 Reggio Emilia</p>
+  <div class="footer-links">
+    <a href="mailto:info@echowebagency.it">info@echowebagency.it</a>
+    <a href="/privacy">Privacy</a>
+    <a href="https://www.linkedin.com/company/echo-ai-agency" target="_blank" rel="noopener">LinkedIn</a>
+    <a href="https://www.instagram.com/echowebagency/" target="_blank" rel="noopener">Instagram</a>
+  </div>
+</footer>
+
+<script>
+(function () {
+  var form = document.getElementById('recut-form');
+  var esito = document.getElementById('recut-esito');
+  var APP = 'https://recut.echo.srl';
+  form.addEventListener('submit', function (e) {
+    e.preventDefault();
+    var d = new FormData(form);
+    var dati = {
+      nome: (d.get('nome') || '').trim(),
+      cognome: (d.get('cognome') || '').trim(),
+      email: (d.get('email') || '').trim(),
+      azienda: (d.get('azienda') || '').trim(),
+      sito: d.get('sito') || '',
+      consenso_aggiornamenti: form.consenso_aggiornamenti.checked,
+      consenso_invito_efn: form.consenso_invito_efn.checked
+    };
+    if (!dati.consenso_aggiornamenti && !dati.consenso_invito_efn) {
+      esito.textContent = 'Non hai scelto niente, quindi non salviamo nessun dato. Ti portiamo a ReCut.';
+      setTimeout(function () { location.href = APP; }, 1500);
+      return;
+    }
+    if (!dati.nome || !/^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/.test(dati.email)) {
+      esito.textContent = 'Per iscriverti servono almeno nome ed email.';
+      return;
+    }
+    form.querySelector('button').disabled = true;
+    esito.textContent = 'Un attimo…';
+    fetch('/api/iscrizione-recut', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify(dati)
+    }).then(function (r) {
+      esito.textContent = r.ok
+        ? 'Grazie. Ti arriver\u00e0 una mail per confermare l\'indirizzo. Intanto ti portiamo a ReCut.'
+        : 'Non siamo riusciti a salvare l\'iscrizione: scrivici a info@echowebagency.it. Intanto ti portiamo a ReCut.';
+    }).catch(function () {
+      esito.textContent = 'Non siamo riusciti a salvare l\'iscrizione: scrivici a info@echowebagency.it. Intanto ti portiamo a ReCut.';
+    }).then(function () {
+      setTimeout(function () { location.href = APP; }, 1800);
+    });
+  });
+})();
+</script>
+
+</body>
+</html>
