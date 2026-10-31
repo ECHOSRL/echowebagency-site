@@ -18,10 +18,10 @@
  * da sole dopo trenta giorni (funzione pulizia, una volta al giorno).
  *
  * Installazione, una volta sola:
- *   1. Impostazioni progetto > Proprieta' script: SEGRETO = una frase lunga a caso
- *      (la stessa va in RECUT_SCRIPT_SECRET su Vercel).
- *   2. Eseguire la funzione installa e autorizzare.
- *   3. Esegui il deployment > Nuovo deployment > App web,
+ *   1. Eseguire la funzione installa e autorizzare. Crea l'intestazione, la
+ *      pulizia giornaliera e, se manca, il SEGRETO (Impostazioni progetto >
+ *      Proprieta' script): il suo valore va in RECUT_SCRIPT_SECRET su Vercel.
+ *   2. Esegui il deployment > Nuovo deployment > App web,
  *      Esegui come: me, Chi ha accesso: chiunque.
  *      L'URL che finisce in /exec va in RECUT_SCRIPT_URL su Vercel.
  */
@@ -37,6 +37,10 @@ const GIORNO = 24 * 60 * 60 * 1000;
 const OGGETTO = 'Conferma il tuo indirizzo per ReCut';
 
 function installa() {
+  const proprieta = PropertiesService.getScriptProperties();
+  if (!proprieta.getProperty('SEGRETO')) {
+    proprieta.setProperty('SEGRETO', Utilities.getUuid() + Utilities.getUuid());
+  }
   const foglio = prendiFoglio();
   if (foglio.getLastRow() === 0) {
     foglio.appendRow(COLONNE);

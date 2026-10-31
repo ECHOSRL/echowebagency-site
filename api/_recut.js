@@ -10,7 +10,7 @@ const crypto = require('crypto');
 const SITO = 'https://www.echo.srl';
 
 function configurato() {
-  return Boolean(process.env.RECUT_SCRIPT_URL && process.env.RECUT_SCRIPT_SECRET && process.env.RECUT_LINK_SECRET);
+  return Boolean(process.env.RECUT_SCRIPT_URL && process.env.RECUT_SCRIPT_SECRET);
 }
 
 async function chiamaScript(azione, dati) {
@@ -27,8 +27,10 @@ async function chiamaScript(azione, dati) {
 }
 
 // Firma di un link: senza il segreto nessuno puo' fabbricare il link di un altro.
+// La chiave e' ricavata dal segreto dello script, cosi' basta una variabile sola.
 function firma(azione, id) {
-  return crypto.createHmac('sha256', process.env.RECUT_LINK_SECRET).update(`${azione}:${id}`).digest('base64url');
+  const chiave = crypto.createHmac('sha256', process.env.RECUT_SCRIPT_SECRET).update('firma-link-recut').digest();
+  return crypto.createHmac('sha256', chiave).update(`${azione}:${id}`).digest('base64url');
 }
 
 function firmaValida(azione, id, data) {

@@ -13,7 +13,7 @@ module.exports = async (req, res) => {
     return res.status(405).json({ ok: false });
   }
   if (!configurato()) {
-    console.error('conferma-recut: manca RECUT_SCRIPT_URL, RECUT_SCRIPT_SECRET o RECUT_LINK_SECRET');
+    console.error('conferma-recut: manca RECUT_SCRIPT_URL o RECUT_SCRIPT_SECRET');
     return res.status(503).json({ ok: false });
   }
 
