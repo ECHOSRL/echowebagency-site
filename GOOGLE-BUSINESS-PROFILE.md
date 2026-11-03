@@ -12,7 +12,7 @@
 | Campo | Valore |
 |---|---|
 | **Nome** | Echo S.r.l. |
-| **Indirizzo** | Via Lelio e Fausto Socini 32/B, 42122 Reggio Emilia (RE) |
+| **Indirizzo** | Via Lelio e Fausto Socini 32/B, 42121 Reggio Emilia (RE) |
 | **Telefono** | +39 351 702 7294 |
 | **Sito** | https://www.echo.srl |
 | **Area di servizio** | Tutta Italia (base: Reggio Emilia) |

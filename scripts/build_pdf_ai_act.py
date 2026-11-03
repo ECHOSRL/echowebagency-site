@@ -316,7 +316,7 @@ story.append(Paragraph(
     "<b>Silvia Rinaldi</b> — Founder, Echo S.r.l.<br/>"
     "Email: info@echowebagency.it<br/>"
     "Sito: echo.srl<br/>"
-    "Sede: Via Lelio e Fausto Socini 32/B, 42122 Reggio Emilia (RE)<br/>"
+    "Sede: Via Lelio e Fausto Socini 32/B, 42121 Reggio Emilia (RE)<br/>"
     "Tel: +39 351 7027294",
     BODY,
 ))
