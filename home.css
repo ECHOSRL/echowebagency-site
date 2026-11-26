@@ -412,3 +412,41 @@ a.servizio:focus-visible { background: var(--accent-soft); }
   .nav-drop-menu a { padding: .6rem 0; }
 }
 @media (max-width: 420px) { .nav-cta { padding: .55rem .9rem; } }
+
+/* ===== Riposizionamento PMI della moda (2026-11-26) ===== */
+.btn-ghost { background: transparent; color: var(--text); border-color: var(--text); }
+.btn-ghost:hover { background: var(--text); color: var(--bg); }
+.hero-actions, .cta-actions { display: flex; flex-wrap: wrap; gap: 1rem; margin-top: 2rem; }
+.cta-actions { justify-content: center; }
+.hero .hero-subtitle + .hero-subtitle { margin-top: 1rem; }
+.problemi-grid { list-style: none; display: grid; grid-template-columns: repeat(3, minmax(0,1fr)); gap: 2rem 2.5rem; margin-top: 3rem; }
+.problemi-grid li { border-top: 2px solid var(--text); padding-top: 1.25rem; }
+.problemi-grid h3 { font-family: var(--font-serif); font-size: 1.3rem; font-weight: 500; margin-bottom: .6rem; line-height: 1.25; }
+.problemi-grid p { font-size: .9375rem; line-height: 1.7; color: var(--muted-sage); }
+.servizio-num { display: block; font-size: .8rem; letter-spacing: .1em; color: var(--muted); margin-bottom: .75rem; }
+.servizi-grid-5 { grid-template-columns: repeat(3, minmax(0,1fr)); }
+.servizi-nota { margin-top: 2.5rem; max-width: 760px; }
+.casi-grid { display: grid; grid-template-columns: repeat(2, minmax(0,1fr)); gap: 22px; }
+.caso { border: 1px solid #66665F; padding: 28px; display: flex; flex-direction: column; gap: 12px; }
+.caso small { font-size: 14px; color: var(--accent); }
+.caso h3 { font: 400 28px/1.2 var(--font-serif); color: var(--bg); }
+.caso p { font-size: 15px; line-height: 1.65; color: rgba(245,243,238,.8); }
+.caso .caso-stato { margin-top: auto; font-size: 14px; color: var(--bg); border-top: 1px solid #44443F; padding-top: 12px; }
+.casi-link { margin-top: 2.5rem; }
+.section-dark .casi-link a { color: var(--bg); text-decoration: underline; }
+.competenze-list { list-style: none; border-top: 1px solid var(--text); }
+.competenze-list li { display: grid; grid-template-columns: 200px 1fr; gap: 1.5rem; padding: 1.25rem 0; border-bottom: 1px solid var(--border); }
+.competenze-list strong { font-family: var(--font-serif); font-weight: 500; font-size: 1.15rem; }
+.competenze-list span { font-size: .9375rem; line-height: 1.7; color: var(--muted); }
+.persone-btn { margin-top: 2rem; }
+.footer-slogan { margin-top: 1rem; font-family: var(--font-serif); font-style: italic; font-size: 1rem; }
+#percorsi-ai a { color: var(--text); }
+@media (max-width: 900px) {
+  .problemi-grid, .servizi-grid-5 { grid-template-columns: 1fr 1fr; }
+  .casi-grid { grid-template-columns: 1fr; }
+  .competenze-list li { grid-template-columns: 1fr; gap: .4rem; }
+}
+@media (max-width: 600px) {
+  .problemi-grid, .servizi-grid-5 { grid-template-columns: 1fr; }
+  .hero-actions .btn, .cta-actions .btn { width: 100%; text-align: center; }
+}

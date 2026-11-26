@@ -12,7 +12,7 @@
 
 <link rel="canonical" href="https://www.echo.srl/settori/manifattura" />
 <link rel="icon" type="image/png" href="/logo-on-cream.png" />
-<meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1" />
+<meta name="robots" content="noindex, follow" />
 
 <meta property="og:type" content="website" />
 <meta property="og:locale" content="it_IT" />
@@ -26,26 +26,33 @@
 {"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://www.echo.srl/"},{"@type":"ListItem","position":2,"name":"Settori","item":"https://www.echo.srl/settori/"},{"@type":"ListItem","position":3,"name":"Manifattura","item":"https://www.echo.srl/settori/manifattura"}]}
 </script>
 
-<script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"L'AI serve a una PMI manifatturiera?","acceptedAnswer":{"@type":"Answer","text":"Sì, e spesso più che alle grandi aziende: dove i margini sono sottili, ridurre fermi macchina, scarti e tempi morti fa una differenza immediata. Non serve un reparto IT, serve partire dal processo giusto."}},{"@type":"Question","name":"Quali sono i primi usi utili dell'AI in produzione?","acceptedAnswer":{"@type":"Answer","text":"Controllo qualità visivo, manutenzione predittiva, pianificazione della produzione e gestione della documentazione tecnica. Si parte da dove ci sono già dati e un problema concreto e misurabile."}},{"@type":"Question","name":"L'AI in produzione richiede grandi investimenti?","acceptedAnswer":{"@type":"Answer","text":"No. Il primo passo è un AI Readiness Audit a costo contenuto: fotografa dove l'AI genera valore reale, così investi solo dove ha senso, con KPI misurabili."}},{"@type":"Question","name":"Cos'è il Digital Product Passport per la manifattura?","acceptedAnswer":{"@type":"Answer","text":"È il passaporto digitale di prodotto che l'UE renderà obbligatorio per diverse categorie: raccoglie dati su materiali, componenti e filiera."}}]}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"L'AI serve a una PMI manifatturiera?","acceptedAnswer":{"@type":"Answer","text":"Sì, e spesso più che alle grandi aziende: dove i margini sono sottili, ridurre fermi macchina, scarti e tempi morti fa una differenza immediata. Non serve un reparto IT, serve partire dal processo giusto."}},{"@type":"Question","name":"Quali sono i primi usi utili dell'AI in produzione?","acceptedAnswer":{"@type":"Answer","text":"Controllo qualità visivo, manutenzione predittiva, pianificazione della produzione e gestione della documentazione tecnica. Si parte da dove ci sono già dati e un problema concreto e misurabile."}},{"@type":"Question","name":"L'AI in produzione richiede grandi investimenti?","acceptedAnswer":{"@type":"Answer","text":"No. Il primo passo è un assessment dei processi, con perimetro e investimento definiti nella proposta: fotografa dove l'AI genera valore reale, così investi solo dove ha senso, con KPI misurabili."}},{"@type":"Question","name":"Cos'è il Digital Product Passport per la manifattura?","acceptedAnswer":{"@type":"Answer","text":"È il passaporto digitale di prodotto che l'UE renderà obbligatorio per diverse categorie: raccoglie dati su materiali, componenti e filiera."}}]}</script>
 <script defer src="/_vercel/insights/script.js"></script>
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "Service", "@id": "https://www.echo.srl/settori/manifattura#service", "name": "Intelligenza Artificiale per la manifattura", "serviceType": "Consulenza AI per PMI manifatturiere", "provider": {"@id": "https://www.echo.srl/#organization"}, "description": "Integrazione dell'AI nelle PMI manifatturiere italiane: produzione, controllo qualità, manutenzione predittiva e logistica.", "areaServed": {"@type": "Country", "name": "Italy"}}</script>
 </head>
 <body>
 
-<nav>
-  <a href="/" class="nav-logo">
-    <img src="/logo-on-cream.png" alt="Echo S.r.l." onerror="this.style.display='none';this.nextSibling.style.display='block'">
-    <span style="display:none;font-family:var(--font-serif);font-size:1.25rem;font-weight:600;">Echo</span>
+<nav aria-label="Navigazione principale">
+  <a href="/" class="nav-logo" aria-label="Echo S.r.l., torna alla home">
+    <img src="/logo-on-cream.png" alt="Echo S.r.l.">
   </a>
   <input type="checkbox" id="nav-toggle" class="nav-toggle-input" aria-hidden="true" tabindex="-1"><label for="nav-toggle" class="nav-toggle" role="button" tabindex="0" aria-label="Apri il menu"><span></span><span></span><span></span></label>
   <ul class="nav-links" onclick="if(event.target.closest('a'))document.getElementById('nav-toggle').checked=false">
-    <li><a href="/#origine">Chi siamo</a></li>
+    <li class="nav-drop"><a href="/#servizi" class="nav-drop-toggle" aria-haspopup="true">Servizi <span aria-hidden="true">▾</span></a><ul class="nav-drop-menu">
+      <li><a href="/ai-readiness-audit">Assessment e analisi dei processi</a></li>
+      <li><a href="/consulenza-processi">Consulenza sui processi</a></li>
+      <li><a href="/formazione-ai">Formazione AI e digitale</a></li>
+      <li><a href="/integrazione-ai">Software, automazioni e AI</a></li>
+      <li><a href="/affiancamento-misurazione">Affiancamento e misurazione</a></li>
+    </ul></li>
     <li><a href="/#metodo">Metodo</a></li>
-    <li><a href="/#casi">Casi Studio</a></li>
-    <li class="nav-drop"><a href="/scarica-recut" class="nav-drop-toggle" aria-haspopup="true">Progetti <span aria-hidden="true">▾</span></a><ul class="nav-drop-menu"><li><a href="/scarica-recut">ReCut di Echo<small>Scarica gratuitamente</small></a></li></ul></li>
-  <li><a href="/#contatti">Contatti</a></li>
+    <li><a href="/settori/moda">Moda</a></li>
+    <li><a href="/casi-studio">Casi studio</a></li>
+    <li><a href="/chi-siamo">Chi siamo</a></li>
+    <li><a href="/blog/">Blog</a></li>
+    <li><a href="/#contatti">Contatti</a></li>
   </ul>
-  <a href="https://calendar.app.google/UVXPPWQVyTQ6PSTS9" target="_blank" rel="noopener" class="nav-cta">Prenota una call</a>
+  <a href="https://calendar.app.google/UVXPPWQVyTQ6PSTS9" target="_blank" rel="noopener" class="nav-cta">Parliamone</a>
 </nav>
 
 <section class="page-hero">
@@ -53,6 +60,7 @@
   <p class="eyebrow">Capannoni, linee, tempi ciclo. Qui &egrave; dove siamo nati.</p>
   <h1>Intelligenza Artificiale<br><em>per la manifattura</em></h1>
   <p class="intro">Le PMI manifatturiere italiane hanno processi solidi, costruiti in decenni di esperienza. L'AI non li sostituisce. Li rende pi&ugrave; veloci, pi&ugrave; precisi, pi&ugrave; scalabili. Noi partiamo dal capannone, non dal cloud.</p>
+  <p class="intro"><strong>Il focus di Echo sono le PMI della moda.</strong> Questa pagina descrive esperienze precedenti in altri settori ed è mantenuta come archivio. <a href="/settori/moda">Scopri come lavoriamo con le PMI della moda</a>.</p>
 </section>
 
 <section>
@@ -64,7 +72,7 @@
     <div class="section-inner">
       <p>In una PMI manifatturiera, ogni reparto ha le sue regole. La produzione ragiona per tempi ciclo. La qualit&agrave; per tolleranze. La logistica per spazi e rotazione. L'amministrazione per scadenze.</p>
       <p>L'AI funziona quando rispetta queste regole. Manutenzione predittiva che anticipa i fermi macchina. Controllo qualit&agrave; visivo che non si stanca. Pianificazione della produzione che tiene conto di ordini, materiali e capacit&agrave; reale.</p>
-      <p>Radici manifatturiere, visione digitale. Non &egrave; uno slogan: &egrave; il modo in cui lavoriamo da sempre. Conosciamo il pavimento del capannone prima di parlare di algoritmi.</p>
+      <p>Radici nella manifattura. Visione digitale. Non &egrave; uno slogan: &egrave; il modo in cui lavoriamo da sempre. Conosciamo il pavimento del capannone prima di parlare di algoritmi.</p>
     </div>
   </div>
 </section>
@@ -128,7 +136,7 @@
     </details>
     <details class="faq-item">
       <summary>L'AI in produzione richiede grandi investimenti?</summary>
-      <div class="faq-answer">No. Il primo passo &egrave; un <a href="/ai-readiness-audit">AI Readiness Audit</a> a costo contenuto: fotografa dove l'AI genera valore reale, cos&igrave; investi solo dove ha senso, con KPI misurabili, invece di comprare strumenti che restano inutilizzati.</div>
+      <div class="faq-answer">No. Il primo passo &egrave; un <a href="/ai-readiness-audit">assessment dei processi</a>, con perimetro e investimento definiti nella proposta: fotografa come si lavora oggi e indica dove un intervento ha senso.</div>
     </details>
     <details class="faq-item">
       <summary>Cos'&egrave; il Digital Product Passport per la manifattura?</summary>
@@ -146,8 +154,8 @@
 <section>
   <div class="internal-links">
     <h3>Approfondimenti</h3>
-    <a href="/ai-readiness-audit">AI Readiness Audit</a>
-    <a href="/integrazione-ai">Integrazione AI</a>
+    <a href="/ai-readiness-audit">Assessment e analisi dei processi</a>
+    <a href="/integrazione-ai">Software, automazioni e AI</a>
     <a href="/digital-product-passport">Digital Product Passport</a>
     <a href="/blog/ai-produzione-pmi-casi-reali">AI in produzione: casi reali</a>
     <a href="/blog/digital-product-passport-manifattura">DPP per la manifattura</a>
@@ -155,16 +163,19 @@
 </section>
 
 <footer>
-  <a href="/" class="footer-logo">
-    <img src="/logo-on-cream.png" alt="Echo S.r.l." onerror="this.style.display='none';this.nextSibling.style.display='block'">
-    <span style="display:none;font-family:var(--font-serif);font-weight:600;">Echo</span>
-  </a>
+  <div>
+    <a href="/" class="footer-logo" aria-label="Echo S.r.l., torna alla home">
+      <img src="/logo-on-cream.png" alt="Echo S.r.l.">
+    </a>
+    <p class="footer-slogan">Radici nella manifattura. Visione digitale.</p>
+  </div>
   <p class="footer-copy">Echo S.r.l. &mdash; P.IVA 03135740359 &mdash; Via Lelio e Fausto Socini 32/B, 42121 Reggio Emilia</p>
   <div class="footer-links">
     <a href="mailto:info@echowebagency.it">info@echowebagency.it</a>
     <a href="/privacy">Privacy</a>
+    <a href="/scarica-recut">ReCut di Echo</a>
     <a href="https://www.linkedin.com/company/echo-ai-agency" target="_blank" rel="noopener">LinkedIn</a>
-    <a href="https://www.instagram.com/echowebagency/" target="_blank" rel="noopener">Instagram</a>
+    <a href="https://www.instagram.com/echoagencyai/" target="_blank" rel="noopener">Instagram</a>
   </div>
 </footer>
 
