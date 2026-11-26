@@ -35,20 +35,27 @@
 </head>
 <body>
 
-<nav>
-  <a href="/" class="nav-logo">
-    <img src="/logo-on-cream.png" alt="Echo S.r.l." onerror="this.style.display='none';this.nextSibling.style.display='block'">
-    <span style="display:none;font-family:var(--font-serif);font-size:1.25rem;font-weight:600;">Echo</span>
+<nav aria-label="Navigazione principale">
+  <a href="/" class="nav-logo" aria-label="Echo S.r.l., torna alla home">
+    <img src="/logo-on-cream.png" alt="Echo S.r.l.">
   </a>
   <input type="checkbox" id="nav-toggle" class="nav-toggle-input" aria-hidden="true" tabindex="-1"><label for="nav-toggle" class="nav-toggle" role="button" tabindex="0" aria-label="Apri il menu"><span></span><span></span><span></span></label>
   <ul class="nav-links" onclick="if(event.target.closest('a'))document.getElementById('nav-toggle').checked=false">
-    <li><a href="/chi-siamo">Chi siamo</a></li>
+    <li class="nav-drop"><a href="/#servizi" class="nav-drop-toggle" aria-haspopup="true">Servizi <span aria-hidden="true">▾</span></a><ul class="nav-drop-menu">
+      <li><a href="/ai-readiness-audit">Assessment e analisi dei processi</a></li>
+      <li><a href="/consulenza-processi">Consulenza sui processi</a></li>
+      <li><a href="/formazione-ai">Formazione AI e digitale</a></li>
+      <li><a href="/integrazione-ai">Software, automazioni e AI</a></li>
+      <li><a href="/affiancamento-misurazione">Affiancamento e misurazione</a></li>
+    </ul></li>
     <li><a href="/#metodo">Metodo</a></li>
+    <li><a href="/settori/moda">Moda</a></li>
+    <li><a href="/casi-studio">Casi studio</a></li>
+    <li><a href="/chi-siamo">Chi siamo</a></li>
     <li><a href="/blog/">Blog</a></li>
-    <li class="nav-drop"><a href="/scarica-recut" class="nav-drop-toggle" aria-haspopup="true">Progetti <span aria-hidden="true">▾</span></a><ul class="nav-drop-menu"><li><a href="/scarica-recut">ReCut di Echo<small>Scarica gratuitamente</small></a></li></ul></li>
-  <li><a href="/#contatti">Contatti</a></li>
+    <li><a href="/#contatti">Contatti</a></li>
   </ul>
-  <a href="https://calendar.app.google/UVXPPWQVyTQ6PSTS9" target="_blank" rel="noopener" class="nav-cta">Prenota una call</a>
+  <a href="https://calendar.app.google/UVXPPWQVyTQ6PSTS9" target="_blank" rel="noopener" class="nav-cta">Parliamone</a>
 </nav>
 
 <section class="page-hero">
@@ -84,7 +91,7 @@
       <div class="step-num">01</div>
       <div class="step-content">
         <span class="step-tag">Infrastruttura</span>
-        <h4>Un ambiente cloud costruito sui reparti reali</h4>
+        <h3>Un ambiente cloud costruito sui reparti reali</h3>
         <p>Cinque account aziendali su dominio dedicato — produzione, avanzamento, spedizioni, amministrazione, programmazione — ciascuno collegato in lettura alla casella di posta reale corrispondente, con cartelle, permessi e condivisione su Drive. Ogni account è dotato di Gemini, calendario condiviso, NotebookLM e Gem personalizzati sul lavoro del reparto.</p>
       </div>
     </div>
@@ -92,7 +99,7 @@
       <div class="step-num">02</div>
       <div class="step-content">
         <span class="step-tag">Governance</span>
-        <h4>Regole per l’uso dell’AI</h4>
+        <h3>Regole per l’uso dell’AI</h3>
         <p>Regolamento interno per l'uso dell'AI redatto ai sensi del Reg. UE 2024/1689, con linee guida operative per il personale. Programma, presenze e attestati documentano le attività formative svolte; non sono una certificazione generale di conformità dell’azienda.</p>
       </div>
     </div>
@@ -100,7 +107,7 @@
       <div class="step-num">03</div>
       <div class="step-content">
         <span class="step-tag">Formazione</span>
-        <h4>Quattro giornate in sede, sessioni per tutto il team</h4>
+        <h3>Quattro giornate in sede, sessioni per tutto il team</h3>
         <p>Due interventi in presenza per complessive quattro giornate, più sessioni collettive registrate e consultabili da chi non c'era. Programma sui fondamentali: cloud e backup, gestione file e permessi, calendario condiviso, Google Chat come canale interno tracciabile, NotebookLM per interrogare i documenti aziendali.</p>
       </div>
     </div>
@@ -108,7 +115,7 @@
       <div class="step-num">04</div>
       <div class="step-content">
         <span class="step-tag">Strumenti su misura</span>
-        <h4>Software costruiti sui processi, non sui cataloghi</h4>
+        <h3>Software costruiti sui processi, non sui cataloghi</h3>
         <p>Un software legge il totale della produzione da mettere in macchina e genera il foglio di suddivisione dei colli secondo la logica interna dell'azienda. Il confronto di tempo riportato nel riepilogo Echo è circoscritto a questa operazione. Un secondo strumento multiagentico genera packing list e sovraccolli mantenendo la logica specifica di ciascun cliente finale. In parallelo, i test di inserimento dati a voce con Gemini.</p>
       </div>
     </div>
@@ -139,11 +146,11 @@
   <p class="section-label">Servizi Echo coinvolti</p>
   <h2>Un percorso modulare,<br><em>costruito per fasi.</em></h2>
   <div class="internal-links">
-    <a href="/ai-readiness-audit">AI Readiness Audit</a>
-    <a href="/integrazione-ai">Integrazione AI nei processi</a>
+    <a href="/ai-readiness-audit">Assessment e analisi dei processi</a>
+    <a href="/integrazione-ai">Software, automazioni e AI</a>
     <a href="/governance-ai">Governance AI</a>
-    <a href="/formazione-ai">Formazione AI</a>
-    <a href="/settori/manifattura">Settore Manifattura</a>
+    <a href="/formazione-ai">Formazione AI e digitale</a>
+    <a href="/settori/moda">PMI della moda</a>
   </div>
 </section>
 
@@ -158,22 +165,25 @@
 </section>
 
 <section class="cta-section">
-  <h2>Hai un maglificio o un'azienda manifatturiera<br><em>e i reparti non si parlano?</em></h2>
-  <p>Trenta minuti di call gratuita. Capiamo insieme se è il momento giusto e da quale processo partire. Senza vendere niente.</p>
-  <a href="https://calendar.app.google/UVXPPWQVyTQ6PSTS9" target="_blank" rel="noopener" class="btn-primary">Prenota la call gratuita</a>
+  <h2>Nella tua azienda<br><em>i reparti non si parlano?</em></h2>
+  <p>Un primo colloquio. Capiamo insieme se è il momento giusto e da quale processo partire. Senza vendere niente.</p>
+  <a href="https://calendar.app.google/UVXPPWQVyTQ6PSTS9" target="_blank" rel="noopener" class="btn-primary">Prenota un primo colloquio</a>
 </section>
 
 <footer>
-  <a href="/" class="footer-logo">
-    <img src="/logo-on-cream.png" alt="Echo S.r.l." onerror="this.style.display='none';this.nextSibling.style.display='block'">
-    <span style="display:none;font-family:var(--font-serif);font-weight:600;">Echo</span>
-  </a>
+  <div>
+    <a href="/" class="footer-logo" aria-label="Echo S.r.l., torna alla home">
+      <img src="/logo-on-cream.png" alt="Echo S.r.l.">
+    </a>
+    <p class="footer-slogan">Radici nella manifattura. Visione digitale.</p>
+  </div>
   <p class="footer-copy">Echo S.r.l. &mdash; P.IVA 03135740359 &mdash; Via Lelio e Fausto Socini 32/B, 42121 Reggio Emilia</p>
   <div class="footer-links">
     <a href="mailto:info@echowebagency.it">info@echowebagency.it</a>
     <a href="/privacy">Privacy</a>
+    <a href="/scarica-recut">ReCut di Echo</a>
     <a href="https://www.linkedin.com/company/echo-ai-agency" target="_blank" rel="noopener">LinkedIn</a>
-    <a href="https://www.instagram.com/echowebagency/" target="_blank" rel="noopener">Instagram</a>
+    <a href="https://www.instagram.com/echoagencyai/" target="_blank" rel="noopener">Instagram</a>
   </div>
 </footer>
 

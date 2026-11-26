@@ -56,9 +56,9 @@
       "destination": "https://www.echo.srl/:path*",
       "permanent": true
     },
-    { "source": "/soluzioni", "destination": "/#metodo", "permanent": true },
+    { "source": "/soluzioni", "destination": "/#servizi", "permanent": true },
     { "source": "/soluzioni/:slug*", "destination": "/#metodo", "permanent": true },
-    { "source": "/settori", "destination": "/#origine", "permanent": true },
+    { "source": "/settori", "destination": "/settori/moda", "permanent": true },
     { "source": "/risorse", "destination": "/#contatti", "permanent": true },
     { "source": "/risorse/:slug*", "destination": "/#contatti", "permanent": true },
     { "source": "/metodo", "destination": "/#metodo", "permanent": true },
@@ -70,10 +70,14 @@
     { "source": "/ai-act-timeline-2026-2027-pmi-italiane", "destination": "/#metodo", "permanent": true },
     { "source": "/ai-allo-stato-brado-policy-aziendale", "destination": "/blog/policy-ai-aziendale-come-scriverla", "permanent": true },
     { "source": "/digital-product-passport-siamo-gia-tardi", "destination": "/#casi", "permanent": true },
-    { "source": "/servizi", "destination": "/#metodo", "permanent": true },
+    { "source": "/servizi", "destination": "/#servizi", "permanent": true },
     { "source": "/web", "destination": "/#metodo", "permanent": true },
     { "source": "/portfolio", "destination": "/#casi", "permanent": true },
     { "source": "/metodo-echo-2", "destination": "/#metodo", "permanent": true },
+    { "source": "/casi-reali", "destination": "/casi-studio", "permanent": true },
+    { "source": "/casi-reali/:slug*", "destination": "/casi-studio", "permanent": true },
+    { "source": "/consulenza", "destination": "/consulenza-processi", "permanent": true },
+    { "source": "/assessment", "destination": "/ai-readiness-audit", "permanent": true },
     { "source": "/casi-studio/maglificio-pmi-emilia", "destination": "/casi-studio/maglificio-conto-terzi-pratese", "permanent": true },
     { "source": "/casi-studio/maison-knit-luxury", "destination": "/casi-studio/maglificio-conto-terzi-pratese", "permanent": true }
   ]

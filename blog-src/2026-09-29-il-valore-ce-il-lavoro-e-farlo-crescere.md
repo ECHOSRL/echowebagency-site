@@ -199,7 +199,7 @@ Nei progetti questo prende forme precise: informazioni organizzate, flussi creat
 
 Portaci un’attività che assorbe tempo, un passaggio di prodotto da ripensare o un valore che oggi fai fatica a raccontare. Partiremo da lì, per capire insieme che cosa cambiare e come verificarlo.
 
-**Echo. Radici manifatturiere, visione nel digitale.**
+**Echo. Radici nella manifattura. Visione digitale.**
 
 ---
 
