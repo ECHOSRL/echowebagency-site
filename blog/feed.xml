@@ -6,20 +6,6 @@
   <description>Formazione, visione e comunicazione. Progetti e riflessioni di Silvia Rinaldi ed Echo.</description>
   <language>it-IT</language>
   <item>
-    <title>Tracciabilità e dati prodotto: il ruolo dell’AI</title>
-    <link>https://www.echo.srl/blog/tracciabilita-prodotto-ai-dpp</link>
-    <guid isPermaLink="true">https://www.echo.srl/blog/tracciabilita-prodotto-ai-dpp</guid>
-    <pubDate>Tue, 15 Dec 2026 09:00:00 +0000</pubDate>
-    <description>Come l&#x27;AI aiuta a raccogliere, strutturare e gestire i dati di tracciabilità prodotto per il DPP. Per aziende moda e manifattura.</description>
-  </item>
-  <item>
-    <title>AI e ufficio stile: come cambia il campionario</title>
-    <link>https://www.echo.srl/blog/ai-ufficio-stile-moda-campionario</link>
-    <guid isPermaLink="true">https://www.echo.srl/blog/ai-ufficio-stile-moda-campionario</guid>
-    <pubDate>Tue, 01 Dec 2026 09:00:00 +0000</pubDate>
-    <description>Come l&#x27;AI trasforma l&#x27;ufficio stile e il processo di campionario nella moda. Trend analysis, mood board, briefing: casi concreti.</description>
-  </item>
-  <item>
     <title>Rischi dell’AI non governata in azienda</title>
     <link>https://www.echo.srl/blog/rischi-intelligenza-artificiale-azienda</link>
     <guid isPermaLink="true">https://www.echo.srl/blog/rischi-intelligenza-artificiale-azienda</guid>
@@ -95,6 +81,20 @@
     <guid isPermaLink="true">https://www.echo.srl/blog/ai-act-pmi-cosa-cambia</guid>
     <pubDate>Wed, 01 Jul 2026 09:00:00 +0000</pubDate>
     <description>Cosa prevede l&#x27;AI Act per le PMI italiane e quali obblighi operativi riguardano le aziende con 5-50 dipendenti. Guida pratica, non legale.</description>
+  </item>
+  <item>
+    <title>AI e ufficio stile: come cambia il campionario</title>
+    <link>https://www.echo.srl/blog/ai-ufficio-stile-moda-campionario</link>
+    <guid isPermaLink="true">https://www.echo.srl/blog/ai-ufficio-stile-moda-campionario</guid>
+    <pubDate>Sun, 28 Jun 2026 09:00:00 +0000</pubDate>
+    <description>Come l&#x27;AI trasforma l&#x27;ufficio stile e il processo di campionario nella moda. Trend analysis, mood board, briefing: casi concreti.</description>
+  </item>
+  <item>
+    <title>Tracciabilità e dati prodotto: il ruolo dell’AI</title>
+    <link>https://www.echo.srl/blog/tracciabilita-prodotto-ai-dpp</link>
+    <guid isPermaLink="true">https://www.echo.srl/blog/tracciabilita-prodotto-ai-dpp</guid>
+    <pubDate>Sun, 28 Jun 2026 09:00:00 +0000</pubDate>
+    <description>Come l&#x27;AI aiuta a raccogliere, strutturare e gestire i dati di tracciabilità prodotto per il DPP. Per aziende moda e manifattura.</description>
   </item>
   <item>
     <title>Cosa il Made in Italy può imparare dalla Francia sul tessile sostenibile</title>
